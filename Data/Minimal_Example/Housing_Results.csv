@@ -1,0 +1,4 @@
+image,image_path,xmin,ymin,xmax,ymax,label,confidence,x_size,y_size
+view_vulnerable_10_3_949+FELL+ST+SAN+FRANCISCO+Work-Complete-CFC-Issued.jpg,/home/muehlemann/Documents/Insight/EQanalytics/Data/Minimal_Example/Street_View/view_vulnerable_10_3_949+FELL+ST+SAN+FRANCISCO+Work-Complete-CFC-Issued.jpg,569,15,640,555,0,0.5271663069725037,640,640
+view_vulnerable_10_3_949+FELL+ST+SAN+FRANCISCO+Work-Complete-CFC-Issued.jpg,/home/muehlemann/Documents/Insight/EQanalytics/Data/Minimal_Example/Street_View/view_vulnerable_10_3_949+FELL+ST+SAN+FRANCISCO+Work-Complete-CFC-Issued.jpg,0,20,599,514,0,0.9989147186279297,640,640
+view_vulnerable_10_2_2080+GOUGH+ST+SAN+FRANCISCO+Work-Complete-CFC-Issued.jpg,/home/muehlemann/Documents/Insight/EQanalytics/Data/Minimal_Example/Street_View/view_vulnerable_10_2_2080+GOUGH+ST+SAN+FRANCISCO+Work-Complete-CFC-Issued.jpg,37,137,379,483,0,0.997381865978241,640,640
