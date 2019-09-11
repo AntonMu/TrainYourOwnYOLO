@@ -1,0 +1,1257 @@
+{
+    "name": "Cat Faces",
+    "securityToken": "Cat Faces Token",
+    "sourceConnection": {
+        "name": "Cat Data",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiOTNkNGE2MWZiNmQ1YzdlMjg0N2FmMTRhNDI2YjRkMDZmMmQ0MjQwOWZkMWQ2OTYwNGY3ODBiNjczNzYzNDhmYjEzNTNiNjBjOWQ3MTRmNDVhZDg2ZDk5NmM0NGY4ZDEyN2Y1ODU4MjI0ODVmMjE3N2UzYjI1YTdkODRlODJmNThmMDdlMmE1ZTJkM2E1MTA2NGQ0Y2I4MjI1NDUxZDE4ZDhiMThjYjkyYzViZTY1MmRlZTU1ZTdjNTVkN2JkNDhkIiwiaXYiOiI5MDJjMDUyMjViMzU0Y2I0NTZkMjgxNjY0NTMyNDViZjU0ZDUxMDEyYWZlMWEyOWEifQ=="
+        },
+        "id": "erQ5j0Ore"
+    },
+    "targetConnection": {
+        "name": "Cat Data",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDg3YTkyMjZlMDI0NGJhYjhiNzVkMmNmODkyM2E1YjRlODAwODVhZTFjMjczMzc3M2FjZjc4Mjc0ZThlNDMzOTVlNWE4NzFmNWFmOTlkMDZkMmQ3MzdjODZjOGJjMjBjYWNiZmFkNjlmYjk0YzgyZDMxMjQ4YWNkNDFmNTk3MDBjZjBjYzA4Y2EyZTM0YjViNGExZTdiN2EzZmQ4ZjZlNjY5MWU3ZmM4YzI0NjNlNjgyNGQ0MDQ0NDI3NzBlYzgzIiwiaXYiOiI5NTlmMzExMDU1MmI3ZjVjMzNiMTIwNTEzNGQ5NzIyYWFlODc0MzY2NDFlNjRjMTIifQ=="
+        },
+        "id": "erQ5j0Ore"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "Cat Face",
+            "color": "#5db300"
+        }
+    ],
+    "id": "gOuAnLUdR",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "csv",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMTNjMDc4NzVjOTkxZTk2YTE0MDUxYmQzNThlYTE1YmE5MDI5ZWZiYzcxNjc5NWZjZGJkOTcxMDA5YzdhYTE5MjQzNDMxOTA3NjE1MzZjM2EwNzMyYzE0NGZkZmNjMTdlIiwiaXYiOiJhYmQyYmYxZmQwYzMzNjMyM2RmZDRiMjQ0YjMwODQ3ODJkMGU1YzIyNjg0N2FiZmYifQ=="
+        }
+    },
+    "version": "2.1.0",
+    "lastVisitedAssetId": "0bd6ec0a3bf7eb682e1a2bebdf5264a4",
+    "assets": {
+        "293e5da724e95e022be3050563d6abd1": {
+            "format": "jpg",
+            "id": "293e5da724e95e022be3050563d6abd1",
+            "name": "2Q__%20(1).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/2Q__%20(1).jpg",
+            "size": {
+                "width": 288,
+                "height": 175
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b9e0c52c54fd3b808fdc02fd41113920": {
+            "format": "jpg",
+            "id": "b9e0c52c54fd3b808fdc02fd41113920",
+            "name": "2Q__%20(2).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/2Q__%20(2).jpg",
+            "size": {
+                "width": 276,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ddae3cd103a5c05bcfc4af79ccda667f": {
+            "format": "jpg",
+            "id": "ddae3cd103a5c05bcfc4af79ccda667f",
+            "name": "2Q__.jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/2Q__.jpg",
+            "size": {
+                "width": 259,
+                "height": 194
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2786382b1b411aca1d70a69bf6232d10": {
+            "format": "jpg",
+            "id": "2786382b1b411aca1d70a69bf6232d10",
+            "name": "9k_%20(1).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/9k_%20(1).jpg",
+            "size": {
+                "width": 299,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "41ff4efe9e951f23da448a9465b39406": {
+            "format": "jpg",
+            "id": "41ff4efe9e951f23da448a9465b39406",
+            "name": "9k_%20(2).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/9k_%20(2).jpg",
+            "size": {
+                "width": 219,
+                "height": 230
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a945356bd46b39b3fcd437868d3167db": {
+            "format": "jpg",
+            "id": "a945356bd46b39b3fcd437868d3167db",
+            "name": "9k_%20(3).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/9k_%20(3).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d90643ab4d5b5054794b8cae96f86aaa": {
+            "format": "jpg",
+            "id": "d90643ab4d5b5054794b8cae96f86aaa",
+            "name": "9k_%20(4).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/9k_%20(4).jpg",
+            "size": {
+                "width": 288,
+                "height": 175
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fe65ba947ba61e24651a54766fce2128": {
+            "format": "jpg",
+            "id": "fe65ba947ba61e24651a54766fce2128",
+            "name": "9k_%20(5).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/9k_%20(5).jpg",
+            "size": {
+                "width": 345,
+                "height": 146
+            },
+            "state": 2,
+            "type": 1
+        },
+        "774a517a7b8a6d16e00f22b5d34156a7": {
+            "format": "jpg",
+            "id": "774a517a7b8a6d16e00f22b5d34156a7",
+            "name": "9k_%20(6).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/9k_%20(6).jpg",
+            "size": {
+                "width": 264,
+                "height": 191
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c22b53f8211979efbbbf9a3c8b84d4d6": {
+            "format": "jpg",
+            "id": "c22b53f8211979efbbbf9a3c8b84d4d6",
+            "name": "9k_%20(7).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/9k_%20(7).jpg",
+            "size": {
+                "width": 299,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2eb5a0a1dd713592e90778853f3e2f94": {
+            "format": "jpg",
+            "id": "2eb5a0a1dd713592e90778853f3e2f94",
+            "name": "9k_.jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/9k_.jpg",
+            "size": {
+                "width": 276,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4662f25e946fce7715e36ef530dc94be": {
+            "format": "jpg",
+            "id": "4662f25e946fce7715e36ef530dc94be",
+            "name": "Z%20(1).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/Z%20(1).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "78c6c367a6ba4e96a8e2f785408923a3": {
+            "format": "jpg",
+            "id": "78c6c367a6ba4e96a8e2f785408923a3",
+            "name": "Z%20(2).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/Z%20(2).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "118cf8ab1f921af50d8fdd1ffb7d5f0e": {
+            "format": "jpg",
+            "id": "118cf8ab1f921af50d8fdd1ffb7d5f0e",
+            "name": "Z%20(3).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/Z%20(3).jpg",
+            "size": {
+                "width": 272,
+                "height": 185
+            },
+            "state": 2,
+            "type": 1
+        },
+        "313d80010ab1c9613339fc72e87bde2d": {
+            "format": "jpg",
+            "id": "313d80010ab1c9613339fc72e87bde2d",
+            "name": "Z%20(4).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/Z%20(4).jpg",
+            "size": {
+                "width": 232,
+                "height": 217
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f6eb6f7b23433c53862385e815e147a8": {
+            "format": "jpg",
+            "id": "f6eb6f7b23433c53862385e815e147a8",
+            "name": "Z.jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/Z.jpg",
+            "size": {
+                "width": 261,
+                "height": 193
+            },
+            "state": 2,
+            "type": 1
+        },
+        "219306c09e7732f6288d2353f5fbfd4f": {
+            "format": "jpg",
+            "id": "219306c09e7732f6288d2353f5fbfd4f",
+            "name": "images%20(1).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(1).jpg",
+            "size": {
+                "width": 274,
+                "height": 184
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d71dbd5f76baceec3b70df31bf75e02e": {
+            "format": "jpg",
+            "id": "d71dbd5f76baceec3b70df31bf75e02e",
+            "name": "images%20(10).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(10).jpg",
+            "size": {
+                "width": 224,
+                "height": 224
+            },
+            "state": 2,
+            "type": 1
+        },
+        "494ff2fae20efbba698d4a7461203361": {
+            "format": "jpg",
+            "id": "494ff2fae20efbba698d4a7461203361",
+            "name": "images%20(100).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(100).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c0af87fe9d7e1d193d3653fc12a01540": {
+            "format": "jpg",
+            "id": "c0af87fe9d7e1d193d3653fc12a01540",
+            "name": "images%20(11).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(11).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c8e1f62d5a58d9ca967606e2bb42e059": {
+            "format": "jpg",
+            "id": "c8e1f62d5a58d9ca967606e2bb42e059",
+            "name": "images%20(12).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(12).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3e5c0c6c81d7f312a03050736dba07ed": {
+            "format": "jpg",
+            "id": "3e5c0c6c81d7f312a03050736dba07ed",
+            "name": "images%20(13).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(13).jpg",
+            "size": {
+                "width": 259,
+                "height": 194
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c44dc114938d373d742bbfc8f4e4a107": {
+            "format": "jpg",
+            "id": "c44dc114938d373d742bbfc8f4e4a107",
+            "name": "images%20(14).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(14).jpg",
+            "size": {
+                "width": 264,
+                "height": 191
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9fab7f62d9405eafbb4c3beaa042af23": {
+            "format": "jpg",
+            "id": "9fab7f62d9405eafbb4c3beaa042af23",
+            "name": "images%20(15).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(15).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "590846e8adea26aec025dcd20d6f27d7": {
+            "format": "jpg",
+            "id": "590846e8adea26aec025dcd20d6f27d7",
+            "name": "images%20(16).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(16).jpg",
+            "size": {
+                "width": 259,
+                "height": 194
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e79685b327941c835a7e64c9daaa66eb": {
+            "format": "jpg",
+            "id": "e79685b327941c835a7e64c9daaa66eb",
+            "name": "images%20(17).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(17).jpg",
+            "size": {
+                "width": 264,
+                "height": 191
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bdc6113db12fa7879d88295b3381eb65": {
+            "format": "jpg",
+            "id": "bdc6113db12fa7879d88295b3381eb65",
+            "name": "images%20(18).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(18).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f79ed8de54aaa0e9690e9aa9631a495f": {
+            "format": "jpg",
+            "id": "f79ed8de54aaa0e9690e9aa9631a495f",
+            "name": "images%20(19).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(19).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fbda928d5b2a304feb8909d2ba8e3b24": {
+            "format": "jpg",
+            "id": "fbda928d5b2a304feb8909d2ba8e3b24",
+            "name": "images%20(2).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(2).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7ab8e448d577fa498b368ad41ed95962": {
+            "format": "jpg",
+            "id": "7ab8e448d577fa498b368ad41ed95962",
+            "name": "images%20(20).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(20).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d74faec645ccfaaf41f5f8301e2c22fb": {
+            "format": "jpg",
+            "id": "d74faec645ccfaaf41f5f8301e2c22fb",
+            "name": "images%20(21).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(21).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "10182af5bc8c1f106efe7bdb8f13d87c": {
+            "format": "jpg",
+            "id": "10182af5bc8c1f106efe7bdb8f13d87c",
+            "name": "images%20(22).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(22).jpg",
+            "size": {
+                "width": 318,
+                "height": 159
+            },
+            "state": 2,
+            "type": 1
+        },
+        "585fb9eecfc33c35dcebcbd267ee2aa2": {
+            "format": "jpg",
+            "id": "585fb9eecfc33c35dcebcbd267ee2aa2",
+            "name": "images%20(23).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(23).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a38f46de69e3a165478f23da552764cb": {
+            "format": "jpg",
+            "id": "a38f46de69e3a165478f23da552764cb",
+            "name": "images%20(24).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(24).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "eb33438638d74607462def8b9fef63c5": {
+            "format": "jpg",
+            "id": "eb33438638d74607462def8b9fef63c5",
+            "name": "images%20(25).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(25).jpg",
+            "size": {
+                "width": 268,
+                "height": 188
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c0410c5f61d02085ede110f317208b5f": {
+            "format": "jpg",
+            "id": "c0410c5f61d02085ede110f317208b5f",
+            "name": "images%20(26).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(26).jpg",
+            "size": {
+                "width": 287,
+                "height": 176
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a11caaed8fbae4e55ffa53c0c927d880": {
+            "format": "jpg",
+            "id": "a11caaed8fbae4e55ffa53c0c927d880",
+            "name": "images%20(27).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(27).jpg",
+            "size": {
+                "width": 236,
+                "height": 213
+            },
+            "state": 2,
+            "type": 1
+        },
+        "96e8c177d77bff3e0ed04d3fd9eb97a2": {
+            "format": "jpg",
+            "id": "96e8c177d77bff3e0ed04d3fd9eb97a2",
+            "name": "images%20(28).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(28).jpg",
+            "size": {
+                "width": 318,
+                "height": 159
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7054c0ee6739f335a1a2cc3f6091124d": {
+            "format": "jpg",
+            "id": "7054c0ee6739f335a1a2cc3f6091124d",
+            "name": "images%20(29).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(29).jpg",
+            "size": {
+                "width": 225,
+                "height": 224
+            },
+            "state": 2,
+            "type": 1
+        },
+        "580a1ad0ec30e7ff0dc448a96e59130b": {
+            "format": "jpg",
+            "id": "580a1ad0ec30e7ff0dc448a96e59130b",
+            "name": "images%20(3).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(3).jpg",
+            "size": {
+                "width": 301,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c050f79d13410b5200247c0b9525a379": {
+            "format": "jpg",
+            "id": "c050f79d13410b5200247c0b9525a379",
+            "name": "images%20(30).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(30).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7760292deffbf119427aeb5a3fe20dd8": {
+            "format": "jpg",
+            "id": "7760292deffbf119427aeb5a3fe20dd8",
+            "name": "images%20(31).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(31).jpg",
+            "size": {
+                "width": 299,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8a544c3b9692c7072fc55655c00cde2a": {
+            "format": "jpg",
+            "id": "8a544c3b9692c7072fc55655c00cde2a",
+            "name": "images%20(32).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(32).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8fc216c314c76991e3f0a8368b6bd1ef": {
+            "format": "jpg",
+            "id": "8fc216c314c76991e3f0a8368b6bd1ef",
+            "name": "images%20(33).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(33).jpg",
+            "size": {
+                "width": 310,
+                "height": 163
+            },
+            "state": 2,
+            "type": 1
+        },
+        "352291bc3b3b1754440df6602b852c3a": {
+            "format": "jpg",
+            "id": "352291bc3b3b1754440df6602b852c3a",
+            "name": "images%20(34).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(34).jpg",
+            "size": {
+                "width": 306,
+                "height": 165
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5c790c61ee2d749b25afd46e6e2dcfd5": {
+            "format": "jpg",
+            "id": "5c790c61ee2d749b25afd46e6e2dcfd5",
+            "name": "images%20(35).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(35).jpg",
+            "size": {
+                "width": 290,
+                "height": 174
+            },
+            "state": 2,
+            "type": 1
+        },
+        "16e7160c58e1cbb4f0b6442578ac2847": {
+            "format": "jpg",
+            "id": "16e7160c58e1cbb4f0b6442578ac2847",
+            "name": "images%20(36).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(36).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3a1972927f4cefd6e672362c1f0f1793": {
+            "format": "jpg",
+            "id": "3a1972927f4cefd6e672362c1f0f1793",
+            "name": "images%20(37).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(37).jpg",
+            "size": {
+                "width": 290,
+                "height": 174
+            },
+            "state": 2,
+            "type": 1
+        },
+        "49a0a43aeb204f8e8d3f389843b0fa1c": {
+            "format": "jpg",
+            "id": "49a0a43aeb204f8e8d3f389843b0fa1c",
+            "name": "images%20(38).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(38).jpg",
+            "size": {
+                "width": 224,
+                "height": 224
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fbb1d5175ed21618129c61939bbd80d1": {
+            "format": "jpg",
+            "id": "fbb1d5175ed21618129c61939bbd80d1",
+            "name": "images%20(39).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(39).jpg",
+            "size": {
+                "width": 299,
+                "height": 169
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8f3212b2e64750df87d813d9aa31840f": {
+            "format": "jpg",
+            "id": "8f3212b2e64750df87d813d9aa31840f",
+            "name": "images%20(4).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(4).jpg",
+            "size": {
+                "width": 224,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2ea156c5db6aab99886c6c59cc2591fa": {
+            "format": "jpg",
+            "id": "2ea156c5db6aab99886c6c59cc2591fa",
+            "name": "images%20(40).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(40).jpg",
+            "size": {
+                "width": 298,
+                "height": 169
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e72d577717f09e59e78fb14b8c64a342": {
+            "format": "jpg",
+            "id": "e72d577717f09e59e78fb14b8c64a342",
+            "name": "images%20(41).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(41).jpg",
+            "size": {
+                "width": 264,
+                "height": 191
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a80a43bf0c6e29a0275dd2f5e24b92a6": {
+            "format": "jpg",
+            "id": "a80a43bf0c6e29a0275dd2f5e24b92a6",
+            "name": "images%20(42).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(42).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "72b46fb99336c7920e0d5c7363fb3149": {
+            "format": "jpg",
+            "id": "72b46fb99336c7920e0d5c7363fb3149",
+            "name": "images%20(43).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(43).jpg",
+            "size": {
+                "width": 310,
+                "height": 163
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9545ec5a34b8c17fec97ded0ed46dca9": {
+            "format": "jpg",
+            "id": "9545ec5a34b8c17fec97ded0ed46dca9",
+            "name": "images%20(44).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(44).jpg",
+            "size": {
+                "width": 224,
+                "height": 224
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0e63bc3e1f40a3279e6032b69128ad64": {
+            "format": "jpg",
+            "id": "0e63bc3e1f40a3279e6032b69128ad64",
+            "name": "images%20(45).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(45).jpg",
+            "size": {
+                "width": 251,
+                "height": 201
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3e252c00ea0c92300915cda0c43a8272": {
+            "format": "jpg",
+            "id": "3e252c00ea0c92300915cda0c43a8272",
+            "name": "images%20(46).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(46).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9370060b116823d2730e763fa016a79f": {
+            "format": "jpg",
+            "id": "9370060b116823d2730e763fa016a79f",
+            "name": "images%20(47).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(47).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f38a5adbd11800cfc9b00b0547a62df2": {
+            "format": "jpg",
+            "id": "f38a5adbd11800cfc9b00b0547a62df2",
+            "name": "images%20(48).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(48).jpg",
+            "size": {
+                "width": 225,
+                "height": 224
+            },
+            "state": 2,
+            "type": 1
+        },
+        "30455c836e4fc64c3075c9b44563b089": {
+            "format": "jpg",
+            "id": "30455c836e4fc64c3075c9b44563b089",
+            "name": "images%20(49).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(49).jpg",
+            "size": {
+                "width": 268,
+                "height": 188
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a87c9c5d16c2728b47c63107b418cea9": {
+            "format": "jpg",
+            "id": "a87c9c5d16c2728b47c63107b418cea9",
+            "name": "images%20(5).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(5).jpg",
+            "size": {
+                "width": 299,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8d6869bc6656b96f4b84faacb73f703f": {
+            "format": "jpg",
+            "id": "8d6869bc6656b96f4b84faacb73f703f",
+            "name": "images%20(50).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(50).jpg",
+            "size": {
+                "width": 277,
+                "height": 182
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e56cef20c520576e97e125d95bda1a36": {
+            "format": "jpg",
+            "id": "e56cef20c520576e97e125d95bda1a36",
+            "name": "images%20(51).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(51).jpg",
+            "size": {
+                "width": 273,
+                "height": 184
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b0f6a26c17a764ad8bf4bba2299b22dc": {
+            "format": "jpg",
+            "id": "b0f6a26c17a764ad8bf4bba2299b22dc",
+            "name": "images%20(52).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(52).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9a2cead6760df4118779f5393f8fc3b0": {
+            "format": "jpg",
+            "id": "9a2cead6760df4118779f5393f8fc3b0",
+            "name": "images%20(53).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(53).jpg",
+            "size": {
+                "width": 299,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3d716d3686f289285792287fc133f782": {
+            "format": "jpg",
+            "id": "3d716d3686f289285792287fc133f782",
+            "name": "images%20(54).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(54).jpg",
+            "size": {
+                "width": 259,
+                "height": 195
+            },
+            "state": 2,
+            "type": 1
+        },
+        "83e687e8abb769c93601f55f73d45425": {
+            "format": "jpg",
+            "id": "83e687e8abb769c93601f55f73d45425",
+            "name": "images%20(55).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(55).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 1,
+            "type": 1
+        },
+        "a2f45d28a88084d99c9ab6044945a5ff": {
+            "format": "jpg",
+            "id": "a2f45d28a88084d99c9ab6044945a5ff",
+            "name": "images%20(56).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(56).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3f6fa431a150dd3a1f9e14b740e49d44": {
+            "format": "jpg",
+            "id": "3f6fa431a150dd3a1f9e14b740e49d44",
+            "name": "images%20(57).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(57).jpg",
+            "size": {
+                "width": 284,
+                "height": 177
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0877872b8442f1c621a7618c22a57a74": {
+            "format": "jpg",
+            "id": "0877872b8442f1c621a7618c22a57a74",
+            "name": "images%20(58).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(58).jpg",
+            "size": {
+                "width": 251,
+                "height": 201
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bbcdf184ea203f82d1836710d2677cef": {
+            "format": "jpg",
+            "id": "bbcdf184ea203f82d1836710d2677cef",
+            "name": "images%20(59).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(59).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "af27016a36e621d4e67a91ad551a1ba8": {
+            "format": "jpg",
+            "id": "af27016a36e621d4e67a91ad551a1ba8",
+            "name": "images%20(6).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(6).jpg",
+            "size": {
+                "width": 301,
+                "height": 167
+            },
+            "state": 2,
+            "type": 1
+        },
+        "32ce67173a52282a7b6076bc8d44c02e": {
+            "format": "jpg",
+            "id": "32ce67173a52282a7b6076bc8d44c02e",
+            "name": "images%20(60).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(60).jpg",
+            "size": {
+                "width": 317,
+                "height": 159
+            },
+            "state": 2,
+            "type": 1
+        },
+        "915de93e01247f1d58fabfbd00743750": {
+            "format": "jpg",
+            "id": "915de93e01247f1d58fabfbd00743750",
+            "name": "images%20(61).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(61).jpg",
+            "size": {
+                "width": 343,
+                "height": 147
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e3642c6323809e877f2da93267d8a50b": {
+            "format": "jpg",
+            "id": "e3642c6323809e877f2da93267d8a50b",
+            "name": "images%20(62).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(62).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "aa817fb0d4d15a75eaff857de81a186e": {
+            "format": "jpg",
+            "id": "aa817fb0d4d15a75eaff857de81a186e",
+            "name": "images%20(63).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(63).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fcf3c512c128447edc021b31203b5b49": {
+            "format": "jpg",
+            "id": "fcf3c512c128447edc021b31203b5b49",
+            "name": "images%20(64).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(64).jpg",
+            "size": {
+                "width": 235,
+                "height": 214
+            },
+            "state": 2,
+            "type": 1
+        },
+        "dc8d1f642697936089c8512d7c2355f4": {
+            "format": "jpg",
+            "id": "dc8d1f642697936089c8512d7c2355f4",
+            "name": "images%20(65).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(65).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4d748a07e86c70e2c09baae74b638311": {
+            "format": "jpg",
+            "id": "4d748a07e86c70e2c09baae74b638311",
+            "name": "images%20(66).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(66).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "781343db821148b7162b7da78db7393f": {
+            "format": "jpg",
+            "id": "781343db821148b7162b7da78db7393f",
+            "name": "images%20(67).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(67).jpg",
+            "size": {
+                "width": 285,
+                "height": 177
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4d625b93fc59bf44ac9438f39ff07249": {
+            "format": "jpg",
+            "id": "4d625b93fc59bf44ac9438f39ff07249",
+            "name": "images%20(68).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(68).jpg",
+            "size": {
+                "width": 259,
+                "height": 194
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f583b3b649f72573d1ae73ea63bfd813": {
+            "format": "jpg",
+            "id": "f583b3b649f72573d1ae73ea63bfd813",
+            "name": "images%20(69).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(69).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "de4da2aa4c4d00c9484f7358153d7f0d": {
+            "format": "jpg",
+            "id": "de4da2aa4c4d00c9484f7358153d7f0d",
+            "name": "images%20(7).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(7).jpg",
+            "size": {
+                "width": 279,
+                "height": 181
+            },
+            "state": 2,
+            "type": 1
+        },
+        "12e01dbe6f0025266d163e04739fe849": {
+            "format": "jpg",
+            "id": "12e01dbe6f0025266d163e04739fe849",
+            "name": "images%20(70).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(70).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "27a412a1d75148138c94600027cf7389": {
+            "format": "jpg",
+            "id": "27a412a1d75148138c94600027cf7389",
+            "name": "images%20(71).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(71).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d1a675379a7dffbb76a5c31324327552": {
+            "format": "jpg",
+            "id": "d1a675379a7dffbb76a5c31324327552",
+            "name": "images%20(72).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(72).jpg",
+            "size": {
+                "width": 243,
+                "height": 207
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d86a022d429c53ae655cb3acb3984429": {
+            "format": "jpg",
+            "id": "d86a022d429c53ae655cb3acb3984429",
+            "name": "images%20(73).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(73).jpg",
+            "size": {
+                "width": 299,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "de96ff7c7827b07088cb8665188b1df5": {
+            "format": "jpg",
+            "id": "de96ff7c7827b07088cb8665188b1df5",
+            "name": "images%20(74).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(74).jpg",
+            "size": {
+                "width": 290,
+                "height": 174
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ce27af0c513229b8e290513999d33547": {
+            "format": "jpg",
+            "id": "ce27af0c513229b8e290513999d33547",
+            "name": "images%20(75).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(75).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7190a0bfc4d646dcd77476fb9c28bebd": {
+            "format": "jpg",
+            "id": "7190a0bfc4d646dcd77476fb9c28bebd",
+            "name": "images%20(76).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(76).jpg",
+            "size": {
+                "width": 225,
+                "height": 224
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2c94bf7fdd895d080963fb8919ce388f": {
+            "format": "jpg",
+            "id": "2c94bf7fdd895d080963fb8919ce388f",
+            "name": "images%20(77).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(77).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5c9fa2098beb628632fde26251bf804b": {
+            "format": "jpg",
+            "id": "5c9fa2098beb628632fde26251bf804b",
+            "name": "images%20(78).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(78).jpg",
+            "size": {
+                "width": 225,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8c948d3538a453b9db5877c6694bceee": {
+            "format": "jpg",
+            "id": "8c948d3538a453b9db5877c6694bceee",
+            "name": "images%20(79).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(79).jpg",
+            "size": {
+                "width": 277,
+                "height": 182
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ea379449942a648c073f7fb98f319b92": {
+            "format": "jpg",
+            "id": "ea379449942a648c073f7fb98f319b92",
+            "name": "images%20(8).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(8).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "09cc776e611fbf16792ddc2ac85a783d": {
+            "format": "jpg",
+            "id": "09cc776e611fbf16792ddc2ac85a783d",
+            "name": "images%20(80).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(80).jpg",
+            "size": {
+                "width": 275,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6ca9bcd6f00bf18f0c358e0a2be34408": {
+            "format": "jpg",
+            "id": "6ca9bcd6f00bf18f0c358e0a2be34408",
+            "name": "images%20(81).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(81).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2bb2dfca9e31a91f3651f6ac584b66a1": {
+            "format": "jpg",
+            "id": "2bb2dfca9e31a91f3651f6ac584b66a1",
+            "name": "images%20(82).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(82).jpg",
+            "size": {
+                "width": 276,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7c7c65a6d1c64ffd5c5856027b6b2c6c": {
+            "format": "jpg",
+            "id": "7c7c65a6d1c64ffd5c5856027b6b2c6c",
+            "name": "images%20(83).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(83).jpg",
+            "size": {
+                "width": 276,
+                "height": 183
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a1c1c38269e7d1d5034b5282d54a9711": {
+            "format": "jpg",
+            "id": "a1c1c38269e7d1d5034b5282d54a9711",
+            "name": "images%20(84).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(84).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0bd6ec0a3bf7eb682e1a2bebdf5264a4": {
+            "format": "jpg",
+            "id": "0bd6ec0a3bf7eb682e1a2bebdf5264a4",
+            "name": "images%20(85).jpg",
+            "path": "file:/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Cat%20Images/images%20(85).jpg",
+            "size": {
+                "width": 300,
+                "height": 168
+            },
+            "state": 2,
+            "type": 1
+        }
+    }
+}
