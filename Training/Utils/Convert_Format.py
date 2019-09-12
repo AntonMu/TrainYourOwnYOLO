@@ -6,7 +6,7 @@ import os
 from PIL import Image
 from Get_File_Paths import GetFileList,ChangeToOtherMachine
 
-def convert_vott_csv_to_yolo(vott_df,labeldict=dict(zip(['Cat_Face'],[0])),path='',target_name='data_train.txt',abs_path=False):
+def convert_vott_csv_to_yolo(vott_df,labeldict=dict(zip(['Cat_Face'],[0,])),path='',target_name='data_train.txt',abs_path=False):
     
     #Encode labels according to labeldict if code's don't exist
     if not 'code' in vott_df.columns:

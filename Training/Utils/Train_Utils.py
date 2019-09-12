@@ -128,17 +128,17 @@ def data_generator_wrapper(annotation_lines, batch_size, input_shape, anchors, n
     return data_generator(annotation_lines, batch_size, input_shape, anchors, num_classes)
 
 
-def ChangeToOtherMachine(filelist,repo='EQanalytics',remote_machine =''):
+def ChangeToOtherMachine(filelist,repo='TrainYourOwnYOLO',remote_machine =''):
     '''
     Takes a list of file_names located in a repo and changes it to the local machines file names. File must be executed from withing the repository
 
     Example:
 
-    '/home/ubuntu/EQanalytics/Data/Street_View_Images/vulnerable/test.jpg'
+    '/home/ubuntu/TrainYourOwnYOLO/Data/Street_View_Images/vulnerable/test.jpg'
 
     Get's converted to
     
-    'C:/Users/Anton/EQanalytics/Data/Street_View_Images/vulnerable/test.jpg'
+    'C:/Users/Anton/TrainYourOwnYOLO/Data/Street_View_Images/vulnerable/test.jpg'
 
     '''
     filelist = [x.replace("\\","/") for x in filelist]
