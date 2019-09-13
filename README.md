@@ -88,7 +88,7 @@ The outputs are saved in [`Data/Minimal_Example/Minimal_Test_Images_Results`](/D
 
 ## Full Start (Training and Inference)
 
-To run a full model, follow the individual instructions located in [1_Pre_Processing](/1_Pre_Processing/), [2_Computer_Vision](/2_Computer_Vision/) and [3_Classification](/3_Classification/), respectively. To retrain detectors navigate to [2_Computer_Vision/Detector_Training](/2_Computer_Vision/Detector_Training/).
+To also train your model, follow the individual instructions located in [1_Image_Annotation](/1_Image_Annotation/), [2_Training](/2_Training/) and [3_Inference](/3_Inference/), respectively. 
 
 <!-- 
 #### Build Environment For Inference
