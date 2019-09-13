@@ -64,7 +64,7 @@ conda create -n EQanalytics
 source activate EQanalytics
 ```
  -->
-Next, install all required packages. If you are running TrainYourOwnYOLO on a machine with GPU (and CUDA drivers installed) run:
+Next, install all required packages. If you are running TrainYourOwnYOLO on a machine with GPU with CUDA drivers installed run:
 
 ```
 pip3 install -r requirements.txt
@@ -191,3 +191,9 @@ apt-get update
 apt-get install -y libsm6 libxext6 libxrender-dev
 pip install opencv-python
 ```
+
+If you are using Linux you can are having trouble installing the `*.snap` package file try:
+```
+snap install - dangerous vott-2.1.0-linux.snap
+```
+See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
