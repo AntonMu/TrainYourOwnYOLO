@@ -1,25 +1,28 @@
-# EQanalytics: Detection of Vulnerable Buildings
+# TrainYourOwnYOLO: Building a Custom Image Detector from Scratch
 
+This repo let's you train a custom image detector using the state-of-the-art YOLOv3 computer vision algorithm. For a short write up check out this [medium post](www.medium.com). 
+<!-- 
 Machine learning project developed at Insight Data Science, 2019 AI session. A slide deck is available [here.](https://docs.google.com/presentation/d/1tJNnS9jaWtCXk3s1T_jZcwygjJv0KPZYK-7gcffLXKo/edit#slide=id.p)
-
-## Project description
+ -->
+<!-- ## Project description
 In August 2018, [**AB-2681 Seismic safety: potentially vulnerable buildings**]([https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2681](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2681)) was passed. This bill requires the state of California to identify all potentially vulnerable buildings before Jan 1, 2021. 
 
 ### Soft Story Buildings
 One important type of vulnerable buildings are those with soft stories. A [soft story](https://en.wikipedia.org/wiki/Soft_story_building) is classified as a level that is less than 70% as stiff as the floor immediately above it.
 
 In this project, I built an application that uses Google Street View images and computer vision techniques as well as classical machine learning to determine whether a given building address has a soft story. 
+ -->
+### Pipeline Overview
 
-### Model Overview
-On a high level, the model training consists of three separate steps:
+On a high level, building a object detection algoihtm has three separate steps:
 
- 1. [Obtain Training Images](/1_Pre_Processing/)
+ 1. [Image Annotation](/1_Image_Annotation/)
 	 - Download Street View images from all buildings in the [San Francisco soft story property list](https://sfdbi.org/soft-story-properties-list).
- 2. [Object Segmentation](/2_Computer_Vision/)
+ 2. [Training](/2_Training/)
  	- Detect Houses
  	- Isolate Houses
  	- Detect Openings
- 3. [Classification](/3_Classification/)
+ 3. [Inference](/3_Inference/)
  	- Identify number of stories via K-means clustering
  	- Compute softness-score as the quotient of the total width of openings on the second story over the total width of openings on the first story.
  
