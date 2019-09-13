@@ -36,15 +36,21 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 
 data_folder = os.path.join(get_parent_dir(n=1),'Data')
-image_folder = os.path.join(data_folder,'Street_View_Images')
+print(data_folder)
+image_folder = os.path.join(data_folder,'Source_Images')
 
-houses_result_folder = os.path.join(data_folder,'House_Detection_Results') 
-houses_result_file =  os.path.join(houses_result_folder, 'Housing_Results.csv')
+image_test_folder = os.path.join(image_folder,'Test_Images')
+
+detection_results_folder = os.path.join(image_folder,'Test_Image_Detection_Results') 
+detection_results_file = os.path.join(detection_results_folder, 'Detection_Results.csv')
+
+# houses_result_folder = os.path.join(data_folder,'House_Detection_Results') 
+# houses_result_file =  os.path.join(houses_result_folder, 'Housing_Results.csv')
 
 model_folder =  os.path.join(data_folder,'Model_Weights')
 
-houses_weights = os.path.join(model_folder,'Houses','trained_weights_final.h5')
-houses_classes = os.path.join(model_folder,'Houses','data_classes.txt')
+model_weights = os.path.join(model_folder,'trained_weights_final.h5')
+model_classes = os.path.join(model_folder,'data_classes.txt')
 
 
 FLAGS = None
@@ -57,7 +63,7 @@ if __name__ == '__main__':
     '''
 
     parser.add_argument(
-        "--input_images", type=str, default=image_folder,
+        "--input_images", type=str, default=image_test_folder,
         help = "Path to image directory. All subdirectories will be included."
     )
 
@@ -67,7 +73,7 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        "--output", type=str, default=houses_result_folder,
+        "--output", type=str, default=detection_results_folder,
         help = "Output path for detection results."
     )
 
@@ -77,7 +83,7 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        '--yolo_model', type=str, dest='model_path', default = houses_weights,
+        '--yolo_model', type=str, dest='model_path', default = model_weights,
         help='Use your own pre-trained weights. This option does NOT overide the --model_type flag setting.'
     )
 
@@ -87,7 +93,7 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        '--classes', type=str, dest='classes_path', default = houses_classes,
+        '--classes', type=str, dest='classes_path', default = model_classes,
         help='path to YOLO class specifications'
     )
 
@@ -97,18 +103,18 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        '--confidence', type=float, dest = 'score', default = 0.1,
+        '--confidence', type=float, dest = 'score', default = 0.25,
         help='YOLO object confidence threshold above which to show predictions'
     )
 
 
     parser.add_argument(
-        '--box_file', type=str, dest = 'box', default = houses_result_file,
+        '--box_file', type=str, dest = 'box', default = detection_results_file,
         help='Specify the destination to save bounding boxes'
     )
     
     parser.add_argument(
-        '--postfix', type=str, dest = 'postfix', default = '_house',
+        '--postfix', type=str, dest = 'postfix', default = '_catface',
         help='Specify the postfix for images with bounding boxes'
     )
     

@@ -155,4 +155,6 @@ def ChangeToOtherMachine(filelist,repo='TrainYourOwnYOLO',remote_machine =''):
         if suffix[0]=='/':
             suffix = suffix[1:]
         new_list.append(os.path.join(prefix,repo+'/',suffix).replace("\\","/"))
+    print("8888888888888888888*********************************98888888888888888888888888888888888")
+    print(new_list)
     return new_list

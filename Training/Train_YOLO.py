@@ -124,7 +124,7 @@ if __name__ == '__main__':
     with open(FLAGS.annotation_file) as f:
         lines = f.readlines()
     print(lines)
-    lines  = ChangeToOtherMachine(lines)
+    lines  = ChangeToOtherMachine(lines,remote_machine = '')
     np.random.seed(42)
     np.random.shuffle(lines)
     np.random.seed(None)
