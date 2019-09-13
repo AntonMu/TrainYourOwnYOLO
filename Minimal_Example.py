@@ -11,11 +11,12 @@ def make_call_string(arglist):
 root_folder = os.path.dirname(os.path.abspath(__file__))
 data_folder = os.path.join(root_folder,'Data')
 model_folder = os.path.join(data_folder,'Model_Weights')
-test_folder =  os.path.join(data_folder,'Minimal_Example')
-cropped_folder = os.path.join(test_folder,'Cropped')
-street_view_folder = os.path.join(test_folder,'Street_View')
-if not os.path.exists(cropped_folder):
-    os.mkdir(cropped_folder)
+minimal_example_folder = os.path.join(data_folder,'Minimal_Example')
+input_folder =  os.path.join(minimal_example_folder,'Minimal_Test_Images')
+output_folder = os.path.join(minimal_example_folder,'Minimal_Test_Images_Results')
+
+if not os.path.exists(output_folder):
+    os.mkdir(output_folder)
     
 #First download the pre-trained weights
 download_script = os.path.join(model_folder,'Download_Weights.py')

@@ -76,14 +76,13 @@ pip3 install -r requirements_cpu.txt
 ```
 
 ## Quick Start (Inference only)
-If you just want to test out the cat face detector on some three sample images located in [`/Data/Minimal_Example/Minimal_Test_Images`](/Data/Minimal_Example/Minimal_Test_Images) run the `Minimal_Example.py` script.
+If you just want to test out the cat face detector on three sample images located in [`Data/Minimal_Example/Minimal_Test_Images`](/Data/Minimal_Example/Minimal_Test_Images) run the `Minimal_Example.py` script with:
 
 ```
 python Minimal_Example.py
 ```
-Minimal_Test_Images_Results
 
-The outputs are saved in the [`/Data/Minimal_Example/Minimal_Test_Images_Results`](/Data/Minimal_Example/Minimal_Test_Images_Results). This includes:
+The outputs are saved in [`Data/Minimal_Example/Minimal_Test_Images_Results`](/Data/Minimal_Example/Minimal_Test_Images_Results). This includes:
  - Cat pictures with bounding boxes around faces with confidence scores
  - \*.csv file with file names and locations of bounding boxes
 
