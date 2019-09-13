@@ -76,21 +76,18 @@ pip3 install -r requirements_cpu.txt
 ```
 
 ## Quick Start (Inference only)
-If you just want to test out the cat face detector on some sample images located in 
-To get started on a [minimal example on two images](https://docs.google.com/presentation/d/1tJNnS9jaWtCXk3s1T_jZcwygjJv0KPZYK-7gcffLXKo/edit#slide=id.p) located in [`Data/Minimal_Example`](/Data/Minimal_Example/) run the `Minimal_Example.py` script.
+If you just want to test out the cat face detector on some three sample images located in [`/Data/Minimal_Example/Minimal_Test_Images`](/Data/Minimal_Example/Minimal_Test_Images) run the `Minimal_Example.py` script.
 
 ```
 python Minimal_Example.py
 ```
+Minimal_Test_Images_Results
 
-The outputs of all detections are saved in the [`Data/Minimal_Example`](/Data/Minimal_Example/) folder. This includes:
- - Results of the housing detector
- - Cropped housing images
- - Results of the opening detector
- - Results of the level detector
- - Softness scores located in [`Softness_Scores.csv`](/Data/Minimal_Example/Softness_Scores.csv) 
+The outputs are saved in the [`/Data/Minimal_Example/Minimal_Test_Images_Results`](/Data/Minimal_Example/Minimal_Test_Images_Results). This includes:
+ - Cat pictures with bounding boxes around faces with confidence scores
+ - \*.csv file with file names and locations of bounding boxes
 
-## Full Start
+## Full Start (Training and Inference)
 
 To run a full model, follow the individual instructions located in [1_Pre_Processing](/1_Pre_Processing/), [2_Computer_Vision](/2_Computer_Vision/) and [3_Classification](/3_Classification/), respectively. To retrain detectors navigate to [2_Computer_Vision/Detector_Training](/2_Computer_Vision/Detector_Training/).
 
