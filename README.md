@@ -32,23 +32,24 @@ The model also uses un-supervised K-means clustering in the final classification
 Model inference consists of four similar steps. After entering an address (or list of addresses), the corresponding street view images will be downloaded. For all images, the housing model first segments and crops one house per address. Then the opening detector labels all openings and creates a csv file with all dimensions and positions of the openings. Finally, the softness score is determined and used to classify the building as "soft", "non_soft" or "undetermined". 
  -->
 ## Repo structure
-+ [`1_Image_Annotation`](/1_Image_Annotation/): All Preprocessing Tasks
-+ [`2_Computer_Vision`](/2_Computer_Vision/): Both Image Segmentation Tasks
-+ [`3_Classification`](/3_Classification/): Final Classification Task
-+ [`Data`](/Data/): Input Data, Output Data and Results
++ [`1_Image_Annotation`](/1_Image_Annotation/): Contains all Information to annotate images
++ [`2_Training`](/2_Training/): Training of your YOLOv3 model
++ [`3_Inference`](/3_Inference/): Testing your trained model on new data
++ [`Data`](/Data/): Input Data, Output Data, Model Weights and Results
 
 ## Getting Started
 
 ### Requisites
-The code uses python 3.6, Keras with Tensorflow backend. Training was performed on an AWS *p2.xlarge* instance (Tesla K80 GPU with 12GB memory). Inference is faster on a GPU (~5 images per second on the same setup), but also works fine on a modest CPU setup (~0.3 images per second on an AWS *t2.medium* with a 2 VCPUs and 4GB of memory). To run this code on AWS, it is recommended to use the `Deep Learning AMI` (this makes sure that all GPU drivers are working).
+The code uses python 3.6, Keras with Tensorflow backend. For training it is recommened to us a GPU. For example on an AWS you can use a *p2.xlarge* instance (Tesla K80 GPU with 12GB memory). Inference is generally even fast on a CPU with an average of ~2 images per second. 
+
 
 ### Installation [Linux or Mac]
 
 #### Clone Repo and Install Requirements
 Clone this repo with:
 ```
-git clone https://github.com/AntonMu/EQanalytics
-cd EQanalytics/
+git clone https://github.com/AntonMu/TrainYourOwnYOLO
+cd TrainYourOwnYOLO/
 ```
 
 Create Virtual Environment ([Venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) needs to be installed on your system). 
@@ -63,13 +64,19 @@ conda create -n EQanalytics
 source activate EQanalytics
 ```
  -->
-Next, install all required packages:
+Next, install all required packages. If you are running TrainYourOwnYOLO on a machine with GPU (and CUDA drivers installed) run:
 
 ```
 pip3 install -r requirements.txt
 ```
 
-## Quick Start
+Otherwise, run:
+```
+pip3 install -r requirements_cpu.txt
+```
+
+## Quick Start (Inference only)
+If you just want to test out the cat face detector on some sample images located in 
 To get started on a [minimal example on two images](https://docs.google.com/presentation/d/1tJNnS9jaWtCXk3s1T_jZcwygjJv0KPZYK-7gcffLXKo/edit#slide=id.p) located in [`Data/Minimal_Example`](/Data/Minimal_Example/) run the `Minimal_Example.py` script.
 
 ```
