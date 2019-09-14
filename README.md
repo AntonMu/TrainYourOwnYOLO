@@ -50,7 +50,7 @@ pip3 install -r requirements_cpu.txt
 ```
 
 ## Quick Start (Inference only)
-If you just want to test out the cat face detector on a few test images located in [`Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script with:
+If you just want to test out the cat face detector on a few test images located in [`Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the roor folder with:
 
 ```
 python Minimal_Example.py
