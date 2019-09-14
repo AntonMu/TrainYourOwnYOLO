@@ -11,9 +11,10 @@ def make_call_string(arglist):
 root_folder = os.path.dirname(os.path.abspath(__file__))
 data_folder = os.path.join(root_folder,'Data')
 model_folder = os.path.join(data_folder,'Model_Weights')
-minimal_example_folder = os.path.join(data_folder,'Minimal_Example')
-input_folder =  os.path.join(minimal_example_folder,'Minimal_Test_Images')
-output_folder = os.path.join(minimal_example_folder,'Minimal_Test_Images_Results')
+image_folder = os.path.join(data_folder,'Source_Images')
+input_folder =  os.path.join(image_folder,'Test_Images')
+output_folder =  os.path.join(image_folder,'Test_Image_Detection_Results')
+
 
 if not os.path.exists(output_folder):
     os.mkdir(output_folder)
