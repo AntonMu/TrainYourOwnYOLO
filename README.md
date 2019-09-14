@@ -56,7 +56,7 @@ If you just want to test out the cat face detector on a few test images located 
 python Minimal_Example.py
 ```
 
-The outputs are saved in [`Data/Minimal_Example`](/Data/Minimal_Example). This includes:
+The outputs are saved in [`Data/Source_Images/Test_Image_Detection_Results`](/Data/Source_Images/Test_Image_Detection_Results). This includes:
  - Cat pictures with bounding boxes around faces with confidence scores
  - \*.csv file with file names and locations of bounding boxes
 
