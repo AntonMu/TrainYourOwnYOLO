@@ -62,7 +62,7 @@ The outputs are saved in [`Data/Source_Images/Test_Image_Detection_Results`](/Da
 
 ## Full Start (Training and Inference)
 
-To also train your model, follow the individual instructions located in [1_Image_Annotation](/1_Image_Annotation/), [2_Training](/2_Training/) and [3_Inference](/3_Inference/), respectively. 
+To also train your model, follow the individual instructions located in [`1_Image_Annotation`](/1_Image_Annotation/), [`2_Training`](/2_Training/) and [`3_Inference`](/3_Inference/), respectively. 
 
 ## License
 

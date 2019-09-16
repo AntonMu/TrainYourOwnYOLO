@@ -1,10 +1,13 @@
-# EQanalytics: Housing Detector Training
-Using the training images downloaded previously (`EQanalytics/Data/Street_View_Images`) we train a detector that can segment houses. 
+# TrainYourOwnYOLO: Image Annotation
+To train our YOLO detector, we first annotate images located in [`Data/Source_Images`](TrainYourOwnYOLO/Data/Source_Images) with the help of Microsoft's Visual Object Tagging Tool (VoTT).
 
-## Creating a Training Data Set for House Segmentation
-To generate our training (and validation) set we use Microsoft's [VoTT](https://github.com/Microsoft/VoTT) to label training images. 
+## Download VoTT
+Head to VoTT releases and download the version for your operation system.
+```
+[Microsoft/VoTT/releases](https://github.com/Microsoft/VoTT/releases)
+```
 
-### Using VoTT
+### Creating a New Project
 After installing VoTT, connect the local database to a selection of images from the folder `EQanalytics/Data/Street_View_Images` and name the database `Houses`.
 
 #### Settings
