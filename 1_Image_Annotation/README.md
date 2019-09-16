@@ -2,18 +2,30 @@
 To train our YOLO detector, we first annotate images located in [`Data/Source_Images`](TrainYourOwnYOLO/Data/Source_Images) with the help of Microsoft's Visual Object Tagging Tool (VoTT).
 
 ## Download VoTT
-Head to VoTT releases and download the version for your operation system.
-```
-[Microsoft/VoTT/releases](https://github.com/Microsoft/VoTT/releases)
-```
+Head to VoTT [releases](https://github.com/Microsoft/VoTT/releases) and download and install the version for your operation system. 
 
 ### Creating a New Project
-After installing VoTT, connect the local database to a selection of images from the folder `EQanalytics/Data/Street_View_Images` and name the database `Houses`.
+After installing VoTT, create a **New Project** and call in `Annotations`. 
 
-#### Settings
+![New Project](/1_Image_Annotation/Screenshots/New_Project.png)
+
+It is highly recommeded to use `Annotations` as your project name. If you like to use a different name for your project, you will have to modify the command line arguments of subsequent scripts accordingly. 
+
+![Annotations](/1_Image_Annotation/Screenshots/Annotations.png)
+
+#### Selecting Connections
+Under **Source Connection** choose **Add Connection** and put `Images` as **Display Name**. Under **Provider** choose **Local File System** and select the folder with [`Source Images`](TrainYourOwnYOLO/Data/Source_Images). 
+
+![Source Images](/1_Image_Annotation/Screenshots/Source_Images.png)
+
+For **Target Connection** choose the same folder as for **Source Connection**.
+
+![Source Images](/1_Image_Annotation/Screenshots/Project_Settings.png)
+<!-- 
+ select the local folder 
 Under export settings, as `Provider` chose `Comma Separated Values (CSV)`. Then hit `Save Export Settings`. Make sure the `Include Images` checkbox is checked.
 
-![VoTT Settings](/2_Computer_Vision/Detector_Training/Screenshots/VoTT_Export_Settings.png)
+![VoTT Settings](/2_Computer_Vision/Detector_Training/Screenshots/VoTT_Export_Settings.png) -->
 
 #### Labeling
 Now start labeling all houses. One class called `house` is enough for this task. I recommend to label at least 300 images. The more the better!
