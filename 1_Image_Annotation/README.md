@@ -4,7 +4,7 @@ To train our YOLO detector, we first annotate images located in [`Data/Source_Im
 ## Download VoTT
 Head to VoTT [releases](https://github.com/Microsoft/VoTT/releases) and download and install the version for your operation system. 
 
-## Creating a New Project
+## Create a New Project
 
 ![New Project](/1_Image_Annotation/Screenshots/New_Project.gif)
 
@@ -12,10 +12,19 @@ Create a **New Project** and call it `Annotations`. It is highly recommeded to u
 
 Under **Source Connection** choose **Add Connection** and put `Images` as **Display Name**. Under **Provider** choose **Local File System** and select the folder with [`Source Images`](TrainYourOwnYOLO/Data/Source_Images). For **Target Connection** choose the same folder as for **Source Connection**. Hit **Save Project** to finish the project creation. 
 
+## Export Settings
+Navigate to **Export Settings** in the sidebar and then change the **Provider** to `Comma Seperated Values (CSV)`, then hit **Save Export Settings**. 
+
+![New Project](/1_Image_Annotation/Screenshots/Export_Settings.gif)
 
 
 ## Labeling
-Now start labeling all houses. One class called `house` is enough for this task. I recommend to label at least 300 images. The more the better!
+Now start labeling process. First create a new tag on the right and give it a relevant tag name. In our example, we choose `Cat_Face`. Then draw bounding boxes around your objects. You can use the number key to quickly assign the tag to the current bounding box. 
+
+![New Project](/1_Image_Annotation/Screenshots/Labeling.gif)
+
+
+One class called `house` is enough for this task. I recommend to label at least 300 images. The more the better!
 
 ![VoTT Houses](/2_Computer_Vision/Detector_Training/Screenshots/VoTT_Houses.png)
 
