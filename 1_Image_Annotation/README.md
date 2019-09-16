@@ -10,7 +10,7 @@ Head to VoTT [releases](https://github.com/Microsoft/VoTT/releases) and download
 
 Create a **New Project** and call it `Annotations`. It is highly recommeded to use `Annotations` as your project name. If you like to use a different name for your project, you will have to modify the command line arguments of subsequent scripts accordingly. 
 
-Under **Source Connection** choose **Add Connection** and put `Images` as **Display Name**. Under **Provider** choose **Local File System** and select the folder with [`Source Images`](TrainYourOwnYOLO/Data/Source_Images). For **Target Connection** choose the same folder as for **Source Connection**. Hit **Save Project** to finish the project creation. 
+Under **Source Connection** choose **Add Connection** and put `Images` as **Display Name**. Under **Provider** choose **Local File System** and select the folder with [`Source Images`](TrainYourOwnYOLO/Data/Source_Images). For **Target Connection** choose the same folder as for **Source Connection**. Hit **Save Project** to finish project creation. 
 
 ## Export Settings
 Navigate to **Export Settings** in the sidebar and then change the **Provider** to `Comma Seperated Values (CSV)`, then hit **Save Export Settings**. 
