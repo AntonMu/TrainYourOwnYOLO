@@ -5,26 +5,14 @@ To train our YOLO detector, we first annotate images located in [`Data/Source_Im
 Head to VoTT [releases](https://github.com/Microsoft/VoTT/releases) and download and install the version for your operation system. 
 
 ## Creating a New Project
-After installing VoTT, create a **New Project** and call in `Annotations`. 
-
-![New Project](/1_Image_Annotation/Screenshots/New_Project.png)
 
 ![New Project](/1_Image_Annotation/Screenshots/New_Project.gif)
 
-It is highly recommeded to use `Annotations` as your project name. If you like to use a different name for your project, you will have to modify the command line arguments of subsequent scripts accordingly. 
+Create a **New Project** and call it `Annotations`. It is highly recommeded to use `Annotations` as your project name. If you like to use a different name for your project, you will have to modify the command line arguments of subsequent scripts accordingly. 
 
-![Annotations](/1_Image_Annotation/Screenshots/Annotations.png)
+Under **Source Connection** choose **Add Connection** and put `Images` as **Display Name**. Under **Provider** choose **Local File System** and select the folder with [`Source Images`](TrainYourOwnYOLO/Data/Source_Images). For **Target Connection** choose the same folder as for **Source Connection**. Hit **Save Project** to finish the project creation. 
 
-### Selecting Connections
-Under **Source Connection** choose **Add Connection** and put `Images` as **Display Name**. Under **Provider** choose **Local File System** and select the folder with [`Source Images`](TrainYourOwnYOLO/Data/Source_Images). 
 
-![Source Images](/1_Image_Annotation/Screenshots/Source_Images.png)
-
-For **Target Connection** choose the same folder as for **Source Connection**.
-
-![Source Images](/1_Image_Annotation/Screenshots/Project_Settings.png)
-
-Hit **Save Project** to finish the project creation. 
 
 ## Labeling
 Now start labeling all houses. One class called `house` is enough for this task. I recommend to label at least 300 images. The more the better!
