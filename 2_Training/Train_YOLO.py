@@ -19,7 +19,7 @@ def get_parent_dir(n=1):
 src_path = os.path.join(get_parent_dir(0),'src')
 sys.path.append(src_path)
 
-utils_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'Utils')
+utils_path = os.path.join(get_parent_dir(1),'Utils')
 sys.path.append(utils_path)
 
 import numpy as np
