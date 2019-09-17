@@ -22,7 +22,7 @@ if not os.path.exists(output_folder):
 #First download the pre-trained weights
 download_script = os.path.join(model_folder,'Download_Weights.py')
 
-print('Downloading Pretrained Weights','\n')
+print('\n','Downloading Pretrained Weights','\n')
 start = time.time()
 call_string = ' '.join(['python',download_script,'1MGXAP_XD_w4OExPP10UHsejWrMww8Tu7', os.path.join(model_folder,'trained_weights_final.h5') ])
 
@@ -43,7 +43,7 @@ anchors = os.path.join(root_folder,'2_Training','src','keras_yolo3','model_data'
 arglist = [['input_images',input_folder],['classes',classes_file],['output',output_folder],['yolo_model',model_weights],['box_file',result_file],['anchors',anchors]]
 call_string = ' '.join(['python', detector_script,make_call_string(arglist)])
 
-print('Detecting Cat Faces by calling \n\n', call_string,'\n')
+print('Detecting Cat Faces by calling: \n\n', call_string,'\n')
 start = time.time()
 subprocess.call(call_string, shell=True)
 end = time.time()
