@@ -1,5 +1,7 @@
 # TrainYourOwnYOLO: Building a Custom Image Detector from Scratch
 
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+
 This repo let's you train a custom image detector using the state-of-the-art [YOLOv3](https://pjreddie.com/darknet/yolo/) computer vision algorithm. For a short write up check out this [medium post](www.medium.com). 
 
 ### Pipeline Overview
