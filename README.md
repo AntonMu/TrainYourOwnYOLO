@@ -42,10 +42,10 @@ Create Virtual Environment (requires [venv](https://packaging.python.org/guides/
 python3 -m venv env
 source env/bin/activate
 ```
-Make sure that from now on, you run all commands from within your virtual environment.
+Make sure that, from now on, you run all commands from within your virtual environment.
 
 #### Setting up Environment [Windows]
-Use the [Github Desktop GUI](https://desktop.github.com/) to clone this repo to your local machine. Navigate to the `TrainYourOwnYOLO` project folder and open a power shell window by pressing **Shift + Right Click** and selecting `Open PowerShell window here` in the dropdown menu.
+Use the [Github Desktop GUI](https://desktop.github.com/) to clone this repo to your local machine. Navigate to the `TrainYourOwnYOLO` project folder and open a power shell window by pressing **Shift + Right Click** and selecting `Open PowerShell window here` in the drop-down menu.
 
 Create Virtual Environment (requires [venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) which is included in the standard library of Python 3.3 or newer):
 
@@ -54,7 +54,7 @@ py -m venv env
 .\env\Scripts\activate
 ```
 ![PowerShell](/Utils/Screenshots/PowerShell.png)
-Make sure that from now on, you run all commands from within your virtual environment.
+Make sure that, from now on, you run all commands from within your virtual environment.
 
 #### Install Required Packages [Windows, Mac or Linux]
 If you are running TrainYourOwnYOLO on a machine with GPU with CUDA drivers installed run:
