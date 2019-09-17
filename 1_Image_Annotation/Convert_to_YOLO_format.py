@@ -32,16 +32,16 @@ if __name__ == '__main__':
     '''
     parser.add_argument(
         "--VoTT_Folder", type=str, default=VoTT_Folder,
-        help = "absolute path to the exported files from the image tagging step with VoTT."
+        help = "Absolute path to the exported files from the image tagging step with VoTT. Default is "+ VoTT_Folder
     )
 
     parser.add_argument(
         "--VoTT_csv", type=str, default=VoTT_csv,
-        help = "absolute path to the *.csv file exported from VoTT. The default name is 'Houses-export.csv'."
+        help = "Absolute path to the *.csv file exported from VoTT. Default is "+ VoTT_csv
     )
     parser.add_argument(
         "--YOLO_filename", type=str, default=YOLO_filename,
-        help = "absolute path to the file where the annotations in YOLO format should be saved. The default name is 'data_train.txt' and is saved in the VoTT folder."
+        help = "Absolute path to the file where the annotations in YOLO format should be saved. Default is " + YOLO_filename
     )
 
     FLAGS = parser.parse_args()
@@ -56,6 +56,7 @@ if __name__ == '__main__':
 
     # Make classes file
     file = open(classes_filename,"w") 
+    
     #Sort Dict by Values
     SortedLabelDict = sorted(labeldict.items() ,  key=lambda x: x[1])
     for elem in SortedLabelDict:
