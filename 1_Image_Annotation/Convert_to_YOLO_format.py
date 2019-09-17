@@ -24,11 +24,6 @@ YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
 model_folder =  os.path.join(Data_Folder,'Model_Weights')
 classes_filename = os.path.join(model_folder,'data_classes.txt')
 
-AWS_path = '/home/ubuntu/TrainYourOwnYOLO/Data/Source_Images/vott-csv-export/'
-
-
-
-
 if __name__ == '__main__':
     # surpress any inhereted default values
     parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS)
