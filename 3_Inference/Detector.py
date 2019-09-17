@@ -36,7 +36,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 
 data_folder = os.path.join(get_parent_dir(n=1),'Data')
-print(data_folder)
+
 image_folder = os.path.join(data_folder,'Source_Images')
 
 image_test_folder = os.path.join(image_folder,'Test_Images')
@@ -52,6 +52,7 @@ model_folder =  os.path.join(data_folder,'Model_Weights')
 model_weights = os.path.join(model_folder,'trained_weights_final.h5')
 model_classes = os.path.join(model_folder,'data_classes.txt')
 
+anchors_path = os.path.join(src_path,'keras_yolo3','model_data','yolo_anchors.txt')
 
 FLAGS = None
 
@@ -65,11 +66,6 @@ if __name__ == '__main__':
     parser.add_argument(
         "--input_images", type=str, default=image_test_folder,
         help = "Path to image directory. All subdirectories will be included."
-    )
-
-    parser.add_argument(
-        '--test', default=False, action="store_true",
-        help='Test routine on 10 images in /Data/Street_View_Images'
     )
 
     parser.add_argument(
@@ -88,7 +84,7 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        '--anchors', type=str, dest='anchors_path', default = 'src/keras_yolo3/model_data/yolo_anchors.txt',
+        '--anchors', type=str, dest='anchors_path', default = anchors_path,
         help='path to YOLO anchors'
     )
 
@@ -123,10 +119,7 @@ if __name__ == '__main__':
 
     save_img = not FLAGS.no_save_img
 
-    if FLAGS.test:
-        input_image_paths = random.choices(GetFileList(image_folder),k=10)
-    else:
-        input_image_paths = GetFileList(FLAGS.input_images)
+    input_image_paths = GetFileList(FLAGS.input_images)
 
     print('Found {} input images: {}...'.format(len(input_image_paths), [ os.path.basename(f) for f in input_image_paths[:5]]))
 
