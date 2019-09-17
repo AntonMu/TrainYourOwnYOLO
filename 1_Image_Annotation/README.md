@@ -32,6 +32,7 @@ As a final step, convert the VoTT csv format to the YOLOv3 format. To do so, run
 ```
 python Convert_to_YOLO_format.py
 ```
-The script generates two output files: `data_train.txt` located in the [`vott-csv-export`](/Data/Source_Images/vott-csv-export)) folder and `data_classes.txt` located in the [`TrainYourOwnYOLO/Data/Model_Weights`](/Data/Model_Weights/) folder.
+The script generates two output files: [`data_train.txt`](/Data/Source_Images/vott-csv-export/data_train.txt) located in the [`vott-csv-export`](/Data/Source_Images/vott-csv-export) folder and [`data_classes.txt`](/Data/Model_Weights/data_classes.txt) located in the [`TrainYourOwnYOLO/Data/Model_Weights`](/Data/Model_Weights/) folder.
 
-That's all for annotation! Next, go to [`TrainYourOwnYOLO/2_Training`](/2_Training) to train your YOLOv3 detector.
+### That's all for annotation! 
+Next, go to [`TrainYourOwnYOLO/2_Training`](/2_Training) to train your YOLOv3 detector.
