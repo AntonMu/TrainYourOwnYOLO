@@ -36,7 +36,7 @@ Clone this repo with:
 git clone https://github.com/AntonMu/TrainYourOwnYOLO
 cd TrainYourOwnYOLO/
 ```
-Create Virtual Environment ([Venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) needs to be installed on your system):
+Create Virtual Environment (requires [venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) which is included in the standard library of Python 3.3 or newer):
 ```
 python3 -m venv env
 source env/bin/activate
@@ -52,15 +52,15 @@ pip3 install -r requirements_cpu.txt
 ```
 
 ## Quick Start (Inference only)
-If you just want to test out the cat face detector on a few test images located in [`Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
+To test the cat face detector on a few test images located in [`Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
 
 ```
 python Minimal_Example.py
 ```
 
 The outputs are saved in [`Data/Source_Images/Test_Image_Detection_Results`](/Data/Source_Images/Test_Image_Detection_Results). This includes:
- - Cat pictures with bounding boxes around faces with confidence scores
- - [`Detection_Results.csv`](/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv) file with file names and locations of bounding boxes
+ - Cat pictures with bounding boxes around faces with confidence scores and
+ - [`Detection_Results.csv`](/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv) file with file names and locations of bounding boxes.
 
 ## Full Start (Training and Inference)
 
@@ -80,7 +80,7 @@ apt-get install -y libsm6 libxext6 libxrender-dev
 pip install opencv-python
 ```
 
-If you are using Linux you can are having trouble installing `*.snap` package files try:
+If you are using Linux and having trouble installing `*.snap` package files try:
 ```
 snap install - dangerous vott-2.1.0-linux.snap
 ```
