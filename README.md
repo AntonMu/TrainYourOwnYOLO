@@ -36,7 +36,7 @@ Clone this repo with:
 git clone https://github.com/AntonMu/TrainYourOwnYOLO
 cd TrainYourOwnYOLO/
 ```
-Create Virtual Environment ([Venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) needs to be installed on your system):
+Create Virtual Environment (requires [Venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) which is included in the standard library of Python 3.3 or newer):
 ```
 python3 -m venv env
 source env/bin/activate
