@@ -11,7 +11,7 @@ To build and test your object detection algorithm follow the below steps:
 	 - Annotate images
  2. [Training](/2_Training/)
  	- Download pre-trained weights
- 	- Train your custom model on annotated images 
+ 	- Train your custom YOLO model on annotated images 
  3. [Inference](/3_Inference/)
  	- Detect objects in new images
 
