@@ -1,11 +1,11 @@
 # TrainYourOwnYOLO: Training
-Using the training images located in [`TrainYourOwnYOLO/Data/Source_Images`](/Data/Source_Images) together with our annotation file [`data_train.txt`](/Data/Source_Images/vott-csv-export) we can train our YOLOv3 detector. 
+Using the training images located in [`TrainYourOwnYOLO/Data/Source_Images`](/Data/Source_Images) and our annotation file [`data_train.txt`](/Data/Source_Images/vott-csv-export) we are now ready to train our YOLOv3 detector. 
 
 ## Download the Pre-Trained Weights
 Before getting started we need to download the pre-trained YOLOv3 weights and convert them to the keras format. To run both steps execute:
 
 ```
-python Download_YOLO_weights.py
+python Download_and_Convert_YOLO_weights.py
 ```
 ## Train YOLOv3 Detector
 To start the training run the training script:
