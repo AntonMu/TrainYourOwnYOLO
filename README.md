@@ -29,13 +29,13 @@ The code uses python 3.6, Keras with Tensorflow backend. For training it is reco
 
 ### Installation [Linux or Mac]
 
-#### Clone Repo and Install Requirements
+<!-- #### Clone Repo and Install Requirements -->
 Clone this repo with:
 ```
 git clone https://github.com/AntonMu/TrainYourOwnYOLO
 cd TrainYourOwnYOLO/
 ```
-Create Virtual Environment ([Venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) needs to be installed on your system). 
+Create Virtual Environment ([Venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) needs to be installed on your system):
 ```
 python3 -m venv env
 source env/bin/activate
