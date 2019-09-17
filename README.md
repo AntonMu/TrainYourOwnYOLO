@@ -25,7 +25,7 @@ To build and test your object detection algorithm follow the below steps:
 ## Getting Started
 
 ### Requisites
-The code uses python 3.6, Keras with Tensorflow backend. For training it is recommened to us a GPU. For example on an AWS you can use a *p2.xlarge* instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with an average of ~2 images per second. 
+The code uses python 3.6, Keras with Tensorflow backend. For training it is recommened to use a GPU. For example on an AWS you can use a **p2.xlarge** instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with an average of ~2 images per second. 
 
 
 ### Installation [Linux or Mac]
@@ -60,7 +60,7 @@ python Minimal_Example.py
 
 The outputs are saved in [`Data/Source_Images/Test_Image_Detection_Results`](/Data/Source_Images/Test_Image_Detection_Results). This includes:
  - Cat pictures with bounding boxes around faces with confidence scores
- - \*.csv file with file names and locations of bounding boxes
+ - [`Detection_Results.csv`](/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv) file with file names and locations of bounding boxes
 
 ## Full Start (Training and Inference)
 
