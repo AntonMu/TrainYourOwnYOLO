@@ -42,6 +42,10 @@ Create Virtual Environment (requires [venv](https://packaging.python.org/guides/
 python3 -m venv env
 source env/bin/activate
 ```
+If you are using Mac and the above command does not work try:
+```
+pipenv shell
+```
 Make sure that, from now on, you run all commands from within your virtual environment.
 
 #### Setting up Environment [Windows]
