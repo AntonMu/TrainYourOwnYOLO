@@ -24,7 +24,7 @@ To build and test your object detection algorithm follow the below steps:
 ## Getting Started
 
 ### Requisites
-The code uses python 3.6, Keras with Tensorflow backend. For training it is recommened to us a GPU. For example on an AWS you can use a *p2.xlarge* instance (Tesla K80 GPU with 12GB memory). Inference is generally even fast on a CPU with an average of ~2 images per second. 
+The code uses python 3.6, Keras with Tensorflow backend. For training it is recommened to us a GPU. For example on an AWS you can use a *p2.xlarge* instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with an average of ~2 images per second. 
 
 
 ### Installation [Linux or Mac]
