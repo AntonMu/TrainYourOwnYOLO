@@ -2,7 +2,6 @@
 MODIFIED FROM keras-yolo3 PACKAGE, https://github.com/qqwweee/keras-yolo3
 Retrain the YOLO model for your own dataset.
 """
-    
 
 import os
 import sys
