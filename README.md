@@ -1,4 +1,4 @@
-# TrainYourOwnYOLO: Building a Custom Image Detector from Scratch
+# TrainYourOwnYOLO: Building a Custom Image Detector from Scratch [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
 This repo let's you train a custom image detector using the state-of-the-art [YOLOv3](https://pjreddie.com/darknet/yolo/) computer vision algorithm. For a short write up check out this [medium post](www.medium.com). 
 
@@ -18,7 +18,7 @@ To build and test your object detection algorithm follow the below steps:
 ## Repo structure
 + [`1_Image_Annotation`](/1_Image_Annotation/): Scripts and instructions on annotating images
 + [`2_Training`](/2_Training/): Scripts and instructions on training your YOLOv3 model
-+ [`3_Inference`](/3_Inference/): Scripts and instructions on testing your trained model on new data
++ [`3_Inference`](/3_Inference/): Scripts and instructions on testing your trained YOLO model on new images
 + [`Data`](/Data/): Input Data, Output Data, Model Weights and Results
 + [`Utils`](/Utils/): Contains utility scripts used by main scripts
 
