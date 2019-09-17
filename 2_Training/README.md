@@ -14,8 +14,8 @@ python Train_YOLO.py
 ```
 Depending on your set-up, this process can take a few minutes to a few hours. To speed up training consider using a GPU. The final weights are saved in [`TrainYourOwnYOLO/Data/Model_weights`](/Data/Model_weights). 
 
-### Training on AWS
-If training is too slow on your local machine, you can use cloud computing services such as AWS. To learn more about training on AWS navigate to the [`AWS`](/2_Training/AWS) folder.
+<!-- ### Training on AWS -->
+If training is too slow on your local machine, you can use cloud computing services such as AWS. To learn more about training on AWS navigate to [`TrainYourOwnYOLO/2_Training/AWS`](/2_Training/AWS).
 
 ### That's all for training! 
 Next, go to [`TrainYourOwnYOLO/3_Inference`](/3_Inference) to test your YOLO detector on new images!
