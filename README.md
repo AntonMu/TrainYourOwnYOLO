@@ -16,16 +16,16 @@ To build and test your object detection algorithm follow the below steps:
  	- Detect objects in new images
 
 ## Repo structure
-+ [`1_Image_Annotation`](/1_Image_Annotation/): Scrips and instructions on annotating images
-+ [`2_Training`](/2_Training/): Scrips and instructions on training your YOLOv3 model
-+ [`3_Inference`](/3_Inference/): Scrips and instructions on testing your trained model on new data
++ [`1_Image_Annotation`](/1_Image_Annotation/): Scripts and instructions on annotating images
++ [`2_Training`](/2_Training/): Scripts and instructions on training your YOLOv3 model
++ [`3_Inference`](/3_Inference/): Scripts and instructions on testing your trained model on new data
 + [`Data`](/Data/): Input Data, Output Data, Model Weights and Results
 + [`Utils`](/Utils/): Contains utility scripts used by main scripts
 
 ## Getting Started
 
 ### Requisites
-The code uses python 3.6, Keras with Tensorflow backend. For training it is recommened to use a GPU. For example on an AWS you can use a **p2.xlarge** instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with an average of ~2 images per second. 
+The code uses python 3.6, Keras with Tensorflow backend. For training it is recommended to use a GPU. For example on an AWS you can use a **p2.xlarge** instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with an average of ~2 images per second. 
 
 
 ### Installation [Linux or Mac]
@@ -52,7 +52,7 @@ pip3 install -r requirements_cpu.txt
 ```
 
 ## Quick Start (Inference only)
-If you just want to test out the cat face detector on a few test images located in [`Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the roor folder with:
+If you just want to test out the cat face detector on a few test images located in [`Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
 
 ```
 python Minimal_Example.py
