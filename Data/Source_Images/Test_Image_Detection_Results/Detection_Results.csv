@@ -1,0 +1,45 @@
+image,image_path,xmin,ymin,xmax,ymax,label,confidence,x_size,y_size
+images - 2019-09-10T134128.431.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134128.431.jpg,48,12,206,204,0,0.7736630439758301,225,225
+images - 2019-09-10T134128.151.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134128.151.jpg,106,9,204,126,0,0.7684876918792725,300,168
+images - 2019-09-10T134126.622.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134126.622.jpg,133,39,219,86,0,0.8016664385795593,266,190
+images (98).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (98).jpg,160,8,223,73,0,0.266099214553833,282,179
+images - 2019-09-10T134134.527.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134134.527.jpg,83,27,142,61,0,0.7067877650260925,259,194
+images - 2019-09-10T134134.615.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134134.615.jpg,119,21,211,83,0,0.6962834000587463,275,183
+images - 2019-09-10T134126.500.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134126.500.jpg,29,62,119,104,0,0.34134823083877563,248,203
+images - 2019-09-10T134129.001.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134129.001.jpg,66,64,152,154,0,0.7721174955368042,225,224
+images (89).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (89).jpg,74,0,212,134,0,0.9420236349105835,275,183
+images (97).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (97).jpg,53,0,197,225,0,0.5543801784515381,225,225
+images (97).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (97).jpg,0,32,225,199,0,0.9503427147865295,225,225
+images - 2019-09-10T134130.826.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.826.jpg,132,4,195,183,0,0.3988156020641327,275,183
+images - 2019-09-10T134130.826.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.826.jpg,122,45,240,180,0,0.9393604397773743,275,183
+images (86).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (86).jpg,16,0,254,189,0,0.9233680963516235,267,189
+images.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images.jpg,172,28,250,138,0,0.26049354672431946,288,175
+images - 2019-09-10T134130.195.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.195.jpg,164,14,201,71,0,0.46475979685783386,259,194
+images - 2019-09-10T134134.826.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134134.826.jpg,42,9,142,183,0,0.8589663505554199,276,183
+images (92).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (92).jpg,47,9,205,150,0,0.9297501444816589,259,194
+images - 2019-09-10T134130.440.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.440.jpg,45,0,182,163,0,0.9500712752342224,275,183
+images - 2019-09-10T134130.723.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.723.jpg,49,25,175,118,0,0.9727286696434021,259,194
+images - 2019-09-10T134128.239.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134128.239.jpg,71,4,164,117,0,0.8734618425369263,259,194
+images (9).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (9).jpg,129,39,229,132,0,0.7385804653167725,275,183
+images (96).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (96).jpg,125,32,216,119,0,0.6370446681976318,251,201
+images - 2019-09-10T134130.538.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.538.jpg,44,11,103,138,0,0.2604644298553467,225,225
+images - 2019-09-10T134130.538.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.538.jpg,23,37,120,111,0,0.8296176791191101,225,225
+images - 2019-09-10T134130.538.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.538.jpg,124,34,216,112,0,0.9195582866668701,225,225
+images (91).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (91).jpg,57,11,218,115,0,0.9943733811378479,285,177
+images (93).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (93).jpg,238,14,303,65,0,0.6713724136352539,343,147
+images - 2019-09-10T134130.076.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.076.jpg,74,19,216,118,0,0.8529627919197083,275,183
+images - 2019-09-10T134130.628.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.628.jpg,62,5,152,151,0,0.9041439294815063,274,184
+images - 2019-09-10T134130.324.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.324.jpg,128,79,230,130,0,0.26047763228416443,275,183
+images - 2019-09-10T134130.324.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134130.324.jpg,116,42,234,152,0,0.8191677331924438,275,183
+images (94).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (94).jpg,190,7,363,118,0,0.5080198645591736,427,118
+images (95).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (95).jpg,6,19,217,205,0,0.8121383190155029,225,225
+images - 2019-09-10T134127.946.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134127.946.jpg,127,87,214,169,0,0.8650391101837158,231,218
+images - 2019-09-10T134128.862.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134128.862.jpg,64,17,168,171,0,0.9240633845329285,220,220
+images - 2019-09-10T134127.849.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134127.849.jpg,48,21,162,118,0,0.9628342390060425,290,174
+images - 2019-09-10T134135.035.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134135.035.jpg,230,27,271,62,0,0.3373614251613617,402,125
+images - 2019-09-10T134128.044.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134128.044.jpg,115,37,184,129,0,0.8853519558906555,225,225
+images (88).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (88).jpg,216,54,276,154,0,0.33529573678970337,299,168
+images - 2019-09-10T134131.528.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134131.528.jpg,118,0,234,168,0,0.6064378619194031,299,168
+images - 2019-09-10T134127.751.jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images - 2019-09-10T134127.751.jpg,121,3,214,93,0,0.6490597724914551,299,168
+images (90).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (90).jpg,107,0,183,119,0,0.3844567835330963,276,183
+images (87).jpg,/home/muehlemann/Documents/Insight/TrainYourOwnYOLO/Data/Source_Images/Test_Images/images (87).jpg,67,5,219,102,0,0.864058792591095,300,168

@@ -1,0 +1,52 @@
+{
+    "name": "Annotations",
+    "securityToken": "Annotations Token",
+    "sourceConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZDgyMTE5MTJiMTVhNjhjYWQ5OTM5NjJjM2JmODJiODA4MjgwZjFkYzk1ZDExMDc1MWRlMzE3NTMyN2Y0ZmU3ZWI4ZTcyMzlmNmRmYWE2ZDVmNTFkYWRhMTBjZTdhYmFiYWEwMmVlZTBlNTBkYmQ0MzA3MjMyZjc1OTkwODBhNzU1YzFhYWQ5ZTM2YWU1MDQ0MjZlMmQ4YWQ2NzgyYjcxMjI3ZTA1NzI1YTdjMjNiZDQxYTYzMmM5MjlhNmYxNWJmIiwiaXYiOiJiYjYxODY1YjM5YTNmMWE4OWQ4NDA2YzE5ODcwNTcwYmM0YzRlMWZjYjc3MTBkODUifQ=="
+        },
+        "id": "7XslkG40N"
+    },
+    "targetConnection": {
+        "name": "Images",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMTU1NmYzMWE4NzE2ZjZlYTJhYjBhNzkwYjJhOTVlZmYwY2VkYzkxNzY0NTQ0OTM0YjM5MmVlZDdkYjQ3MDUwOWUwODMzMjg1YjQ3Njk3MzcwODMyZWIyMDM5YjVjMjI0NTk5YTNiNGQ0MmZlNmRkNTlkN2IzMTMwMWU4MTBhZDA1MmY3NDljODIzNWViMjFlZGU1NzZkMTE0NzBjNTlhODAzYzNiMDNiOTgxMTI4MTdiMjgzNTA0MWRmY2IxMTYwIiwiaXYiOiI0OGI0Yjk2ODU0Mzc1YWIwNDc1YmE4NDA5ZmU2NGMzMGE4MzQ3ODNjYjI3MjY2OWYifQ=="
+        },
+        "id": "7XslkG40N"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [],
+    "id": "WkBk3U4mu",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZTQxNTc2OWU1ODUwNzYzOWEyMGUzZTUwMjVjZDI1N2U0YWUwMmQzZmMwNGZhZWRiYTkyMmFlNWI3ZTllZGI3MDZlMzMwMTcxMzFjNWE1M2MxNjQ3ZjE4MDExM2ZhNzc5IiwiaXYiOiI2YWE0MGU0OWFjNzIzYmZjNmRlMGEzODk2OTIxNjQxY2QyMTE5ZmM5OTZmN2IxNjYifQ=="
+        }
+    },
+    "version": "2.1.0",
+    "lastVisitedAssetId": "d09a856a75263f846fb6a1a673a0a955",
+    "assets": {
+        "d09a856a75263f846fb6a1a673a0a955": {
+            "format": "jpg",
+            "id": "d09a856a75263f846fb6a1a673a0a955",
+            "name": "2Q__%20(1).jpg",
+            "path": "file:C:/Users/Anton/OneDrive/GitHub/TrainYourOwnYOLO/Data/Source_Images/2Q__%20(1).jpg",
+            "size": {
+                "width": 288,
+                "height": 175
+            },
+            "state": 1,
+            "type": 1
+        }
+    }
+}
