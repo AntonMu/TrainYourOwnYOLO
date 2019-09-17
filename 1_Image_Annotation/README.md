@@ -6,7 +6,7 @@ Head to VoTT [releases](https://github.com/Microsoft/VoTT/releases) and download
 
 ## Create a New Project
 
-![New Project](/1_Image_Annotation/Screenshots/New_Project.gif)
+![New Project](/1_Image_Annotation/Screen_Recordings/New_Project.gif)
 
 Create a **New Project** and call it `Annotations`. It is highly recommended to use `Annotations` as your project name. If you like to use a different name for your project, you will have to modify the command line arguments of subsequent scripts accordingly. 
 
@@ -15,13 +15,13 @@ Under **Source Connection** choose **Add Connection** and put `Images` as **Disp
 ## Export Settings
 Navigate to **Export Settings** in the sidebar and then change the **Provider** to `Comma Separated Values (CSV)`, then hit **Save Export Settings**. 
 
-![New Project](/1_Image_Annotation/Screenshots/Export_Settings.gif)
+![New Project](/1_Image_Annotation/Screen_Recordings/Export_Settings.gif)
 
 
 ## Labeling
 First create a new tag on the right and give it a relevant tag name. In our example, we choose `Cat_Face`. Then draw bounding boxes around your objects. You can use the number key to quickly assign tags to the current bounding box. 
 
-![New Project](/1_Image_Annotation/Screenshots/Labeling.gif)
+![New Project](/1_Image_Annotation/Screen_Recordings/Labeling.gif)
 
 ## Export Results
 Once you have labeled enough images (try to label at least 100 objects) press **CRTL+E** to export the project. You should now see a folder called [`vott-csv-export`](/Data/Source_Images/vott-csv-export) in the [`Source Images`](/Data/Source_Images) directory. Within that folder, you should see a `*.csv` file called [`Annotations-export.csv`](/Data/Source_Images/vott-csv-export/Annotations-export.csv) which contains file names and bounding box coordinates. 
