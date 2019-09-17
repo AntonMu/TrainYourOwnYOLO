@@ -1,3 +1,5 @@
+setuptools>=41.0.0
+pip>=19.0.0
 absl-py==0.7.1
 astor==0.8.0
 attrs==19.1.0
