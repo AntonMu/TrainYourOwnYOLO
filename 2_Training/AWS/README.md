@@ -8,4 +8,4 @@ To spin up a GPU instance, go to **EC2** and select **Launch Instance**. Then go
 ![Deep_Learning_AMI](/2_Training/AWS/Screenshots/AWS_Deep_Learning_AMI.gif)
 
 ## Start the Training
-Connect to your instance and follow the same steps as on your local machine. Make sure to copy the up-to-date `data_train.txt` file to the [`vott-csv-export`](/Data/Source_Images/vott-csv-export) folder and the `classes.txt` file to the [`Data/Model_Weights`](/Data/Model_Weights/) folder.
+Connect to your instance and follow the same steps as on your local machine. Make sure that all your Source Images are in [`/Data/Source_Images`](/Data/Source_Images) and that the [`data_train.txt`](/Data/Source_Images/vott-csv-export/data_train.txt) and [`classes.txt`](/Data/Model_Weights/classes.txt) are up-to-date.
