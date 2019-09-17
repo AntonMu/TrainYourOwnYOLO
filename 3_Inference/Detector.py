@@ -1,11 +1,5 @@
-#
-# SCRIPT TO DETECT HOUSES IN IMAGES AND RETURN A CSV FILE WITH BOUDING BOXES
-#
-
 import os
 import sys
-
-#Check the postifx!!!!!!!!!!!!!!!!!! in the csv file
 
 def get_parent_dir(n=1):
     """ returns the n-th parent dicrectory of the current
@@ -20,6 +14,7 @@ utils_path = os.path.join(get_parent_dir(1),'Utils')
 
 sys.path.append(src_path)
 sys.path.append(utils_path)
+
 import argparse
 from keras_yolo3.yolo import YOLO
 from PIL import Image
@@ -34,7 +29,7 @@ import random
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 
-
+# Set up folder names for default values
 data_folder = os.path.join(get_parent_dir(n=1),'Data')
 
 image_folder = os.path.join(data_folder,'Source_Images')
@@ -43,9 +38,6 @@ image_test_folder = os.path.join(image_folder,'Test_Images')
 
 detection_results_folder = os.path.join(image_folder,'Test_Image_Detection_Results') 
 detection_results_file = os.path.join(detection_results_folder, 'Detection_Results.csv')
-
-# houses_result_folder = os.path.join(data_folder,'House_Detection_Results') 
-# houses_result_file =  os.path.join(houses_result_folder, 'Housing_Results.csv')
 
 model_folder =  os.path.join(data_folder,'Model_Weights')
 
@@ -65,53 +57,53 @@ if __name__ == '__main__':
 
     parser.add_argument(
         "--input_images", type=str, default=image_test_folder,
-        help = "Path to image directory. All subdirectories will be included."
+        help = "Path to image directory. All subdirectories will be included. Default is " + image_test_folder
     )
 
     parser.add_argument(
         "--output", type=str, default=detection_results_folder,
-        help = "Output path for detection results."
+        help = "Output path for detection results. Default is " + detection_results_folder
     )
 
     parser.add_argument(
         "--no_save_img", default=False, action="store_true",
-        help = "do not save output images with annotated boxes"
+        help = "Only save bounding box coordinates but do not save output images with annotated boxes. Default is False."
     )
 
     parser.add_argument(
         '--yolo_model', type=str, dest='model_path', default = model_weights,
-        help='Use your own pre-trained weights. This option does NOT overide the --model_type flag setting.'
+        help='Path to pre-trained weight files. Default is ' + model_weights
     )
 
     parser.add_argument(
         '--anchors', type=str, dest='anchors_path', default = anchors_path,
-        help='path to YOLO anchors'
+        help='Path to YOLO anchors. Default is '+ anchors_path
     )
 
     parser.add_argument(
         '--classes', type=str, dest='classes_path', default = model_classes,
-        help='path to YOLO class specifications'
+        help='Path to YOLO class specifications. Default is ' + model_classes
     )
 
     parser.add_argument(
         '--gpu_num', type=int, default = 1,
-        help='Number of GPU to use'
+        help='Number of GPU to use. Default is 1'
     )
 
     parser.add_argument(
         '--confidence', type=float, dest = 'score', default = 0.25,
-        help='YOLO object confidence threshold above which to show predictions'
+        help='Threshold for YOLO object confidence score to show predictions. Default is 0.25.'
     )
 
 
     parser.add_argument(
         '--box_file', type=str, dest = 'box', default = detection_results_file,
-        help='Specify the destination to save bounding boxes'
+        help='File to save bounding box results to. Default is ' + detection_results_file
     )
     
     parser.add_argument(
         '--postfix', type=str, dest = 'postfix', default = '_catface',
-        help='Specify the postfix for images with bounding boxes'
+        help='Specify the postfix for images with bounding boxes. Default is "_catface"'
     )
     
 
@@ -127,8 +119,7 @@ if __name__ == '__main__':
     if not os.path.exists(output_path):
         os.makedirs(output_path)
 
-
-    # define YOLO logo detector
+    # define YOLO detector
     yolo = YOLO(**{"model_path": FLAGS.model_path,
                 "anchors_path": FLAGS.anchors_path,
                 "classes_path": FLAGS.classes_path,
@@ -145,8 +136,6 @@ if __name__ == '__main__':
     class_file = open(FLAGS.classes_path, 'r')
     input_labels = [line.rstrip('\n') for line in class_file.readlines()]
     print('Found {} input labels: {}...'.format(len(input_labels), input_labels))
-
-
 
     start = timer()
     text_out = ''
