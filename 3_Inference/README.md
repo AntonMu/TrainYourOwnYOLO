@@ -1,11 +1,14 @@
-# EQanalytics: Computer Vision
-In this step, we process our previously downloaded training images (`EQanalytics/Data/Street_View_Images`).
+# TrainYourOwnYOLO: Inference
+In this step, we test our detector on images located in [`/Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images).
 
-## House Segmentation
-To segment houses, we run the housing detector script.
+## Test the Detector
+To detect objects run the detector script.
 ```
-python detector.py
+python Detector.py
 ```
+The outputs are save to [`/Data/Source_Images/Test_Image_Detection_Results`](/Data/Source_Images/Test_Image_Detection_Results). 
+
+
 By default, the script runs the detection on images in the folder `EQanalytics/Data/Street_View_Images` and uses the model weights and classes located in `EQanalytics/Data/Model_Weights/Houses`. The segmentation output images are saved to `EQanalytics/Data/House_Detection_Results` and the list of segmentation is also saved in `Housing_Results.csv` in the same folder. Other flags include `--gpu_num`, the number of GPUs to use, `no_save_img`, whether or not to save images with segmentation and  `--postfix`, a string to append to the segmented images.
 
 ## House Cropping
