@@ -90,9 +90,15 @@ if __name__ == '__main__':
         "--is_tiny", default=False,  action="store_true",
         help = "Use the tiny Yolo version for better performance and less accuracy."
         )
+    parser.add_argument(
+        "--random_seed", type=float, default=None,
+        help = "Random seed value to make script deterministic. Default is 'None', i.e. non-deterministic."
+        )
 
-
+    
     FLAGS = parser.parse_args()
+
+    np.random.seed(FLAGS.random_seed)
 
     log_dir = FLAGS.log_dir
 
@@ -101,8 +107,7 @@ if __name__ == '__main__':
     anchors = get_anchors(FLAGS.anchors_path)
     weights_path = FLAGS.weights_path
 
-
-    input_shape = (416, 416) # multiple of 32, hw
+    input_shape = (416, 416) # multiple of 32, height, width
     epoch1, epoch2 = 51, 51
 
     is_tiny_version = (len(anchors)==6) # default setting
@@ -123,11 +128,10 @@ if __name__ == '__main__':
     val_split = FLAGS.val_split
     with open(FLAGS.annotation_file) as f:
         lines = f.readlines()
-    print(lines)
+    # This step makes sure that the path names correspond to the local machine
+    # This is important if annotation and training are done on different machines (e.g. training on AWS)
     lines  = ChangeToOtherMachine(lines,remote_machine = '')
-    np.random.seed(42)
     np.random.shuffle(lines)
-    np.random.seed(None)
     num_val = int(len(lines)*val_split)
     num_train = len(lines) - num_val
 
