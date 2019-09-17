@@ -14,12 +14,13 @@ To build and test your object detection algorithm follow the below steps:
  	- Train your custom model on annotated images 
  3. [Inference](/3_Inference/)
  	- Detect objects in new images
+
 ## Repo structure
-+ [`1_Image_Annotation`](/1_Image_Annotation/): Contains all Information to annotate images
-+ [`2_Training`](/2_Training/): Training of your YOLOv3 model
-+ [`3_Inference`](/3_Inference/): Testing your trained model on new data
++ [`1_Image_Annotation`](/1_Image_Annotation/): Scrips and instructions on annotating images
++ [`2_Training`](/2_Training/): Scrips and instructions on training your YOLOv3 model
++ [`3_Inference`](/3_Inference/): Scrips and instructions on testing your trained model on new data
 + [`Data`](/Data/): Input Data, Output Data, Model Weights and Results
-+ [`Utils`](/Utils/): Utility scripts used by main scripts
++ [`Utils`](/Utils/): Contains utility scripts used by the main scripts
 
 ## Getting Started
 
