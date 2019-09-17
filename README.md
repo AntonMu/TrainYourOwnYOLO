@@ -44,7 +44,7 @@ source env/bin/activate
 Next, install all required packages. If you are running TrainYourOwnYOLO on a machine with GPU with CUDA drivers installed run:
 
 ```
-pip3 install -r requirements.txt
+pip3 install -r requirements_gpu.txt
 ```
 Otherwise, run:
 ```
