@@ -22,14 +22,14 @@ if not os.path.exists(output_folder):
 #First download the pre-trained weights
 download_script = os.path.join(model_folder,'Download_Weights.py')
 
-print('Downloading Pretrained Weights')
+print('Downloading Pretrained Weights','\n')
 start = time.time()
 call_string = ' '.join(['python',download_script,'1MGXAP_XD_w4OExPP10UHsejWrMww8Tu7', os.path.join(model_folder,'trained_weights_final.h5') ])
 
 subprocess.call(call_string , shell=True)
 
 end = time.time()
-print('Downloaded Pretrained Weights in {0:.1f} seconds'.format(end-start))
+print('Downloaded Pretrained Weights in {0:.1f} seconds'.format(end-start),'\n')
 
 # Now run the cat face detector
 detector_script = os.path.join(os.path.dirname(os.path.abspath(__file__)),'3_Inference','Detector.py')
