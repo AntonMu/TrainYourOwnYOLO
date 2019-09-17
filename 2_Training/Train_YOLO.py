@@ -61,38 +61,42 @@ if __name__ == '__main__':
 
     parser.add_argument(
         "--annotation_file", type=str, default=YOLO_filename,
-        help = "Path to annotation file for Yolo. "
+        help = "Path to annotation file for Yolo. Default is "+ YOLO_filename
         )
     parser.add_argument(
         "--classes_file", type=str, default=YOLO_classname,
-        help = "Path to YOLO classnames. "
+        help = "Path to YOLO classnames. Default is "+ YOLO_classname
         )
 
     parser.add_argument(
         "--log_dir", type=str, default=log_dir,
-        help = "Folder to save training logs and trained weights to."
+        help = "Folder to save training logs and trained weights to. Default is "+ log_dir 
         )
 
     parser.add_argument(
         "--anchors_path", type=str, default=anchors_path,
-        help = "Path to YOLO anchors."
+        help = "Path to YOLO anchors. Default is "+ anchors_path
         )
 
     parser.add_argument(
         "--weights_path", type=str, default=weights_path,
-        help = "Path to pre-trained YOLO weights."
+        help = "Path to pre-trained YOLO weights. Default is "+ weights_path
         )
     parser.add_argument(
         "--val_split", type=float, default=0.1,
-        help = "Percentage of training to be used for validation."
+        help = "Percentage of training set to be used for validation. Default is 10%."
         )
     parser.add_argument(
         "--is_tiny", default=False,  action="store_true",
-        help = "Use the tiny Yolo version for better performance and less accuracy."
+        help = "Use the tiny Yolo version for better performance and less accuracy. Default is False."
         )
     parser.add_argument(
         "--random_seed", type=float, default=None,
         help = "Random seed value to make script deterministic. Default is 'None', i.e. non-deterministic."
+        )
+    parser.add_argument(
+        "--epochs", type=float, default=51,
+        help = "Number of epochs for training last layers and number of epochs for fine-tuning layers. Default is 51."
         )
 
     
@@ -108,7 +112,7 @@ if __name__ == '__main__':
     weights_path = FLAGS.weights_path
 
     input_shape = (416, 416) # multiple of 32, height, width
-    epoch1, epoch2 = 51, 51
+    epoch1, epoch2 = FLAGS.epochs, FLAGS.epochs
 
     is_tiny_version = (len(anchors)==6) # default setting
     if FLAGS.is_tiny:
@@ -128,6 +132,7 @@ if __name__ == '__main__':
     val_split = FLAGS.val_split
     with open(FLAGS.annotation_file) as f:
         lines = f.readlines()
+
     # This step makes sure that the path names correspond to the local machine
     # This is important if annotation and training are done on different machines (e.g. training on AWS)
     lines  = ChangeToOtherMachine(lines,remote_machine = '')
@@ -136,7 +141,7 @@ if __name__ == '__main__':
     num_train = len(lines) - num_val
 
     # Train with frozen layers first, to get a stable loss.
-    # Adjust num epochs to your dataset. This step is enough to obtain a not bad model.
+    # Adjust num epochs to your dataset. This step is enough to obtain a decent model.
     if True:
         model.compile(optimizer=Adam(lr=1e-3), loss={
             # use custom yolo_loss Lambda layer.
@@ -170,7 +175,7 @@ if __name__ == '__main__':
         file.close()
         
     # Unfreeze and continue training, to fine-tune.
-    # Train longer if the result is not good.
+    # Train longer if the result is unsatisfactory.
     if True:
         for i in range(len(model.layers)):
             model.layers[i].trainable = True
