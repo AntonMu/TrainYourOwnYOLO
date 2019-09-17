@@ -17,4 +17,5 @@ Depending on your set-up, this process can take a few minutes to a few hours. To
 ### Training on AWS
 If training is too slow on your local machine, you can use cloud computing services such as AWS. To learn more about training on AWS navigate to the [`AWS`](/2_Training/AWS) folder.
 
-This concludes the training step and you are now ready to detect cat faces in new images!
+### That's all for training! 
+Next, go to [`TrainYourOwnYOLO/3_Inference`](/3_Inference) to test your YOLO detector on new images!
