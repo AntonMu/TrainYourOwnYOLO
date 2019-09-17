@@ -49,11 +49,6 @@ if __name__ == '__main__':
         help = "absolute path to the file where the annotations in YOLO format should be saved. The default name is 'data_train.txt' and is saved in the VoTT folder."
     )
 
-    parser.add_argument(
-        '--AWS', default=False, action="store_true",
-        help='Enable this flag if you plan to train on AWS but did your pre-processing on a local machine.'
-    )
-
     FLAGS = parser.parse_args()
 
     #Prepare the dataset for YOLO
@@ -61,10 +56,7 @@ if __name__ == '__main__':
     labels = multi_df['label'].unique()
     labeldict = dict(zip(labels,range(len(labels))))
     multi_df.drop_duplicates(subset=None, keep='first', inplace=True)
-    if FLAGS.AWS:
-        train_path = AWS_path
-    else:
-        train_path = FLAGS.VoTT_Folder
+    train_path = FLAGS.VoTT_Folder
     convert_vott_csv_to_yolo(multi_df,labeldict,path = train_path,target_name=FLAGS.YOLO_filename)
 
     # Make classes file
