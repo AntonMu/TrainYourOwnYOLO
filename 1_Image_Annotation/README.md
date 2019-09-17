@@ -24,7 +24,7 @@ First create a new tag on the right and give it a relevant tag name. In our exam
 ![New Project](/1_Image_Annotation/Screenshots/Labeling.gif)
 
 ## Export Results
-Once you have labeled enough images (try to label at least 100 objects) press **CRTL+E** to export the project. You should now see a folder called [`vott-csv-export`](/Data/Source_Images/vott-csv-export) in the [`Source Images`](/Data/Source_Images) directory. Within that folder, you should see a `*.csv` file called [`Annotations-export.csv`](/Data/Source_Images/vott-csv-export/Annotations-export.csv) which contains information on all bounding boxes. 
+Once you have labeled enough images (try to label at least 100 objects) press **CRTL+E** to export the project. You should now see a folder called [`vott-csv-export`](/Data/Source_Images/vott-csv-export) in the [`Source Images`](/Data/Source_Images) directory. Within that folder, you should see a `*.csv` file called [`Annotations-export.csv`](/Data/Source_Images/vott-csv-export/Annotations-export.csv) which contains file names and bounding box coordinates. 
 
 ## Convert to YOLO Format
 As a final step, convert the VoTT csv format to the YOLOv3 format. To do so, run the conversion script:
