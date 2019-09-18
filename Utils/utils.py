@@ -8,8 +8,8 @@ from matplotlib.colors import rgb_to_hsv, hsv_to_rgb
 from PIL import Image, ImageFont, ImageDraw
 from timeit import default_timer as timer
 
-import readline
-readline.parse_and_bind("tab: complete")
+# import readline
+# readline.parse_and_bind("tab: complete")
 
 min_logo_size = (10,10)
 

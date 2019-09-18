@@ -28,8 +28,9 @@ To build and test your object detection algorithm follow the below steps:
 The code uses python 3.6, Keras with Tensorflow backend. For training it is recommended to use a GPU. For example on an AWS you can use a **p2.xlarge** instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with an average of ~2 images per second. 
 
 
-### Installation [Linux or Mac]
+### Installation
 
+#### Setting up Environment [Linux or Mac]
 <!-- #### Clone Repo and Install Requirements -->
 Clone this repo with:
 ```
@@ -41,7 +42,26 @@ Create Virtual Environment (requires [venv](https://packaging.python.org/guides/
 python3 -m venv env
 source env/bin/activate
 ```
-Next, install all required packages. If you are running TrainYourOwnYOLO on a machine with GPU with CUDA drivers installed run:
+If you are using Mac and the above command does not work try:
+```
+pipenv shell
+```
+Make sure that, from now on, you run all commands from within your virtual environment.
+
+#### Setting up Environment [Windows]
+Use the [Github Desktop GUI](https://desktop.github.com/) to clone this repo to your local machine. Navigate to the `TrainYourOwnYOLO` project folder and open a power shell window by pressing **Shift + Right Click** and selecting `Open PowerShell window here` in the drop-down menu.
+
+Create Virtual Environment (requires [venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) which is included in the standard library of Python 3.3 or newer):
+
+```
+py -m venv env
+.\env\Scripts\activate
+```
+![PowerShell](/Utils/Screenshots/PowerShell.png)
+Make sure that, from now on, you run all commands from within your virtual environment.
+
+#### Install Required Packages [Windows, Mac or Linux]
+If you are running TrainYourOwnYOLO on a machine with GPU with CUDA drivers installed run:
 
 ```
 pip3 install -r requirements_gpu.txt

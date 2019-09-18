@@ -24,11 +24,6 @@ YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
 model_folder =  os.path.join(Data_Folder,'Model_Weights')
 classes_filename = os.path.join(model_folder,'data_classes.txt')
 
-AWS_path = '/home/ubuntu/TrainYourOwnYOLO/Data/Source_Images/vott-csv-export/'
-
-
-
-
 if __name__ == '__main__':
     # surpress any inhereted default values
     parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS)
@@ -37,21 +32,16 @@ if __name__ == '__main__':
     '''
     parser.add_argument(
         "--VoTT_Folder", type=str, default=VoTT_Folder,
-        help = "absolute path to the exported files from the image tagging step with VoTT."
+        help = "Absolute path to the exported files from the image tagging step with VoTT. Default is "+ VoTT_Folder
     )
 
     parser.add_argument(
         "--VoTT_csv", type=str, default=VoTT_csv,
-        help = "absolute path to the *.csv file exported from VoTT. The default name is 'Houses-export.csv'."
+        help = "Absolute path to the *.csv file exported from VoTT. Default is "+ VoTT_csv
     )
     parser.add_argument(
         "--YOLO_filename", type=str, default=YOLO_filename,
-        help = "absolute path to the file where the annotations in YOLO format should be saved. The default name is 'data_train.txt' and is saved in the VoTT folder."
-    )
-
-    parser.add_argument(
-        '--AWS', default=False, action="store_true",
-        help='Enable this flag if you plan to train on AWS but did your pre-processing on a local machine.'
+        help = "Absolute path to the file where the annotations in YOLO format should be saved. Default is " + YOLO_filename
     )
 
     FLAGS = parser.parse_args()
@@ -61,14 +51,12 @@ if __name__ == '__main__':
     labels = multi_df['label'].unique()
     labeldict = dict(zip(labels,range(len(labels))))
     multi_df.drop_duplicates(subset=None, keep='first', inplace=True)
-    if FLAGS.AWS:
-        train_path = AWS_path
-    else:
-        train_path = FLAGS.VoTT_Folder
+    train_path = FLAGS.VoTT_Folder
     convert_vott_csv_to_yolo(multi_df,labeldict,path = train_path,target_name=FLAGS.YOLO_filename)
 
     # Make classes file
     file = open(classes_filename,"w") 
+    
     #Sort Dict by Values
     SortedLabelDict = sorted(labeldict.items() ,  key=lambda x: x[1])
     for elem in SortedLabelDict:
