@@ -94,9 +94,9 @@ To train your own custom YOLO object detector please follow the instructions det
 - [`2_Training`](/2_Training/) and
 - [`3_Inference`](/3_Inference/).
  
-**To make everything run smoothly it is highly recommended to the original folder structure of this repo!**
+**To make everything run smoothly it is highly recommended to keep the original folder structure of this repo!**
 
-Each `*.py` script has various command line options that help tweak performance and change the input and output files. All scripts are initialized with good default values that help accomplish all tasks as long as the original folder structure is preserved. To learn more about available command line options of a python script run:
+Each `*.py` script has various command line options that help tweak performance and change things such as input and output directories. All scripts are initialized with good default values that help accomplish all tasks as long as the original folder structure is preserved. To learn more about available command line options of a python script run:
 
 ```
 python <script_name.py> -h
