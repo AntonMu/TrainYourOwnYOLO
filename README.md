@@ -30,7 +30,7 @@ The only hard requirement is a running version of python 3.3 or newer. To instal
 
 and follow the installation instructions. 
 
-To speed up training, it is recommended to use a GPU with CUDA support. For example on AWS you can use a **p2.xlarge** instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with approximately ~2 images per second. 
+To speed up training, it is recommended to use a GPU with CUDA support. For example on AWS you can use a `p2.xlarge` instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with approximately ~2 images per second. 
 
 
 ### Installation
