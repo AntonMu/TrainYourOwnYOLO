@@ -25,13 +25,18 @@ To build and test your object detection algorithm follow the below steps:
 ## Getting Started
 
 ### Requisites
-The code uses python 3.6, Keras with Tensorflow backend. For training it is recommended to use a GPU. For example on an AWS you can use a **p2.xlarge** instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with an average of ~2 images per second. 
+The only hard requirement is a running version of python 3.3 or newer. To install the latest python 3.x version go to 
+- [python.org/downloads](https://www.python.org/downloads/) 
+
+and follow the installation instructions. 
+
+To speed up training, it is recommended to use a GPU with CUDA support. For example on [AWS](https://aws.amazon.com/) you can use a `p2.xlarge` instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with approximately ~2 images per second. 
 
 
 ### Installation
 
 #### Setting up Environment [Linux or Mac]
-<!-- #### Clone Repo and Install Requirements -->
+
 Clone this repo with:
 ```
 git clone https://github.com/AntonMu/TrainYourOwnYOLO
@@ -84,7 +89,18 @@ The outputs are saved in [`Data/Source_Images/Test_Image_Detection_Results`](/Da
 
 ## Full Start (Training and Inference)
 
-To train your own model, follow the individual instructions located in [`1_Image_Annotation`](/1_Image_Annotation/), [`2_Training`](/2_Training/) and [`3_Inference`](/3_Inference/), respectively. 
+To train your own custom YOLO object detector please follow the instructions detailed in the three numbered subfolders of this repo:
+- [`1_Image_Annotation`](/1_Image_Annotation/),
+- [`2_Training`](/2_Training/) and
+- [`3_Inference`](/3_Inference/).
+ 
+**To make everything run smoothly it is highly recommended to keep the original folder structure of this repo!**
+
+Each `*.py` script has various command line options that help tweak performance and change things such as input and output directories. All scripts are initialized with good default values that help accomplish all tasks as long as the original folder structure is preserved. To learn more about available command line options of a python script `<script_name.py>` run:
+
+```
+python <script_name.py> -h
+```
 
 ## License
 
