@@ -25,7 +25,7 @@ To build and test your object detection algorithm follow the below steps:
 ## Getting Started
 
 ### Requisites
-The only hard requirement is a running version of python 3.3 or new. To install python 3.x go to [python.org/downloads](https://www.python.org/downloads/) and follow the installation instructions. To speed it training, it is recommended to use a GPU with CUDA support. For example on AWS you can use a **p2.xlarge** instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with approximately ~2 images per second. 
+The only hard requirement is a running version of python 3.3 or newer. To install the latest python 3.x version go to [python.org/downloads](https://www.python.org/downloads/) and follow the installation instructions. To speed it training, it is recommended to use a GPU with CUDA support. For example on AWS you can use a **p2.xlarge** instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with approximately ~2 images per second. 
 
 
 ### Installation
