@@ -31,7 +31,7 @@ The only hard requirement is a running version of python 3.3 or new. To install 
 ### Installation
 
 #### Setting up Environment [Linux or Mac]
-<!-- #### Clone Repo and Install Requirements -->
+
 Clone this repo with:
 ```
 git clone https://github.com/AntonMu/TrainYourOwnYOLO
