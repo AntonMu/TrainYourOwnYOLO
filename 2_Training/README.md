@@ -1,4 +1,11 @@
 # TrainYourOwnYOLO: Training
+## Dataset
+To train the YOLO object detector on your own dataset, copy your training images to [`TrainYourOwnYOLO/Data/Source_Images`](/Data/Source_Images). By default, this directory is pre-populated with ~150 cat images. Feel free to delete all existing cat images to make your own project cleaner. 
+
+### Creating a Dataset from Scratch
+If you do not already have a dataset consider using a [Chrome extension](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en) which lets you search and download images from Google Images. For instance, you can create a Fidget Spinner detector by searching for images with Fidget Spinners. 
+
+## Training
 Using the training images located in [`TrainYourOwnYOLO/Data/Source_Images`](/Data/Source_Images) and the annotation file [`data_train.txt`](/Data/Source_Images/vott-csv-export) which we have created in the [previous step](/1_Image_Annotation/) we are now ready to train our YOLOv3 detector. 
 
 ## Download and Convert Pre-Trained Weights
