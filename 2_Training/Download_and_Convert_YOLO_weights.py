@@ -10,9 +10,6 @@ FLAGS = None
 root_folder = os.path.dirname(os.path.abspath(__file__))
 download_folder = os.path.join(root_folder,'src','keras_yolo3')
 
-# cd $(dirname $0)
-# wget https://pjreddie.com/media/files/yolov3.weights
-# python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5
 if __name__ == '__main__':
     # Delete all default flags
     parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS)
