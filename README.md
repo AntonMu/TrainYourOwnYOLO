@@ -109,7 +109,7 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
     pipenv shell
     ```
 
-2. If you are having trouble with getting cv2 to run, try:
+2. If you are having trouble getting cv2 to run, try:
 
     ```
     apt-get update
@@ -117,7 +117,7 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
     pip install opencv-python
     ```
 
-3. If you are using Linux and having trouble installing `*.snap` package files try:
+3. If you are a Linux user and having trouble installing `*.snap` package files try:
     ```
     snap install - dangerous vott-2.1.0-linux.snap
     ```
