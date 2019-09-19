@@ -73,13 +73,13 @@ pip3 install -r requirements_cpu.txt
 ```
 
 ## Quick Start (Inference only)
-To test the cat face detector on a few test images located in [`Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
+To test the cat face detector on a few test images located in [`TrainYourOwnYOLO/Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
 
 ```
 python Minimal_Example.py
 ```
 
-The outputs are saved in [`Data/Source_Images/Test_Image_Detection_Results`](/Data/Source_Images/Test_Image_Detection_Results). This includes:
+The outputs are saved in [`TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detection_Results`](/Data/Source_Images/Test_Image_Detection_Results). This includes:
  - Cat pictures with bounding boxes around faces with confidence scores and
  - [`Detection_Results.csv`](/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv) file with file names and locations of bounding boxes.
 
