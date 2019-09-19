@@ -121,3 +121,8 @@ If you are using Linux and having trouble installing `*.snap` package files try:
 snap install - dangerous vott-2.1.0-linux.snap
 ```
 See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
+
+## Stay Up-to-Date
+
+- ⭐ **star** this repo to get notifications on future improvements and
+- 🍴 **fork** this repo if you like to use it as part of your own project.
