@@ -121,7 +121,7 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
 
 3. If you are a Linux user and having trouble installing `*.snap` package files try:
     ```
-    snap install - dangerous vott-2.1.0-linux.snap
+    snap install --dangerous vott-2.1.0-linux.snap
     ```
     See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
 
