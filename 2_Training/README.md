@@ -9,12 +9,15 @@ Before getting started download the pre-trained YOLOv3 weights and convert them 
 ```
 python Download_and_Convert_YOLO_weights.py
 ```
+To list available command line options run `python Download_and_Convert_YOLO_weights.py -h`.
 ## Train YOLOv3 Detector
 To start the training, run the training script from within the [`TrainYourOwnYOLO/2_Training`](/2_Training/) directory:
 ```
 python Train_YOLO.py 
 ```
-Depending on your set-up, this process can take a few minutes to a few hours. The final weights are saved in [`TrainYourOwnYOLO/Data/Model_weights`](/Data/Model_weights). If training is too slow on your local machine, consider using cloud computing services such as AWS to speed things up. To learn more about training on AWS navigate to [`TrainYourOwnYOLO/2_Training/AWS`](/2_Training/AWS).
+Depending on your set-up, this process can take a few minutes to a few hours. The final weights are saved in [`TrainYourOwnYOLO/Data/Model_weights`](/Data/Model_weights). To list available command line options run `python Train_YOLO.py -h`.
+
+If training is too slow on your local machine, consider using cloud computing services such as AWS to speed things up. To learn more about training on AWS navigate to [`TrainYourOwnYOLO/2_Training/AWS`](/2_Training/AWS).
 
 ### That's all for training! 
 Next, go to [`TrainYourOwnYOLO/3_Inference`](/3_Inference) to test your YOLO detector on new images!
