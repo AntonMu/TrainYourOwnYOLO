@@ -20,7 +20,7 @@ To build and test your object detection algorithm follow the below steps:
 + [`2_Training`](/2_Training/): Scripts and instructions on training your YOLOv3 model
 + [`3_Inference`](/3_Inference/): Scripts and instructions on testing your trained YOLO model on new images
 + [`Data`](/Data/): Input Data, Output Data, Model Weights and Results
-+ [`Utils`](/Utils/): Contains utility scripts used by main scripts
++ [`Utils`](/Utils/): Utility scripts used by main scripts
 
 ## Getting Started
 
@@ -47,7 +47,7 @@ Create Virtual Environment (requires [venv](https://packaging.python.org/guides/
 python3 -m venv env
 source env/bin/activate
 ```
-Make sure that, from now on, you run all commands from within your virtual environment.
+Make sure that, from now on, you **run all commands from within your virtual environment**.
 
 #### Setting up Environment [Windows]
 Use the [Github Desktop GUI](https://desktop.github.com/) to clone this repo to your local machine. Navigate to the `TrainYourOwnYOLO` project folder and open a power shell window by pressing **Shift + Right Click** and selecting `Open PowerShell window here` in the drop-down menu.
@@ -59,7 +59,7 @@ py -m venv env
 .\env\Scripts\activate
 ```
 ![PowerShell](/Utils/Screenshots/PowerShell.png)
-Make sure that, from now on, you run all commands from within your virtual environment.
+Make sure that, from now on, you **run all commands from within your virtual environment**.
 
 #### Install Required Packages [Windows, Mac or Linux]
 If you are running TrainYourOwnYOLO on a machine with **GPU with CUDA** drivers installed run:
