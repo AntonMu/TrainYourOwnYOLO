@@ -106,9 +106,6 @@ python <script_name.py> -h
 
 Unless explicitly stated otherwise at the top of a file, all code is licensed under the MIT license. This repo makes use of [**ilmonteux/logohunter**](https://github.com/ilmonteux/logohunter) which itself is inspired by [**qqwweee/keras-yolo3**](https://github.com/qqwweee/keras-yolo3).
 
-- Please **star** ⭐ this repo to get notifications on future improvements and
-- Please **fork** 🍴 this repo if you like to use it as part of your own project.
-
 ## Common Issues
 
 If you are having trouble with getting cv2 to run, try:
@@ -124,3 +121,8 @@ If you are using Linux and having trouble installing `*.snap` package files try:
 snap install - dangerous vott-2.1.0-linux.snap
 ```
 See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
+
+## Stay Up-to-Date
+
+- **star** ⭐ this repo to get notifications on future improvements and
+- **fork** 🍴 this repo if you like to use it as part of your own project.
