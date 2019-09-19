@@ -106,6 +106,9 @@ python <script_name.py> -h
 
 Unless explicitly stated otherwise at the top of a file, all code is licensed under the MIT license. This repo makes use of [**ilmonteux/logohunter**](https://github.com/ilmonteux/logohunter) which itself is inspired by [**qqwweee/keras-yolo3**](https://github.com/qqwweee/keras-yolo3).
 
+- Please **star** ⭐ this repo to get notifications on future improvements and
+- Please **fork** 🍴 this repo if you like to use it as part of your own project.
+
 ## Common Issues
 
 If you are having trouble with getting cv2 to run, try:
