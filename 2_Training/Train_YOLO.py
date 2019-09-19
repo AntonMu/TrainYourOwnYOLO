@@ -38,7 +38,7 @@ from Train_Utils import get_classes, get_anchors, create_model, create_tiny_mode
 
 keras_path = os.path.join(src_path,'keras_yolo3')
 Data_Folder = os.path.join(get_parent_dir(1),'Data')
-Image_Folder = os.path.join(Data_Folder,'Source_Images')
+Image_Folder = os.path.join(Data_Folder,'Source_Images','Training_Images')
 VoTT_Folder = os.path.join(Image_Folder,'vott-csv-export')
 YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
 
