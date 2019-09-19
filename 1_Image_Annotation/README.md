@@ -21,7 +21,7 @@ Installing `*.snap` files requires the snapd package manager which is available 
 
 Create a **New Project** and call it `Annotations`. It is highly recommended to use `Annotations` as your project name. If you like to use a different name for your project, you will have to modify the command line arguments of subsequent scripts accordingly. 
 
-Under **Source Connection** choose **Add Connection** and put `Images` as **Display Name**. Under **Provider** choose **Local File System** and select [`TrainYourOwnYOLO/Data/Source Images`](/Data/Source_Images). For **Target Connection** choose the same folder as for **Source Connection**. Hit **Save Project** to finish project creation. 
+Under **Source Connection** choose **Add Connection** and put `Images` as **Display Name**. Under **Provider** choose **Local File System** and select [`TrainYourOwnYOLO/Data/Source Images`](/Data/Source_Images) and then **Save Connection**. For **Target Connection** choose the same folder as for **Source Connection**. Hit **Save Project** to finish project creation. 
 
 ![New Project](/1_Image_Annotation/Screen_Recordings/New_Project.gif)
 
@@ -32,7 +32,7 @@ Navigate to **Export Settings** in the sidebar and then change the **Provider** 
 
 
 ### Labeling
-First create a new tag on the right and give it a relevant tag name. In our example, we choose `Cat_Face`. Then draw bounding boxes around your objects. You can use the number key to quickly assign tags to the current bounding box. 
+First create a new tag on the right and give it a relevant tag name. In our example, we choose `Cat_Face`. Then draw bounding boxes around your objects. You can use the number key **1** to quickly assign the first tag to the current bounding box. 
 
 ![New Project](/1_Image_Annotation/Screen_Recordings/Labeling.gif)
 
