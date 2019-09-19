@@ -124,5 +124,5 @@ See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2)
 
 ## Stay Up-to-Date
 
-- **star** ⭐ this repo to get notifications on future improvements and
-- **fork** 🍴 this repo if you like to use it as part of your own project.
+- ⭐ **star** this repo to get notifications on future improvements and
+- 🍴 **fork** this repo if you like to use it as part of your own project.
