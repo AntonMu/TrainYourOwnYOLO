@@ -20,7 +20,7 @@ To build and test your object detection algorithm follow the below steps:
 + [`2_Training`](/2_Training/): Scripts and instructions on training your YOLOv3 model
 + [`3_Inference`](/3_Inference/): Scripts and instructions on testing your trained YOLO model on new images
 + [`Data`](/Data/): Input Data, Output Data, Model Weights and Results
-+ [`Utils`](/Utils/): Contains utility scripts used by main scripts
++ [`Utils`](/Utils/): Utility scripts used by main scripts
 
 ## Getting Started
 
