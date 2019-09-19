@@ -83,7 +83,7 @@ The outputs are saved in [`Data/Source_Images/Test_Image_Detection_Results`](/Da
  - Cat pictures with bounding boxes around faces with confidence scores and
  - [`Detection_Results.csv`](/Data/Source_Images/Test_Image_Detection_Results/Detection_Results.csv) file with file names and locations of bounding boxes.
 
- If you want to detect cat faces in your own cat pictures, replace the cat images in [`Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) with your own images.
+ If you want to detect cat faces in your own pictures, replace the cat images in [`Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) with your own images.
 
 ## Full Start (Training and Inference)
 
