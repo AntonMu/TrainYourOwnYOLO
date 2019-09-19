@@ -105,23 +105,23 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
 ## Possible Issues
 
 1. If you are a Mac user and `py -m venv env` does not work, try:
- ```
- pipenv shell
- ```
+    ```
+    pipenv shell
+    ```
 
 2. If you are having trouble with getting cv2 to run, try:
 
- ```
- apt-get update
- apt-get install -y libsm6 libxext6 libxrender-dev
- pip install opencv-python
- ```
+    ```
+    apt-get update
+    apt-get install -y libsm6 libxext6 libxrender-dev
+    pip install opencv-python
+    ```
 
 3. If you are using Linux and having trouble installing `*.snap` package files try:
- ```
- snap install - dangerous vott-2.1.0-linux.snap
- ```
- See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
+    ```
+    snap install - dangerous vott-2.1.0-linux.snap
+    ```
+    See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
 
 
 
