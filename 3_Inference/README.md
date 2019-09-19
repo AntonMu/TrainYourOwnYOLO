@@ -2,7 +2,7 @@
 In this step, we test our detector on images located in [`TrainYourOwnYOLO/Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images). If you like to test your detector on your own images, place them in the [`Test_Images`](/Data/Source_Images/Test_Images) folder. 
 
 ## Testing Your Detector
-To detect objects run the detector script from within the [`TrainYourOwnYOLO/3_Inferece`](/3_Inference/) directory:.
+To detect objects run the detector script from within the [`TrainYourOwnYOLO/3_Inference`](/3_Inference/) directory:.
 ```
 python Detector.py
 ```
