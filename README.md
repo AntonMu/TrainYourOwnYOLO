@@ -47,10 +47,6 @@ Create Virtual Environment (requires [venv](https://packaging.python.org/guides/
 python3 -m venv env
 source env/bin/activate
 ```
-If you are using Mac and the above command does not work try:
-```
-pipenv shell
-```
 Make sure that, from now on, you run all commands from within your virtual environment.
 
 #### Setting up Environment [Windows]
@@ -106,21 +102,28 @@ python <script_name.py> -h
 
 Unless explicitly stated otherwise at the top of a file, all code is licensed under the MIT license. This repo makes use of [**ilmonteux/logohunter**](https://github.com/ilmonteux/logohunter) which itself is inspired by [**qqwweee/keras-yolo3**](https://github.com/qqwweee/keras-yolo3).
 
-## Common Issues
+## Possible Issues
 
-If you are having trouble with getting cv2 to run, try:
+1. If you are a Mac user and `py -m venv env` does not work, try:
+    ```
+    pipenv shell
+    ```
 
-```
-apt-get update
-apt-get install -y libsm6 libxext6 libxrender-dev
-pip install opencv-python
-```
+2. If you are having trouble getting cv2 to run, try:
 
-If you are using Linux and having trouble installing `*.snap` package files try:
-```
-snap install - dangerous vott-2.1.0-linux.snap
-```
-See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
+    ```
+    apt-get update
+    apt-get install -y libsm6 libxext6 libxrender-dev
+    pip install opencv-python
+    ```
+
+3. If you are a Linux user and having trouble installing `*.snap` package files try:
+    ```
+    snap install - dangerous vott-2.1.0-linux.snap
+    ```
+    See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
+
+
 
 ## Stay Up-to-Date
 
