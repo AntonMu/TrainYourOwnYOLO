@@ -10,7 +10,7 @@ If you do not already have an image dataset, consider using a Chrome extension s
 To make our detector learn, we first need to feed it some good training examples. We use Microsoft's Visual Object Tagging Tool (VoTT) to manually label images in our training folder [`TrainYourOwnYOLO/Data/Source_Images`](/Data/Source_Images). To achieve decent results annotate at least 100 images. For good results label at least 300 images and for great results label 1000+ images. 
 
 ### Download VoTT
-Head to VoTT [releases](https://github.com/Microsoft/VoTT/releases) and download and install the version for your operation system. 
+Head to VoTT [releases](https://github.com/Microsoft/VoTT/releases) and download and install the version for your operating system. 
 
 ### Create a New Project
 
