@@ -106,7 +106,7 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
 
 ## Troubleshooting
 
-1. If you are using [pipenv](https://github.com/pypa/pipenv) and creating a virtual environment with `py -m venv env` does not work, try:
+1. If you are using [pipenv](https://github.com/pypa/pipenv) and are having trouble running `python3 -m venv env`, try:
     ```
     pipenv shell
     ```
