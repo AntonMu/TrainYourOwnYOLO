@@ -17,7 +17,7 @@ sys.path.append(os.path.join(get_parent_dir(1),'Utils'))
 from Convert_Format import convert_vott_csv_to_yolo
 
 Data_Folder = os.path.join(get_parent_dir(1),'Data')
-VoTT_Folder = os.path.join(Data_Folder,'Source_Images','vott-csv-export')
+VoTT_Folder = os.path.join(Data_Folder,'Source_Images','Training_Images','vott-csv-export')
 VoTT_csv =  os.path.join(VoTT_Folder,'Annotations-export.csv')
 YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
 
