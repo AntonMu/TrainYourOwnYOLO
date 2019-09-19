@@ -8,6 +8,8 @@
 
 import requests
 import os
+import progressbar
+
 def download_file_from_google_drive(id, destination):
     def get_confirm_token(response):
         for key, value in response.cookies.items():
@@ -20,8 +22,12 @@ def download_file_from_google_drive(id, destination):
         CHUNK_SIZE = 32768
 
         with open(destination, "wb") as f:
+            bar = progressbar.ProgressBar(max_value=progressbar.UnknownLength)
+            i=0
             for chunk in response.iter_content(CHUNK_SIZE):
                 if chunk: # filter out keep-alive new chunks
+                    bar.update(i)
+                    i+=1
                     f.write(chunk)
 
     URL = "https://docs.google.com/uc?export=download"
