@@ -11,7 +11,7 @@ The outputs are saved to [`TrainYourOwnYOLO/Data/Source_Images/Test_Image_Detect
 ### That's all!
 Congratulations on building your own custom YOLOv3 computer vision application.
 
-I hope you enjoyed this tutorial and I hope it helped you get our own project off the ground:
+I hope you enjoyed this tutorial and I hope it helped you get our own computer vision project off the ground:
 
 - Please **star** ⭐ this repo to get notifications on future improvements and
 - Please **fork** 🍴 this repo if you like to use it as part of your own project.
