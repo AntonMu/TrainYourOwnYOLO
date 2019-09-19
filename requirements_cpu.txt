@@ -10,6 +10,7 @@ chardet==3.0.4
 cycler==0.10.0
 decorator==4.4.0
 defusedxml==0.6.0
+progressbar2==3.46.1
 entrypoints==0.3
 gast==0.2.2
 google-pasta==0.1.7

@@ -1,7 +1,7 @@
 # TrainYourOwnYOLO: Image Annotation
 
 ## Dataset
-To train the YOLO object detector on your own dataset, copy your training images to [`TrainYourOwnYOLO/Data/Source_Images/Training_Images`](/Data/Source_Images/Training_Images/). By default, this directory is pre-populated with ~150 cat images. Feel free to delete all existing cat images to make your project cleaner. 
+To train the YOLO object detector on your own dataset, copy your training images to [`TrainYourOwnYOLO/Data/Source_Images/Training_Images`](/Data/Source_Images/Training_Images/). By default, this directory is pre-populated with 101 cat images. Feel free to delete all existing cat images to make your project cleaner. 
 
 ### Creating a Dataset from Scratch
 If you do not already have an image dataset, consider using a Chrome extension such as [Fatkun Batch Downloader](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en) which lets you search and download images from Google Images. For instance, you can build a fidget spinner detector by searching for images with fidget spinners. 

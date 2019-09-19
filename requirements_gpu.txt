@@ -1,4 +1,5 @@
 setuptools>=41.0.0
+progressbar2==3.46.1
 pip>=19.0.0
 absl-py==0.7.1
 astor==0.8.0

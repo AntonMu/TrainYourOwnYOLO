@@ -4,6 +4,7 @@ import time
 import sys
 import argparse
 import requests
+import progressbar
 
 FLAGS = None
 
@@ -25,10 +26,19 @@ if __name__ == '__main__':
     FLAGS = parser.parse_args()
 
     url = 'https://pjreddie.com/media/files/yolov3.weights'
-    r = requests.get(url)
+    r = requests.get(url,stream=True)
 
-    with open(os.path.join(download_folder,'yolov3.weights'), 'wb') as f:
-        f.write(r.content)
+    f = open(os.path.join(download_folder,'yolov3.weights'), 'wb')
+    file_size = int(r.headers.get('content-length'))
+    chunk = 100
+    num_bars = file_size // chunk
+    bar =  progressbar.ProgressBar(maxval=num_bars).start()
+    i = 0
+    for chunk in r.iter_content(chunk):
+        f.write(chunk)
+        bar.update(i)
+        i+=1
+    f.close()
 
     call_string = 'python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5'
 
