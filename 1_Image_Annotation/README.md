@@ -14,6 +14,7 @@ Head to VoTT [releases](https://github.com/Microsoft/VoTT/releases) and download
 - `vott-2.x.x-darwin.dmg` for Mac users, 
 - `vott-2.x.x-win32.exe` for Windows users and 
 - `vott-2.x.x-linux.snap` for Linux users.
+
 Installing `*.snap` files requires the snapd package manager which is available at [snapcraft.io](https://snapcraft.io/docs/installing-snapd).
 
 ### Create a New Project
