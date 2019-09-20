@@ -47,7 +47,7 @@ YOLO_classname = os.path.join(Model_Folder,'data_classes.txt')
 
 log_dir = Model_Folder
 anchors_path = os.path.join(keras_path,'model_data','yolo_anchors.txt') 
-weights_path = os.path.join(keras_path,'model_data','yolo.h5') 
+weights_path = os.path.join(keras_path,'yolo.h5') 
 
 FLAGS = None
 

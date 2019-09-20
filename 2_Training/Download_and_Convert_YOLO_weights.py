@@ -40,6 +40,6 @@ if __name__ == '__main__':
         i+=1
     f.close()
 
-    call_string = 'python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5'
+    call_string = 'python convert.py yolov3.cfg yolov3.weights yolo.h5'
 
     subprocess.call(call_string , shell=True, cwd = download_folder )
