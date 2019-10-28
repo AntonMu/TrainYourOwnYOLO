@@ -6,8 +6,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# VS Code
+# All hidden files and
 
+.vscode/
 .vscode
 
 # C extensions
