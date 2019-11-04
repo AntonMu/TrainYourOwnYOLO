@@ -8,6 +8,7 @@ def make_call_string(arglist):
     for arg in arglist:
         result_string+= ''.join(['--',arg[0],' ', arg[1],' '])
     return result_string
+	
 root_folder = os.path.dirname(os.path.abspath(__file__))
 data_folder = os.path.join(root_folder,'Data')
 model_folder = os.path.join(data_folder,'Model_Weights')
