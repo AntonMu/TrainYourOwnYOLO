@@ -22,7 +22,7 @@ oauthlib==3.1.0
 opencv-python==4.1.1.26
 opt-einsum==3.1.0
 pandas==0.25.3
-Pillow==6.2.1git 
+Pillow==6.2.1
 progressbar2==3.47.0
 protobuf==3.10.0
 pyasn1==0.4.7
