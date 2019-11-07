@@ -1,3 +1,4 @@
+pip==19.3.1
 absl-py==0.8.1
 astor==0.8.0
 cachetools==3.1.1
@@ -22,7 +23,7 @@ oauthlib==3.1.0
 opencv-python==4.1.1.26
 opt-einsum==3.1.0
 pandas==0.25.3
-Pillow==6.2.1
+Pillow==6.2.1git 
 progressbar2==3.47.0
 protobuf==3.10.0
 pyasn1==0.4.7
