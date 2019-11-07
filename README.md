@@ -62,14 +62,10 @@ py -m venv env
 Make sure that, from now on, you **run all commands from within your virtual environment**.
 
 #### Install Required Packages [Windows, Mac or Linux]
-If you are running TrainYourOwnYOLO on a machine with **GPU with CUDA** drivers installed run:
+Install required packages (from within your virtual environment) via:
 
 ```
-pip3 install -r requirements_gpu.txt
-```
-Otherwise, run:
-```
-pip3 install -r requirements_cpu.txt
+pip3 install -r requirements.txt
 ```
 
 ## Quick Start (Inference only)
