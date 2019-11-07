@@ -35,7 +35,7 @@ To speed up training, it is recommended to use a **GPU with CUDA** support. For 
 
 ### Installation
 
-#### Setting up Environment [Linux or Mac]
+#### Setting up Virtual Environment [Linux or Mac]
 
 Clone this repo with:
 ```
@@ -49,7 +49,7 @@ source env/bin/activate
 ```
 Make sure that, from now on, you **run all commands from within your virtual environment**.
 
-#### Setting up Environment [Windows]
+#### Setting up Virtual Environment [Windows]
 Use the [Github Desktop GUI](https://desktop.github.com/) to clone this repo to your local machine. Navigate to the `TrainYourOwnYOLO` project folder and open a power shell window by pressing **Shift + Right Click** and selecting `Open PowerShell window here` in the drop-down menu.
 
 Create Virtual **(Windows)** Environment (requires [venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) which is included in the standard library of Python 3.3 or newer):

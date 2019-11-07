@@ -24,11 +24,13 @@ opt-einsum==3.1.0
 pandas==0.25.3
 Pillow==6.2.1
 progressbar==2.5
+progressbar2==3.47.0
 protobuf==3.10.0
 pyasn1==0.4.7
 pyasn1-modules==0.2.7
 pyparsing==2.4.4
 python-dateutil==2.8.1
+python-utils==2.3.0
 pytz==2019.3
 PyYAML==5.1.2
 requests==2.22.0
