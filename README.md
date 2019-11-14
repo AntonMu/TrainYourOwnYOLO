@@ -131,3 +131,6 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
 
 - ⭐ **star** this repo to get notifications on future improvements and
 - 🍴 **fork** this repo if you like to use it as part of your own project.
+
+
+![CatVideo](/Utils/Screenshots/CatVideo.gif)
