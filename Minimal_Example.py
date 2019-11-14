@@ -42,7 +42,7 @@ model_weights = os.path.join(model_folder,'trained_weights_final.h5')
 classes_file = os.path.join(model_folder,'data_classes.txt')
 anchors = os.path.join(root_folder,'2_Training','src','keras_yolo3','model_data','yolo_anchors.txt')
 
-arglist = [['input_images',input_folder],['classes',classes_file],['output',output_folder],['yolo_model',model_weights],['box_file',result_file],['anchors',anchors]]
+arglist = [['input_path',input_folder],['classes',classes_file],['output',output_folder],['yolo_model',model_weights],['box_file',result_file],['anchors',anchors]]
 call_string = ' '.join(['python', detector_script,make_call_string(arglist)])
 
 print('Detecting Cat Faces by calling: \n\n', call_string,'\n')
