@@ -13,12 +13,12 @@ To build and test your object detection algorithm follow the below steps:
  	- Download pre-trained weights
  	- Train your custom YOLO model on annotated images 
  3. [Inference](/3_Inference/)
- 	- Detect objects in new images
+ 	- Detect objects in new images and videos
 
 ## Repo structure
 + [`1_Image_Annotation`](/1_Image_Annotation/): Scripts and instructions on annotating images
 + [`2_Training`](/2_Training/): Scripts and instructions on training your YOLOv3 model
-+ [`3_Inference`](/3_Inference/): Scripts and instructions on testing your trained YOLO model on new images
++ [`3_Inference`](/3_Inference/): Scripts and instructions on testing your trained YOLO model on new images and videos
 + [`Data`](/Data/): Input Data, Output Data, Model Weights and Results
 + [`Utils`](/Utils/): Utility scripts used by main scripts
 
@@ -73,7 +73,7 @@ pip3 install -r requirements_cpu.txt
 ```
 
 ## Quick Start (Inference only)
-To test the cat face detector on a few test images located in [`TrainYourOwnYOLO/Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
+To test the cat face detector on test images located in [`TrainYourOwnYOLO/Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
 
 ```
 python Minimal_Example.py
