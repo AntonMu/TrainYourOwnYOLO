@@ -104,7 +104,7 @@ class YOLO(object):
                 score_threshold=self.score, iou_threshold=self.iou)
         return boxes, scores, classes
 
-    def detect_image(self, image):
+    def detect_image(self, image, show_stats = True):
         start = timer()
 
         if self.model_image_size != (None, None):
@@ -116,8 +116,8 @@ class YOLO(object):
                               image.height - (image.height % 32))
             boxed_image = letterbox_image(image, new_image_size)
         image_data = np.array(boxed_image, dtype='float32')
-
-        print(image_data.shape)
+        if show_stats:
+            print(image_data.shape)
         image_data /= 255.
         image_data = np.expand_dims(image_data, 0)  # Add batch dimension.
 
@@ -128,8 +128,8 @@ class YOLO(object):
                 self.input_image_shape: [image.size[1], image.size[0]],
                 K.learning_phase(): 0
             })
-
-        print('Found {} boxes for {}'.format(len(out_boxes), 'img'))
+        if show_stats:
+            print('Found {} boxes for {}'.format(len(out_boxes), 'img'))
         out_prediction = []
 
         font_path = os.path.join(os.path.dirname(__file__),'font/FiraMono-Medium.otf')
@@ -157,8 +157,8 @@ class YOLO(object):
             # lowering confidence threshold to 0.01)
             if top > image.size[1] or right > image.size[0]:
                 continue
-
-            print(label, (left, top), (right, bottom))
+            if show_stats:
+                print(label, (left, top), (right, bottom))
 
             # output as xmin, ymin, xmax, ymax, class_index, confidence
             out_prediction.append([left, top, right, bottom, c, score])
@@ -181,7 +181,8 @@ class YOLO(object):
             del draw
 
         end = timer()
-        print('Time spent: {:.3f}sec'.format(end - start))
+        if show_stats:
+            print('Time spent: {:.3f}sec'.format(end - start))
         return out_prediction, image
 
     def close_session(self):
@@ -198,7 +199,7 @@ def detect_video(yolo, video_path, output_path=""):
                         int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT)))
     isOutput = True if output_path != "" else False
     if isOutput:
-        print(output_path, video_FourCC, video_fps, video_size)
+        print('Processing {} with frame size {} at {:.1f} FPS'.format(os.path.basename(video_path), video_size, video_fps))
         # print("!!! TYPE:", type(output_path), type(video_FourCC), type(video_fps), type(video_size))
         out = cv2.VideoWriter(output_path, video_FourCC, video_fps, video_size)
     accum_time = 0
@@ -212,7 +213,7 @@ def detect_video(yolo, video_path, output_path=""):
         # opencv images are BGR, translate to RGB
         frame = frame[:,:,::-1]
         image = Image.fromarray(frame)
-        out_pred, image = yolo.detect_image(image)
+        out_pred, image = yolo.detect_image(image,show_stats = False)
         result = np.asarray(image)
         curr_time = timer()
         exec_time = curr_time - prev_time
@@ -233,4 +234,4 @@ def detect_video(yolo, video_path, output_path=""):
         #     break
     vid.release()
     out.release()
-    yolo.close_session()
+    # yolo.close_session()
