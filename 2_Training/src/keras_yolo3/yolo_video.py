@@ -124,7 +124,7 @@ if __name__ == '__main__':
 
         txtfile.close()
         yolo.close_session()
-    # elif "video" in FLAGS:
-    #     detect_video(YOLO(**vars(FLAGS)), FLAGS.video, FLAGS.output)
+    elif "video" in FLAGS:
+        detect_video(YOLO(**vars(FLAGS)), FLAGS.video, FLAGS.output)
     else:
         print("Must specify at least --image or --video.  See usage with --help.")
