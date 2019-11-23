@@ -11,6 +11,9 @@ import os
 from collections import defaultdict
 
 import numpy as np
+import tensorflow as tf
+TF_VERSION2=tf.__version__.startswith("2")
+if TF_VERSION2: from tensorflow import keras
 from keras import backend as K
 from keras.layers import (Conv2D, Input, ZeroPadding2D, Add,
                           UpSampling2D, MaxPooling2D, Concatenate)
