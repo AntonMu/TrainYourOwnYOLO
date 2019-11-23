@@ -22,6 +22,9 @@ utils_path = os.path.join(get_parent_dir(1),'Utils')
 sys.path.append(utils_path)
 
 import numpy as np
+import tensorflow as tf
+TF_VERSION2=tf.__version__.startswith("2")
+if TF_VERSION2: from tensorflow import keras
 import keras.backend as K
 from keras.layers import Input, Lambda
 from keras.models import Model
