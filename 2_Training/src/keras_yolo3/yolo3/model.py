@@ -4,6 +4,8 @@ from functools import wraps
 
 import numpy as np
 import tensorflow as tf
+TF_VERSION2=tf.__version__.startswith("2")
+if TF_VERSION2: from tensorflow import keras
 from keras import backend as K
 from keras.layers import Conv2D, Add, ZeroPadding2D, UpSampling2D, Concatenate, MaxPooling2D
 from keras.layers.advanced_activations import LeakyReLU
@@ -391,7 +393,10 @@ def yolo_loss(args, anchors, num_classes, ignore_thresh=.5, print_loss=False):
             best_iou = K.max(iou, axis=-1)
             ignore_mask = ignore_mask.write(b, K.cast(best_iou<ignore_thresh, K.dtype(true_box)))
             return b+1, ignore_mask
-        _, ignore_mask = K.control_flow_ops.while_loop(lambda b,*args: b<m, loop_body, [0, ignore_mask])
+        if TF_VERSION2:
+            _, ignore_mask = tf.while_loop(lambda b,*args: b<m, loop_body, [0, ignore_mask])
+        else:
+            _, ignore_mask = K.control_flow_ops.while_loop(lambda b,*args: b<m, loop_body, [0, ignore_mask])
         ignore_mask = ignore_mask.stack()
         ignore_mask = K.expand_dims(ignore_mask, -1)
 

@@ -8,7 +8,14 @@ import os
 from timeit import default_timer as timer
 
 import numpy as np
-from keras import backend as K
+import tensorflow.compat.v1 as tf
+TF_VERSION2=tf.__version__.startswith("2")
+if TF_VERSION2:
+    tf.disable_v2_behavior()
+    from tensorflow import keras
+    import tensorflow.python.keras.backend as K
+else:
+    from keras import backend as K
 from keras.models import load_model
 from keras.layers import Input
 from PIL import Image, ImageFont, ImageDraw
