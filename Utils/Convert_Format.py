@@ -6,34 +6,66 @@ import os
 from PIL import Image
 from Get_File_Paths import GetFileList,ChangeToOtherMachine
 
-def convert_vott_csv_to_yolo(vott_df,labeldict=dict(zip(['Cat_Face'],[0,])),path='',target_name='data_train.txt',abs_path=False):
-    
+def getFilesWithExtension(path, exts=('csv'), joinPath=False):
+    fileList=[]
+    try:
+        if os.path.isfile(path):
+            for ext in exts:
+                if file.endswith(ext):
+                    return fileList.append(path)
+        for file in os.listdir(path):
+            for ext in exts:
+                if file.endswith(ext):
+                    if joinPath: fileList.append(os.path.join(path, file))
+                    else: fileList.append(file)
+                    continue
+    except IOError:
+        print('Ignoreable error: Folder/File could not be accessed, may not exist ->', path)
+    return fileList
+
+def convert_vott_csv_to_yolo(vott_df,labeldict=dict(zip(['Cat_Face'],[0,])),path='',target_name='data_train.txt',abs_path=False, zeroAnnotationPath=None):
+
     #Encode labels according to labeldict if code's don't exist
     if not 'code' in vott_df.columns:
         vott_df['code']=vott_df['label'].apply(lambda x: labeldict[x])
     #Round float to ints
     for col in vott_df[['xmin', 'ymin', 'xmax', 'ymax']]:
         vott_df[col]=(vott_df[col]).apply(lambda x: round(x))
-        
+
     #Create Yolo Text file
     last_image = ''
     txt_file = ''
 
+    imagesInCsv = []
     for index,row in vott_df.iterrows():
         if not last_image == row['image']:
             if abs_path:
+                imagesInCsv.append(row['image_path'])
                 txt_file +='\n'+row['image_path'] + ' '
             else:
+                imagesInCsv.append(os.path.join(path,row['image']))
                 txt_file +='\n'+os.path.join(path,row['image']) + ' '
             txt_file += ','.join([str(x) for x in (row[['xmin', 'ymin', 'xmax', 'ymax','code']].tolist())])
         else:
             txt_file += ' '
             txt_file += ','.join([str(x) for x in (row[['xmin', 'ymin', 'xmax', 'ymax','code']].tolist())])
         last_image = row['image']
-    file = open(target_name,"w") 
-    file.write(txt_file[1:]) 
-    file.close() 
-    return True
+
+    # All images are complete paths here
+    # Checks folder for images not listed in the csv
+    if zeroAnnotationPath is not None:
+        imagesInFolder = getFilesWithExtension(zeroAnnotationPath, exts=('png','jpeg','jpg'), joinPath=True)
+        for imageInFolder in imagesInFolder:
+            if imageInFolder not in imagesInCsv:
+                txt_file +='\n'+imageInFolder + ' '
+
+    if target_name is not None:
+        file = open(target_name,"w")
+        file.write(txt_file[1:])
+        file.close()
+        return True
+    else:
+        return txt_file[1:]
 
 
 def csv_from_xml(directory,path_name=''):
@@ -81,16 +113,16 @@ def csv_from_xml(directory,path_name=''):
 def crop_and_save(image_df,target_path, target_file ,one =True,label_dict = {0:'house'},postfix='cropped'):
     """Takes a vott_csv file with image names, labels and crop_boxes
     and crops the images accordingly
-    
+
     Input csv file format:
-    
+
     image   xmin ymin xmax ymax label
     im.jpg  0    10   100  500  house
 
-    
+
     Parameters
     ----------
-    df : pd.Dataframe 
+    df : pd.Dataframe
         The input dataframe with file_names, bounding box info
         and label
     source_path : str
@@ -115,14 +147,14 @@ def crop_and_save(image_df,target_path, target_file ,one =True,label_dict = {0:'
         current_name = row['image_path']
         x_size,_ = (Image.open(current_name).size)
         x_centrality = abs((row['xmin']+ row['xmax'])/2/x_size-.5)
-        return x_centrality        
+        return x_centrality
     if one:
         centrality = []
         for index, row in image_df.iterrows():
             centrality.append(find_rel_position(row))
         image_df['x_centrality'] = pd.Series(centrality)
-        image_df.sort_values(['image','x_centrality'], inplace = True) 
-        image_df.drop_duplicates(subset ="image", keep = 'first', inplace = True) 
+        image_df.sort_values(['image','x_centrality'], inplace = True)
+        image_df.drop_duplicates(subset ="image", keep = 'first', inplace = True)
     new_paths = []
     for index, row in image_df.iterrows():
         current_name = row['image_path']
@@ -153,7 +185,7 @@ if __name__ == '__main__':
 
     #Prepare the windows dataset for YOLO
     path = 'C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Window_Detector/base'
-    csv_from_xml(path,'/home/ubuntu/logohunter/data/windows').to_csv('C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Window_Detector/base/annotations.csv')   
+    csv_from_xml(path,'/home/ubuntu/logohunter/data/windows').to_csv('C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Window_Detector/base/annotations.csv')
 
     label_names = ['background', 'facade', 'molding', 'cornice', 'pillar', 'window', 'door', 'sill', 'blind', 'balcony', 'shop', 'deco']
     labeldict = dict(zip(label_names,list(range(12))))
