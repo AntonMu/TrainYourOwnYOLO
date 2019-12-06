@@ -13,6 +13,9 @@ from keras.regularizers import l2
 
 from ..yolo3.utils import compose
 
+# fixed module 'keras.backend' has no attribute 'control_flow_ops'
+# https://github.com/AntonMu/TrainYourOwnYOLO/issues/48
+K.control_flow_ops = tf
 
 @wraps(Conv2D)
 def DarknetConv2D(*args, **kwargs):
