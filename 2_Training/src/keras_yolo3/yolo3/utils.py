@@ -11,6 +11,7 @@ from matplotlib.colors import rgb_to_hsv, hsv_to_rgb
 import re
 
 
+
 def compose(*funcs):
     """Compose arbitrarily many functions, evaluated left to right.
 
@@ -62,6 +63,7 @@ def get_random_data(
     else:
         line = tmp_split
     # line[0] contains the filename
+
     image = Image.open(line[0])
     # The rest of the line includes bounding boxes
     line = line[1].split(" ")
