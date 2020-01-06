@@ -2,6 +2,9 @@
 *.h5
 *.weights
 
+# tf event files
+events.out.tfevents.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

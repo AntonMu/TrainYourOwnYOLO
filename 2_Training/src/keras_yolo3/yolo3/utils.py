@@ -11,7 +11,6 @@ from matplotlib.colors import rgb_to_hsv, hsv_to_rgb
 import re
 
 
-
 def compose(*funcs):
     """Compose arbitrarily many functions, evaluated left to right.
 
@@ -54,7 +53,7 @@ def get_random_data(
     proc_img=True,
 ):
     """random preprocessing for real-time data augmentation"""
-    
+
     # This type of splitting makes sure that it is compatible with spaces in folder names
     # We split at the first space that is followed by a number
     tmp_split = re.split("( \d)", annotation_line, maxsplit=1)
