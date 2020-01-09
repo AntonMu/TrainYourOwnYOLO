@@ -13,12 +13,12 @@ To build and test your object detection algorithm follow the below steps:
  	- Download pre-trained weights
  	- Train your custom YOLO model on annotated images 
  3. [Inference](/3_Inference/)
- 	- Detect objects in new images
+ 	- Detect objects in new images and videos
 
 ## Repo structure
 + [`1_Image_Annotation`](/1_Image_Annotation/): Scripts and instructions on annotating images
 + [`2_Training`](/2_Training/): Scripts and instructions on training your YOLOv3 model
-+ [`3_Inference`](/3_Inference/): Scripts and instructions on testing your trained YOLO model on new images
++ [`3_Inference`](/3_Inference/): Scripts and instructions on testing your trained YOLO model on new images and videos
 + [`Data`](/Data/): Input Data, Output Data, Model Weights and Results
 + [`Utils`](/Utils/): Utility scripts used by main scripts
 
@@ -35,7 +35,7 @@ To speed up training, it is recommended to use a **GPU with CUDA** support. For 
 
 ### Installation
 
-#### Setting up Virtual Environment [Linux or Mac]
+#### 1a Setting up Virtual Environment [Linux or Mac]
 
 Clone this repo with:
 ```
@@ -49,7 +49,7 @@ source env/bin/activate
 ```
 Make sure that, from now on, you **run all commands from within your virtual environment**.
 
-#### Setting up Virtual Environment [Windows]
+#### 1b Setting up Virtual Environment [Windows]
 Use the [Github Desktop GUI](https://desktop.github.com/) to clone this repo to your local machine. Navigate to the `TrainYourOwnYOLO` project folder and open a power shell window by pressing **Shift + Right Click** and selecting `Open PowerShell window here` in the drop-down menu.
 
 Create Virtual **(Windows)** Environment (requires [venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) which is included in the standard library of Python 3.3 or newer):
@@ -61,8 +61,8 @@ py -m venv env
 ![PowerShell](/Utils/Screenshots/PowerShell.png)
 Make sure that, from now on, you **run all commands from within your virtual environment**.
 
-#### Install Required Packages [Windows, Mac or Linux]
-Install required packages (from within your virtual environment) via:
+#### 2 Install Required Packages [Windows, Mac or Linux]
+If you are running TrainYourOwnYOLO on a machine with **GPU with CUDA** drivers installed run:
 
 ```
 pip install -r requirements.txt
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 If this fails, you may have to upgrade your pip version first with `pip install pip --upgrade`.
 
 ## Quick Start (Inference only)
-To test the cat face detector on a few test images located in [`TrainYourOwnYOLO/Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
+To test the cat face detector on test images located in [`TrainYourOwnYOLO/Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
 
 ```
 python Minimal_Example.py
@@ -101,7 +101,12 @@ python <script_name.py> -h
 
 Unless explicitly stated otherwise at the top of a file, all code is licensed under the MIT license. This repo makes use of [**ilmonteux/logohunter**](https://github.com/ilmonteux/logohunter) which itself is inspired by [**qqwweee/keras-yolo3**](https://github.com/qqwweee/keras-yolo3).
 
+## Acknowledgements
+Many thanks to [Niklas Wilson](https://github.com/NiklasWilson) for contributing towards making this repo compatible with Tensorflow 2.0. 
+
 ## Troubleshooting
+
+0. If you encounter any error, please make sure you follow the instructions **exactly** (word by word). Once you are familiar with the code, you're welcome to modify it as needed but in order to minimize error, I encourage you to not deviate from the instructions above.  
 
 1. If you are using [pipenv](https://github.com/pypa/pipenv) and are having trouble running `python3 -m venv env`, try:
     ```
@@ -128,3 +133,5 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
 
 - ⭐ **star** this repo to get notifications on future improvements and
 - 🍴 **fork** this repo if you like to use it as part of your own project.
+
+![CatVideo](/Utils/Screenshots/CatVideo.gif)
