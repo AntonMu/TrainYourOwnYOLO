@@ -65,8 +65,9 @@ Make sure that, from now on, you **run all commands from within your virtual env
 Install required packages (from within your virtual environment) via:
 
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
+If this fails, you may have to upgrade your pip version first with `pip install pip --upgrade`.
 
 ## Quick Start (Inference only)
 To test the cat face detector on a few test images located in [`TrainYourOwnYOLO/Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
