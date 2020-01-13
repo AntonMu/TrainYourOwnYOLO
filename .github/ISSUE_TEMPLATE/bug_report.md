@@ -1,5 +1,5 @@
 ---
-name: Bug report or Feature Request
+name: Bug Report or Feature Request
 about: Create a report to help us improve
 title: ''
 labels: ''
