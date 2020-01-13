@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: Bug report or Feature Request
 about: Create a report to help us improve
 title: ''
 labels: ''
@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Please understand that many of the models included in this repository are experimental and research-style code. If you open a GitHub issue, here is our policy:
+If you like to file a bug or make a feature requests please follow the steps below.
 
 1. It must be a bug, a feature request, or a significant problem with the documentation (for small docs fixes please send a PR instead).
 2. The form below must be filled out.
