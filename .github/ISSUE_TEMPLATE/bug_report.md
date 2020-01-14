@@ -6,8 +6,13 @@ labels: ''
 assignees: ''
 
 ---
+Before filing a report consider this question:
 
-If you like to file a bug or make a feature requests please follow the steps below.
+## Have you followed the instructions exactly (word by word)?
+
+Once you are familiar with the code, you're welcome to modify it as needed but in order to minimize error, I encourage you to not deviate from the instructions above.
+
+If you have followed the instructions exactly and would still like to file a bug or make a feature requests please follow the steps below.
 
 1. It must be a bug, a feature request, or a significant problem with the documentation (for small docs fixes please send a PR instead).
 2. The form below must be filled out.
