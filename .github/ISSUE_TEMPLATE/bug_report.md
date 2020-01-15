@@ -10,7 +10,7 @@ Before filing a report consider this question:
 
 ## Have you followed the instructions exactly (word by word)?
 
-Once you are familiar with the code, you're welcome to modify it as needed but in order to minimize error, I encourage you to not deviate from the instructions above.
+Once you are familiar with the code, you're welcome to modify it. Please only continue to file a bug report if you encounter an issue with the provided code and after having followed the instructions.
 
 If you have followed the instructions exactly and would still like to file a bug or make a feature requests please follow the steps below.
 
@@ -23,9 +23,7 @@ If you have followed the instructions exactly and would still like to file a bug
 - **What is the top-level directory of the model you are using**:
 - **Have I written custom code (as opposed to using a stock example script provided in the repo)**:
 - **OS Platform and Distribution (e.g., Linux Ubuntu 16.04)**:
-- **TensorFlow installed from (source or binary)**:
 - **TensorFlow version (use command below)**:
-- **Bazel version (if compiling from source)**:
 - **CUDA/cuDNN version**:
 - **GPU model and memory**:
 - **Exact command to reproduce**:
