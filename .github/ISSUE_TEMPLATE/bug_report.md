@@ -12,7 +12,11 @@ Before filing a report consider this question:
 
 Once you are familiar with the code, you're welcome to modify it. Please only continue to file a bug report if you encounter an issue with the provided code and after having followed the instructions.
 
-If you have followed the instructions exactly and would still like to file a bug or make a feature requests please follow the steps below.
+## Did you check the troubleshooting section?
+
+Before proceeding, have a look at [Troubleshooting](https://github.com/AntonMu/TrainYourOwnYOLO#troubleshooting) tips. 
+
+If you have followed the instructions exactly, couldn't solve your problem with the provided troubleshooting tips and would still like to file a bug or make a feature requests please follow the steps below.
 
 1. It must be a bug, a feature request, or a significant problem with the documentation (for small docs fixes please send a PR instead).
 2. The form below must be filled out.
