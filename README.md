@@ -138,7 +138,10 @@ Many thanks to [Niklas Wilson](https://github.com/NiklasWilson) for contributing
     ```
     See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
 
+## Filing an Issue
+If you would like to file an issue, please use the provided issue template and make sure to complete all fields. This makes it easier to reproduce the issue for someone trying to help you. 
 
+![Issue](/Utils/Screenshots/Issue.gif)
 
 ## Stay Up-to-Date
 
