@@ -10,6 +10,9 @@ Before getting started download the pre-trained YOLOv3 weights and convert them 
 python Download_and_Convert_YOLO_weights.py
 ```
 To list available command line options run `python Download_and_Convert_YOLO_weights.py -h`.
+
+The weights are pre-trained on the [ImageNet 1000 dataset](http://image-net.org/challenges/LSVRC/2015/index) and thus work well for object detection tasks that are very similar to the types of images and objects in the ImageNet 1000 dataset.
+
 ## Train YOLOv3 Detector
 To start the training, run the training script from within the [`TrainYourOwnYOLO/2_Training`](/2_Training/) directory:
 ```
