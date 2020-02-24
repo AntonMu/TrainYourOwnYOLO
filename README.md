@@ -108,7 +108,7 @@ Many thanks to [Niklas Wilson](https://github.com/NiklasWilson) for contributing
 
 0. If you encounter any error, please make sure you follow the instructions **exactly** (word by word). Once you are familiar with the code, you're welcome to modify it as needed but in order to minimize error, I encourage you to not deviate from the instructions above. If you would like to file an issue, please use the provided template and make sure to fill out all fields. 
 
-1. If you encounter a `FileNotFoundError` error, make sure that you did not change the folder structure. In particular, your  working directory needs to look like this: 
+1. If you encounter a `FileNotFoundError` or a `Module not found` error, make sure that you did not change the folder structure. In particular, your  working directory needs to look like this: 
     ```
     TrainYourOwnYOLO
     └─── 1_Image_Annotation
