@@ -4,7 +4,7 @@ This repo let's you train a custom image detector using the state-of-the-art [YO
 
 ### Pipeline Overview
 
-To build and test your object detection algorithm follow the below steps:
+To build and test your YOLO object detection algorithm follow the below steps:
 
  1. [Image Annotation](/1_Image_Annotation/)
 	 - Install Microsoft's Visual Object Tagging Tool (VoTT)
