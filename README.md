@@ -143,6 +143,8 @@ If you would like to file an issue, please use the provided issue template and m
 
 ![Issue](/Utils/Screenshots/Issue.gif)
 
+Issues without a completed issue template will be deleted after 7 days. 
+
 ## Stay Up-to-Date
 
 - ⭐ **star** this repo to get notifications on future improvements and
