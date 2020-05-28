@@ -25,10 +25,10 @@ To build and test your YOLO object detection algorithm follow the below steps:
 ## Getting Started
 
 ### Requisites
-The only hard requirement is a running version of python 3.3 or newer. To install the latest python 3.x version go to 
-- [python.org/downloads](https://www.python.org/downloads/) 
+The only hard requirement is a running version of python 3.6 or 3.7. To install python 3.7 go to 
+- [python.org/downloads](https://www.python.org/downloads/release/python-376/) 
 
-and follow the installation instructions. Note that this repo has only been tested with python 3.6 and thus it is recommened to use `python3.6`.
+and follow the installation instructions. Note that this repo has only been tested with python 3.6 and python 3.7 thus it is recommened to use either `python3.6` or `python3.7`.
 
 To speed up training, it is recommended to use a **GPU with CUDA** support. For example on [AWS](/2_Training/AWS/) you can use a `p2.xlarge` instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with approximately ~2 images per second. 
 
@@ -42,7 +42,7 @@ Clone this repo with:
 git clone https://github.com/AntonMu/TrainYourOwnYOLO
 cd TrainYourOwnYOLO/
 ```
-Create Virtual **(Linux/Mac)** Environment (requires [venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) which is included in the standard library of Python 3.3 or newer):
+Create Virtual **(Linux/Mac)** Environment:
 ```
 python3 -m venv env
 source env/bin/activate
@@ -52,7 +52,7 @@ Make sure that, from now on, you **run all commands from within your virtual env
 #### 1b Setting up Virtual Environment [Windows]
 Use the [Github Desktop GUI](https://desktop.github.com/) to clone this repo to your local machine. Navigate to the `TrainYourOwnYOLO` project folder and open a power shell window by pressing **Shift + Right Click** and selecting `Open PowerShell window here` in the drop-down menu.
 
-Create Virtual **(Windows)** Environment (requires [venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) which is included in the standard library of Python 3.3 or newer):
+Create Virtual **(Windows)** Environment:
 
 ```
 py -m venv env
