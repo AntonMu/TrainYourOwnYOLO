@@ -21,6 +21,10 @@ If you have followed the instructions exactly, couldn't solve your problem with 
 
 ------------------------
 
+### Readme 
+
+- I have followed all Readme instructions carefully word by word: **Answer**
+
 ### System information
 - **What is the top-level directory of the model you are using**:
 - **Have I written custom code (as opposed to using a stock example script provided in the repo)**:
