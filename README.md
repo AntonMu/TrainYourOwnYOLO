@@ -161,11 +161,22 @@ License][cc-by]. This means that you are free to:
 
 Under the following terms:
 
- * **Attribution** — a link to this [github repo](https://github.com/AntonMu/TrainYourOwnYOLO)!
+ * **Attribution** 
+ 
+ Cite as:
+ 
+ ```
+ @misc{TrainYourOwnYOLO,
+    title={TrainYourOwnYOLO: Building a Custom Object Detector from Scratch},
+    author={Anton Muehlemann},
+    year={2019},
+    url={https://github.com/AntonMu/TrainYourOwnYOLO}
+}
+```
+If your work doesn't include a citation list, simply link this [github repo](https://github.com/AntonMu/TrainYourOwnYOLO)!
  
 [![CC BY 4.0][cc-by-image]][cc-by]
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
-
