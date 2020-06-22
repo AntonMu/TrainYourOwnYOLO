@@ -24,6 +24,9 @@ To build and test your YOLO object detection algorithm follow the below steps:
 
 ## Getting Started
 
+### NEW: Google Colab Tutorial <a href="https://colab.research.google.com/github/AntonMu/TrainYourOwnYOLO/blob/master/TrainYourOwnYOLO.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+With Google Colab you can skip most of the set up steps and start training your own model right away. 
+
 ### Requisites
 The only hard requirement is a running version of python 3.6 or 3.7. To install python 3.7 go to 
 - [python.org/downloads](https://www.python.org/downloads/release/python-376/) 

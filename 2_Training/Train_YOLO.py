@@ -6,7 +6,7 @@ Retrain the YOLO model for your own dataset.
 import os
 import sys
 import argparse
-
+import warnings
 
 def get_parent_dir(n=1):
     """ returns the n-th parent dicrectory of the current
@@ -43,6 +43,7 @@ from keras_yolo3.yolo3.model import (
 from keras_yolo3.yolo3.utils import get_random_data
 from PIL import Image
 from time import time
+import tensorflow.compat.v1 as tf
 import pickle
 
 from Train_Utils import (
@@ -136,9 +137,20 @@ if __name__ == "__main__":
         default=51,
         help="Number of epochs for training last layers and number of epochs for fine-tuning layers. Default is 51.",
     )
+    parser.add_argument(
+        "--warnings",
+        default=False,
+        action="store_true",
+        help="Display warning messages. Default is False.",
+    )
 
     FLAGS = parser.parse_args()
-
+    
+    if not FLAGS.warnings:
+        tf.logging.set_verbosity(tf.logging.ERROR)
+        os.environ['TF_CPP_MIN_LOG_LEVEL']='3'
+        warnings.filterwarnings("ignore")
+        
     np.random.seed(FLAGS.random_seed)
 
     log_dir = FLAGS.log_dir
