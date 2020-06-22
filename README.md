@@ -151,3 +151,21 @@ Issues without a completed issue template will be closed after 7 days.
 - 🍴 **fork** this repo if you like to use it as part of your own project.
 
 ![CatVideo](/Utils/Screenshots/CatVideo.gif)
+
+## Licensing 
+This work is licensed under a [Creative Commons Attribution 4.0 International
+License][cc-by]. This means that you are free to:
+
+ * **Share** — copy and redistribute the material in any medium or format
+ * **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+
+Under the following terms:
+
+ * **Attribution** — a link to this [github repo](https://github.com/AntonMu/TrainYourOwnYOLO)!
+ 
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
