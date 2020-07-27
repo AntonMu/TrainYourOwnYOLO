@@ -139,7 +139,6 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--warnings",
-        type=bool,
         default=False,
         action="store_true",
         help="Display warning messages. Default is False.",
