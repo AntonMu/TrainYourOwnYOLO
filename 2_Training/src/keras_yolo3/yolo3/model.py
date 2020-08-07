@@ -471,7 +471,7 @@ def yolo_loss(args, anchors, num_classes, ignore_thresh=0.5, print_loss=False):
             )
             return b + 1, ignore_mask
 
-        _, ignore_mask = K.control_flow_ops.while_loop(
+        _, ignore_mask = tf.while_loop(
             lambda b, *args: b < m, loop_body, [0, ignore_mask]
         )
         ignore_mask = ignore_mask.stack()

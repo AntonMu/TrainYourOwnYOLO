@@ -8,8 +8,11 @@ import progressbar
 
 FLAGS = None
 
-root_folder = os.path.dirname(os.path.abspath(__file__))
-download_folder = os.path.join(root_folder, "src", "keras_yolo3")
+root_folder = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+download_folder = os.path.join(root_folder, "2_Training", "src", "keras_yolo3")
+data_folder = os.path.join(root_folder, "Data")
+model_folder = os.path.join(data_folder, "Model_Weights")
+download_script = os.path.join(model_folder, "Download_Weights.py")
 
 if __name__ == "__main__":
     # Delete all default flags
@@ -26,21 +29,27 @@ if __name__ == "__main__":
 
     FLAGS = parser.parse_args()
 
-    url = "https://pjreddie.com/media/files/yolov3.weights"
-    r = requests.get(url, stream=True)
+    if not os.path.isfile(os.path.join(download_folder, "yolov3.weights")):
+        print("\n", "Downloading Raw YOLOv3 Weights", "\n")
+        start = time.time()
+        call_string = " ".join(
+            [
+                "python",
+                download_script,
+                "1ENKguLZbkgvM8unU3Hq1BoFzoLeGWvE_",
+                os.path.join(download_folder, "yolov3.weights"),
+            ]
+        )
 
-    f = open(os.path.join(download_folder, "yolov3.weights"), "wb")
-    file_size = int(r.headers.get("content-length"))
-    chunk = 100
-    num_bars = file_size // chunk
-    bar = progressbar.ProgressBar(maxval=num_bars).start()
-    i = 0
-    for chunk in r.iter_content(chunk):
-        f.write(chunk)
-        bar.update(i)
-        i += 1
-    f.close()
+        subprocess.call(call_string, shell=True)
 
-    call_string = "python convert.py yolov3.cfg yolov3.weights yolo.h5"
+        end = time.time()
+        print(
+            "Downloaded Raw YOLOv3 Weights in {0:.1f} seconds".format(end - start), "\n"
+        )
 
-    subprocess.call(call_string, shell=True, cwd=download_folder)
+        # Original URL: https://pjreddie.com/media/files/yolov3.weights
+
+        call_string = "python convert.py yolov3.cfg yolov3.weights yolo.h5"
+
+        subprocess.call(call_string, shell=True, cwd=download_folder)
