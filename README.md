@@ -120,7 +120,9 @@ Many thanks to [Niklas Wilson](https://github.com/NiklasWilson) for contributing
     └─── Data
     └─── Utils
     ```
-    If you want to use a different folder layout (not recommended) you will have to specify your paths as command line arguments. Also, try to avoid spaces in folder names, i.e. don't use a folder name like this `my folder` but instead use `my_folder`.
+    If you want to use a different folder layout (not recommended) you will have to specify your paths as command line arguments.
+
+    Don't use spaces in folder names, i.e. don't use a folder name like this `my folder` but instead use `my_folder`.
 
 2. If you are using [pipenv](https://github.com/pypa/pipenv) and are having trouble running `python3 -m venv env`, try:
     ```
