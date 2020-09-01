@@ -8,9 +8,10 @@ import sys
 import argparse
 import warnings
 
+
 def get_parent_dir(n=1):
-    """ returns the n-th parent dicrectory of the current
-    working directory """
+    """returns the n-th parent dicrectory of the current
+    working directory"""
     current_path = os.path.dirname(os.path.abspath(__file__))
     for k in range(n):
         current_path = os.path.dirname(current_path)
@@ -133,7 +134,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--epochs",
-        type=float,
+        type=int,
         default=51,
         help="Number of epochs for training last layers and number of epochs for fine-tuning layers. Default is 51.",
     )
@@ -145,12 +146,12 @@ if __name__ == "__main__":
     )
 
     FLAGS = parser.parse_args()
-    
+
     if not FLAGS.warnings:
         tf.logging.set_verbosity(tf.logging.ERROR)
-        os.environ['TF_CPP_MIN_LOG_LEVEL']='3'
+        os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
         warnings.filterwarnings("ignore")
-        
+
     np.random.seed(FLAGS.random_seed)
 
     log_dir = FLAGS.log_dir
