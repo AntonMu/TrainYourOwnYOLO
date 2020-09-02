@@ -1,6 +1,6 @@
-# TrainYourOwnYOLO: Building a Custom Object Detector from Scratch [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+# TrainYourOwnYOLO: Building a Custom Object Detector from Scratch [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This repo let's you train a custom image detector using the state-of-the-art [YOLOv3](https://pjreddie.com/darknet/yolo/) computer vision algorithm. For a short write up check out this [medium post](https://medium.com/@muehle/how-to-train-your-own-yolov3-detector-from-scratch-224d10e55de2). This repo works with the latest versions of tensorflow (2.3) and keras (2.4).
+This repo let's you train a custom image detector using the state-of-the-art [YOLOv3](https://pjreddie.com/darknet/yolo/) computer vision algorithm. For a short write up check out this [medium post](https://medium.com/@muehle/how-to-train-your-own-yolov3-detector-from-scratch-224d10e55de2). This repo works with TensorFlow 2.3 and Keras 2.4.
 
 ### Pipeline Overview
 
@@ -33,7 +33,7 @@ The only hard requirement is a running version of python 3.6 or 3.7. To install 
 
 and follow the installation instructions. Note that this repo has only been tested with python 3.6 and python 3.7 thus it is recommened to use either `python3.6` or `python3.7`.
 
-To speed up training, it is recommended to use a **GPU with CUDA** support. For example on [AWS](/2_Training/AWS/) you can use a `p2.xlarge` instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with approximately ~2 images per second. 
+To speed up training, it is recommended to use a **GPU with CUDA** support. For example on [AWS](/2_Training/AWS/) you can use a `p2.xlarge` instance (Tesla K80 GPU with 12GB memory). Inference is very fast even on a CPU with approximately ~2 images per second. If you want to use your own machine, follow the instructions at [tensorflow.org/install/gpu](https://www.tensorflow.org/install/gpu) to install CUDA drivers. 
 
 
 ### Installation
@@ -121,20 +121,7 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
 
     Don't use spaces in folder names, i.e. don't use a folder name like this `my folder` but instead use `my_folder`.
 
-2. If you are using [pipenv](https://github.com/pypa/pipenv) and are having trouble running `python3 -m venv env`, try:
-    ```
-    pipenv shell
-    ```
-
-3. If you are having trouble getting cv2 to run, try:
-
-    ```
-    apt-get update
-    apt-get install -y libsm6 libxext6 libxrender-dev
-    pip install opencv-python
-    ```
-
-4. If you are a Linux user and having trouble installing `*.snap` package files try:
+2. If you are a Linux user and having trouble installing `*.snap` package files try:
     ```
     snap install --dangerous vott-2.1.0-linux.snap
     ```
