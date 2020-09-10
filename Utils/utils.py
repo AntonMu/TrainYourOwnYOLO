@@ -78,8 +78,7 @@ def load_extractor_model(model_name="InceptionV3", flavor=1):
       flavor: int specifying the model variant and input_shape.
         For InceptionV3, the map is {0: default, 1: 200*200, truncate last Inception block,
         2: 200*200, truncate last 2 blocks, 3: 200*200, truncate last 3 blocks, 4: 200*200}
-        For VGG16, it only changes the input size, {0: 224 (default), 1: 128, 2: 64}.
-"""
+        For VGG16, it only changes the input size, {0: 224 (default), 1: 128, 2: 64}."""
     start = timer()
     if model_name == "InceptionV3":
         from keras.applications.inception_v3 import InceptionV3

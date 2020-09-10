@@ -272,7 +272,7 @@ def _main(args):
     remaining_weights = len(weights_file.read()) / 4
     weights_file.close()
     print(
-        "Read {} of {} from Darknet weights.".format(count, count + remaining_weights)
+        f"Read {count:0.0f} of {count + remaining_weights:0.0f} from Darknet weights."
     )
     if remaining_weights > 0:
         print("Warning: {} unused weights".format(remaining_weights))

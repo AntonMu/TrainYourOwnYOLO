@@ -158,8 +158,15 @@ if __name__ == "__main__":
 
     class_names = get_classes(FLAGS.classes_file)
     num_classes = len(class_names)
-    anchors = get_anchors(FLAGS.anchors_path)
-    weights_path = FLAGS.weights_path
+
+    if FLAGS.is_tiny and FLAGS.weights_path == weights_path:
+        weights_path = os.path.join(os.path.dirname(FLAGS.weights_path), "yolo-tiny.h5")
+    if FLAGS.is_tiny and FLAGS.anchors_path == anchors_path:
+        anchors_path = os.path.join(
+            os.path.dirname(FLAGS.anchors_path), "yolo-tiny_anchors.txt"
+        )
+
+    anchors = get_anchors(anchors_path)
 
     input_shape = (416, 416)  # multiple of 32, height, width
     epoch1, epoch2 = FLAGS.epochs, FLAGS.epochs

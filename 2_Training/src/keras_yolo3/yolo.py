@@ -21,6 +21,7 @@ import tensorflow.python.keras.backend as K
 
 tf.disable_eager_execution()
 
+
 class YOLO(object):
     _defaults = {
         "model_path": "model_data/yolo.h5",

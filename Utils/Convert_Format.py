@@ -9,7 +9,14 @@ from Get_File_Paths import GetFileList, ChangeToOtherMachine
 
 def convert_vott_csv_to_yolo(
     vott_df,
-    labeldict=dict(zip(["Cat_Face"], [0,])),
+    labeldict=dict(
+        zip(
+            ["Cat_Face"],
+            [
+                0,
+            ],
+        )
+    ),
     path="",
     target_name="data_train.txt",
     abs_path=False,
@@ -106,16 +113,16 @@ def crop_and_save(
 ):
     """Takes a vott_csv file with image names, labels and crop_boxes
     and crops the images accordingly
-    
+
     Input csv file format:
-    
+
     image   xmin ymin xmax ymax label
     im.jpg  0    10   100  500  house
 
-    
+
     Parameters
     ----------
-    df : pd.Dataframe 
+    df : pd.Dataframe
         The input dataframe with file_names, bounding box info
         and label
     source_path : str
@@ -175,7 +182,14 @@ def crop_and_save(
 
 if __name__ == "__main__":
     # Prepare the houses dataset for YOLO
-    labeldict = dict(zip(["house"], [0,]))
+    labeldict = dict(
+        zip(
+            ["house"],
+            [
+                0,
+            ],
+        )
+    )
     multi_df = pd.read_csv(
         "C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Housing_detector/2/vott-csv-export/Housing_cropping-export.csv"
     )

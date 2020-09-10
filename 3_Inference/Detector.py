@@ -3,8 +3,8 @@ import sys
 
 
 def get_parent_dir(n=1):
-    """ returns the n-th parent dicrectory of the current
-    working directory """
+    """returns the n-th parent dicrectory of the current
+    working directory"""
     current_path = os.path.dirname(os.path.abspath(__file__))
     for k in range(n):
         current_path = os.path.dirname(current_path)
@@ -28,6 +28,7 @@ import pandas as pd
 import numpy as np
 from Get_File_Paths import GetFileList
 import random
+from Train_Utils import get_anchors
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
@@ -141,6 +142,13 @@ if __name__ == "__main__":
         help='Specify the postfix for images with bounding boxes. Default is "_catface"',
     )
 
+    parser.add_argument(
+        "--is_tiny",
+        default=False,
+        action="store_true",
+        help="Use the tiny Yolo version for better performance and less accuracy. Default is False.",
+    )
+
     FLAGS = parser.parse_args()
 
     save_img = not FLAGS.no_save_img
@@ -168,11 +176,17 @@ if __name__ == "__main__":
     if not os.path.exists(output_path):
         os.makedirs(output_path)
 
+    if FLAGS.is_tiny and FLAGS.anchors_path == anchors_path:
+        anchors_path = os.path.join(
+            os.path.dirname(FLAGS.anchors_path), "yolo-tiny_anchors.txt"
+        )
+
+    anchors = get_anchors(anchors_path)
     # define YOLO detector
     yolo = YOLO(
         **{
             "model_path": FLAGS.model_path,
-            "anchors_path": FLAGS.anchors_path,
+            "anchors_path": anchors_path,
             "classes_path": FLAGS.classes_path,
             "score": FLAGS.score,
             "gpu_num": FLAGS.gpu_num,

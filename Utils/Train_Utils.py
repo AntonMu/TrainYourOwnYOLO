@@ -9,8 +9,8 @@ import sys
 
 
 def get_parent_dir(n=1):
-    """ returns the n-th parent dicrectory of the current
-    working directory """
+    """returns the n-th parent dicrectory of the current
+    working directory"""
     current_path = os.getcwd()
     for k in range(n):
         current_path = os.path.dirname(current_path)
@@ -221,7 +221,7 @@ def ChangeToOtherMachine(filelist, repo="TrainYourOwnYOLO", remote_machine=""):
     '/home/ubuntu/TrainYourOwnYOLO/Data/Street_View_Images/vulnerable/test.jpg'
 
     Get's converted to
-    
+
     'C:/Users/Anton/TrainYourOwnYOLO/Data/Street_View_Images/vulnerable/test.jpg'
 
     """
