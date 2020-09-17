@@ -8,9 +8,9 @@ assignees: ''
 ---
 Before filing a report consider the following two questions:
 
-### Have you followed the instructions exactly (word by word)?
+### Have you followed all Readme instructions exactly? 
 
-### Have you checked the [troubleshooting](https://github.com/AntonMu/TrainYourOwnYOLO#troubleshooting) section?
+### Have you checked the [troubleshooting](https://github.com/AntonMu/TrainYourOwnYOLO#troubleshooting) section? 
 
 Once you are familiar with the code, you're welcome to modify it. Please only continue to file a bug report if you encounter an issue with the provided code and after having followed the instructions.
 
@@ -23,7 +23,11 @@ If you have followed the instructions exactly, couldn't solve your problem with 
 
 ### Readme 
 
-- I have followed all Readme instructions carefully word by word: **Answer**
+- I have followed all Readme instructions carefully: **Answer**
+
+### Troubleshooting Section
+
+- I have looked at the  [troubleshooting](https://github.com/AntonMu/TrainYourOwnYOLO#troubleshooting) section: **Answer**
 
 ### System information
 - **What is the top-level directory of the model you are using**:
@@ -43,3 +47,4 @@ Describe the problem clearly here. Be sure to convey here why it's a bug or a fe
 
 ### Source code / logs
 Include any logs or source code that would be helpful to diagnose the problem. If including tracebacks, please include the full traceback. Large logs and files should be attached. Try to provide a reproducible test case that is the bare minimum necessary to generate the problem.
+
