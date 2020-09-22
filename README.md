@@ -108,7 +108,7 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
 
 0. If you encounter any error, please make sure you follow the instructions **exactly** (word by word). Once you are familiar with the code, you're welcome to modify it as needed but in order to minimize error, I encourage you to not deviate from the instructions above. If you would like to file an issue, please use the provided template and make sure to fill out all fields. 
 
-1. If you encounter a `FileNotFoundError`, `Module not found` or similar error, make sure that you did not change the folder structure. Your directory structure **must** look like this: 
+1. If you encounter a `FileNotFoundError`, `Module not found` or similar error, make sure that you did not change the folder structure. Your directory structure **must** look exactly like this: 
     ```
     TrainYourOwnYOLO
     └─── 1_Image_Annotation
@@ -119,7 +119,7 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
     ```
     If you use a different name such as e.g. `TrainYourOwnYOLO-master` you will have to specify the correct paths as command line arguments in every function call.
 
-    Don't use spaces in folder names, i.e. don't use a folder name like this `my folder` but instead use `my_folder`.
+    Don't use spaces in file or folder names, i.e. instead of `my folder` use `my_folder`.
 
 2. If you are a Linux user and having trouble installing `*.snap` package files try:
     ```
