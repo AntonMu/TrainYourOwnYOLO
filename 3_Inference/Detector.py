@@ -18,7 +18,7 @@ sys.path.append(src_path)
 sys.path.append(utils_path)
 
 import argparse
-from keras_yolo3.yolo import YOLO, detect_video
+from keras_yolo3.yolo import YOLO, detect_video, detect_webcam
 from PIL import Image
 from timeit import default_timer as timer
 from utils import load_extractor_model, load_features, parse_input, detect_object
@@ -149,11 +149,20 @@ if __name__ == "__main__":
         help="Use the tiny Yolo version for better performance and less accuracy. Default is False.",
     )
 
+    parser.add_argument(
+        "--webcam",
+        default=False,
+        action="store_true",
+        help="Use webcam for real-time detection. Default is False.",
+    )
+
     FLAGS = parser.parse_args()
 
     save_img = not FLAGS.no_save_img
 
     file_types = FLAGS.file_types
+
+    webcam_active = FLAGS.webcam
 
     if file_types:
         input_paths = GetFileList(FLAGS.input_path, endings=file_types)
@@ -215,7 +224,7 @@ if __name__ == "__main__":
     input_labels = [line.rstrip("\n") for line in class_file.readlines()]
     print("Found {} input labels: {} ...".format(len(input_labels), input_labels))
 
-    if input_image_paths:
+    if input_image_paths and not webcam_active:
         print(
             "Found {} input images: {} ...".format(
                 len(input_image_paths),
@@ -272,7 +281,8 @@ if __name__ == "__main__":
         out_df.to_csv(FLAGS.box, index=False)
 
     # This is for videos
-    if input_video_paths:
+    # for pre-recorded videos present in the Test_Images folder
+    if input_video_paths and not webcam_active:
         print(
             "Found {} input videos: {} ...".format(
                 len(input_video_paths),
@@ -293,5 +303,12 @@ if __name__ == "__main__":
                 len(input_video_paths), end - start
             )
         )
+    # for Webcam
+    if webcam_active:
+        start = timer()
+        detect_webcam(yolo)
+        end = timer()
+        print("Processed from webcam for {:.1f}sec".format(end - start))
+
     # Close the current yolo session
     yolo.close_session()
