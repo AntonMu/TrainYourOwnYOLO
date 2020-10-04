@@ -149,11 +149,20 @@ if __name__ == "__main__":
         help="Use the tiny Yolo version for better performance and less accuracy. Default is False.",
     )
 
+    parser.add_argument(
+        "--webcam",
+        default=False,
+        action="store_true",
+        help="Use webcam for real-time detection. Default is False.",
+    )
+
     FLAGS = parser.parse_args()
 
     save_img = not FLAGS.no_save_img
 
     file_types = FLAGS.file_types
+
+    webcam_active = FLAGS.webcam
 
     if file_types:
         input_paths = GetFileList(FLAGS.input_path, endings=file_types)
@@ -294,13 +303,13 @@ if __name__ == "__main__":
                 len(input_video_paths), end - start
             )
         )
-    # for Webcam uncomment the below code and the one in 2_Training/src/keras_yolo3/yolo.py
-    """
-    start = timer()
-    detect_video(yolo)
+    # for Webcam
+    if webcam_active:
+      start = timer()
+      detect_video(yolo)
 
-    end = timer()
-    print("Processed {} videos in {:.1f}sec".format( len(input_video_paths), end - start))
-    """
+      end = timer()
+      print("Processed {} videos in {:.1f}sec".format( len(input_video_paths), end - start))
+
     # Close the current yolo session
     yolo.close_session()
