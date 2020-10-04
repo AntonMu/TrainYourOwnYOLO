@@ -12,7 +12,7 @@ Contributions are highly appreciated. If you'd like to make a contribution, plea
 
     * Rebase off the upstream/master branch to avoid merge conflicts.
 
-    * Test your feature on all three major operating systems (Windows, Linux and macOS) with and without using a GPU. Thus, you need to run tests in at least 6 different environments. 
+    * Test your feature on as many different system configurations as possible. The three major operating systems are Windows, Linux and macOS. For each, try to test the feature with and without using a GPU.
 
  1. Create a pull request to the upstream/master branch. The pull request must include:
 
@@ -20,7 +20,7 @@ Contributions are highly appreciated. If you'd like to make a contribution, plea
     
     * A minimal test example that uses the new feature,
     
-    * A list of tested system configurations (OS and GPU model).
+    * A list of tested system configurations (OS and GPU model if used).
 
  1. Once the PR is created, wait for feedback and incorporate suggested changes. 
 
