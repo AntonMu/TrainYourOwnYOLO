@@ -12,13 +12,16 @@ Contributions are highly appreciated. If you'd like to make a contribution, plea
 
     * Rebase off the upstream/master branch to avoid merge conflicts.
 
-    * Test your feature on as many different system configurations as possible. The three major operating systems are Windows, Linux and macOS. For each, try to test the feature with and without using a GPU.
+    * Test your feature on as many different system configurations as possible. The three major operating systems are Windows, Linux and macOS. For each, try to test the feature with and without using a GPU,
+    
+    * Test *all* existing feature with your new code (your change should not break existing features). 
 
  1. Create a pull request to the upstream/master branch. The pull request must include:
 
     * A description of the new feature,
     
     * A minimal test example that uses the new feature,
+    
     
     * A list of tested system configurations (OS and GPU model if used).
 
