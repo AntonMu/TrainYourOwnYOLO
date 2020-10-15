@@ -31,6 +31,10 @@ If you have followed the instructions exactly, couldn't solve your problem with 
 
 - I have looked at the  [troubleshooting](https://github.com/AntonMu/TrainYourOwnYOLO#troubleshooting) section: **Answer**
 
+### Troubleshooting Section
+
+- I have looked for [similar issues](https://github.com/AntonMu/TrainYourOwnYOLO/issues?q=is%3Aissue): **Answer**
+
 ### System information
 - **What is the top-level directory of the model you are using**:
 - **Have I written custom code (as opposed to using a stock example script provided in the repo)**:
