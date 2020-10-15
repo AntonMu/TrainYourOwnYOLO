@@ -286,3 +286,48 @@ def detect_video(yolo, video_path, output_path=""):
     vid.release()
     out.release()
     # yolo.close_session()
+
+
+# TO PROCESS VIDEOS DIRECTLY FROM WEBCAM
+def detect_webcam(yolo):
+    import cv2
+
+    vid = cv2.VideoCapture(0)
+    if not vid.isOpened():
+        raise IOError("Couldn't open webcam")
+    accum_time = 0
+    curr_fps = 0
+    fps = "FPS: ??"
+    prev_time = timer()
+    while vid.isOpened():
+        return_value, frame = vid.read()
+        if not return_value:
+            break
+        image = Image.fromarray(frame)
+        out_pred, image = yolo.detect_image(image, show_stats=False)
+        result = np.asarray(image)
+        curr_time = timer()
+        exec_time = curr_time - prev_time
+        prev_time = curr_time
+        accum_time = accum_time + exec_time
+        curr_fps = curr_fps + 1
+        if accum_time > 1:
+            accum_time = accum_time - 1
+            fps = "FPS: " + str(curr_fps)
+            curr_fps = 0
+        cv2.putText(
+            result,
+            text=fps,
+            org=(3, 15),
+            fontFace=cv2.FONT_HERSHEY_SIMPLEX,
+            fontScale=0.50,
+            color=(255, 0, 0),
+            thickness=2,
+        )
+        cv2.namedWindow("Result", cv2.WINDOW_NORMAL)
+        cv2.imshow("Result", result)
+        cv2.waitKey(1)
+        if cv2.getWindowProperty("Result", cv2.WND_PROP_VISIBLE) < 1:
+            break
+    vid.release()
+    yolo.close_session()
