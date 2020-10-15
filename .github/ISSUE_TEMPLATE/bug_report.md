@@ -12,6 +12,8 @@ Before filing a report consider the following two questions:
 
 ### Have you checked the [troubleshooting](https://github.com/AntonMu/TrainYourOwnYOLO#troubleshooting) section? 
 
+### Have you looked for [similar issues](https://github.com/AntonMu/TrainYourOwnYOLO/issues?q=is%3Aissue)? 
+
 Once you are familiar with the code, you're welcome to modify it. Please only continue to file a bug report if you encounter an issue with the provided code and after having followed the instructions.
 
 If you have followed the instructions exactly, couldn't solve your problem with the provided troubleshooting tips and would still like to file a bug or make a feature requests please follow the steps below.
