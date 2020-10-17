@@ -102,7 +102,7 @@ python <script_name.py> -h
 
 ## License
 
-Unless explicitly stated otherwise at the top of a file, all code is licensed under the MIT license. This repo makes use of [**ilmonteux/logohunter**](https://github.com/ilmonteux/logohunter) which itself is inspired by [**qqwweee/keras-yolo3**](https://github.com/qqwweee/keras-yolo3).
+Unless explicitly stated otherwise at the top of a file, all code is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This repo makes use of [**ilmonteux/logohunter**](https://github.com/ilmonteux/logohunter) which itself is inspired by [**qqwweee/keras-yolo3**](https://github.com/qqwweee/keras-yolo3).
 
 ## Troubleshooting
 
