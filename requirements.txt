@@ -58,6 +58,7 @@ toml==0.10.1
 typed-ast==1.4.1
 typing-extensions==3.7.4.3
 urllib3==1.25.10
+wandb==0.10.8
 Werkzeug==1.0.1
 wrapt==1.12.1
 zipp==3.1.0

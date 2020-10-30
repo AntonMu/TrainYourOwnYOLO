@@ -13,7 +13,7 @@ def get_parent_dir(n=1):
     """returns the n-th parent dicrectory of the current
     working directory"""
     current_path = os.path.dirname(os.path.abspath(__file__))
-    for k in range(n):
+    for _ in range(n):
         current_path = os.path.dirname(current_path)
     return current_path
 
@@ -29,6 +29,7 @@ import keras.backend as K
 from keras.layers import Input, Lambda
 from keras.models import Model
 from keras.optimizers import Adam
+
 from keras.callbacks import (
     TensorBoard,
     ModelCheckpoint,
@@ -152,6 +153,22 @@ if __name__ == "__main__":
         os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
         warnings.filterwarnings("ignore")
 
+    # Get WandB integration if setup
+    try:
+        import wandb
+        from wandb.integration.keras import WandbCallback  # type: ignore
+
+        wandb.ensure_configured()
+        if wandb.api.api_key is None:
+            _has_wandb = False
+            wandb.termwarn(
+                "W&B installed but not logged in.  Run `wandb login` or set the WANDB_API_KEY env variable."
+            )
+        else:
+            _has_wandb = False if os.getenv("WANDB_DISABLED") else True
+    except (ImportError, AttributeError):
+        _has_wandb = False
+
     np.random.seed(FLAGS.random_seed)
 
     log_dir = FLAGS.log_dir
@@ -208,96 +225,77 @@ if __name__ == "__main__":
 
     # Train with frozen layers first, to get a stable loss.
     # Adjust num epochs to your dataset. This step is enough to obtain a decent model.
-    if True:
-        model.compile(
-            optimizer=Adam(lr=1e-3),
-            loss={
-                # use custom yolo_loss Lambda layer.
-                "yolo_loss": lambda y_true, y_pred: y_pred
-            },
+    frozen_callbacks = [logging, checkpoint]
+
+    if _has_wandb:
+        wandb.init(
+            project="TrainYourOwnYOLO", config=vars(FLAGS), sync_tensorboard=False
         )
+        wandb_callback = WandbCallback(save_model=False)
+        frozen_callbacks.append(wandb_callback)
 
-        batch_size = 32
-        print(
-            "Train on {} samples, val on {} samples, with batch size {}.".format(
-                num_train, num_val, batch_size
-            )
+    model.compile(
+        optimizer=Adam(lr=1e-3),
+        loss={
+            # use custom yolo_loss Lambda layer.
+            "yolo_loss": lambda y_true, y_pred: y_pred
+        },
+    )
+
+    batch_size = 32
+    print(
+        "Train on {} samples, val on {} samples, with batch size {}.".format(
+            num_train, num_val, batch_size
         )
-        history = model.fit_generator(
-            data_generator_wrapper(
-                lines[:num_train], batch_size, input_shape, anchors, num_classes
-            ),
-            steps_per_epoch=max(1, num_train // batch_size),
-            validation_data=data_generator_wrapper(
-                lines[num_train:], batch_size, input_shape, anchors, num_classes
-            ),
-            validation_steps=max(1, num_val // batch_size),
-            epochs=epoch1,
-            initial_epoch=0,
-            callbacks=[logging, checkpoint],
-        )
-        model.save_weights(os.path.join(log_dir, "trained_weights_stage_1.h5"))
-
-        step1_train_loss = history.history["loss"]
-
-        file = open(os.path.join(log_dir_time, "step1_loss.npy"), "w")
-        with open(os.path.join(log_dir_time, "step1_loss.npy"), "w") as f:
-            for item in step1_train_loss:
-                f.write("%s\n" % item)
-        file.close()
-
-        step1_val_loss = np.array(history.history["val_loss"])
-
-        file = open(os.path.join(log_dir_time, "step1_val_loss.npy"), "w")
-        with open(os.path.join(log_dir_time, "step1_val_loss.npy"), "w") as f:
-            for item in step1_val_loss:
-                f.write("%s\n" % item)
-        file.close()
+    )
+    history = model.fit_generator(
+        data_generator_wrapper(
+            lines[:num_train], batch_size, input_shape, anchors, num_classes
+        ),
+        steps_per_epoch=max(1, num_train // batch_size),
+        validation_data=data_generator_wrapper(
+            lines[num_train:], batch_size, input_shape, anchors, num_classes
+        ),
+        validation_steps=max(1, num_val // batch_size),
+        epochs=epoch1,
+        initial_epoch=0,
+        callbacks=frozen_callbacks,
+    )
+    model.save_weights(os.path.join(log_dir, "trained_weights_stage_1.h5"))
 
     # Unfreeze and continue training, to fine-tune.
     # Train longer if the result is unsatisfactory.
-    if True:
-        for i in range(len(model.layers)):
-            model.layers[i].trainable = True
-        model.compile(
-            optimizer=Adam(lr=1e-4), loss={"yolo_loss": lambda y_true, y_pred: y_pred}
-        )  # recompile to apply the change
-        print("Unfreeze all layers.")
 
-        batch_size = (
-            4  # note that more GPU memory is required after unfreezing the body
+    full_callbacks = [logging, checkpoint, reduce_lr, early_stopping]
+
+    if _has_wandb:
+        full_callbacks.append(wandb_callback)
+
+    for i in range(len(model.layers)):
+        model.layers[i].trainable = True
+    model.compile(
+        optimizer=Adam(lr=1e-4), loss={"yolo_loss": lambda y_true, y_pred: y_pred}
+    )  # recompile to apply the change
+
+    print("Unfreeze all layers.")
+
+    batch_size = 4  # note that more GPU memory is required after unfreezing the body
+    print(
+        "Train on {} samples, val on {} samples, with batch size {}.".format(
+            num_train, num_val, batch_size
         )
-        print(
-            "Train on {} samples, val on {} samples, with batch size {}.".format(
-                num_train, num_val, batch_size
-            )
-        )
-        history = model.fit_generator(
-            data_generator_wrapper(
-                lines[:num_train], batch_size, input_shape, anchors, num_classes
-            ),
-            steps_per_epoch=max(1, num_train // batch_size),
-            validation_data=data_generator_wrapper(
-                lines[num_train:], batch_size, input_shape, anchors, num_classes
-            ),
-            validation_steps=max(1, num_val // batch_size),
-            epochs=epoch1 + epoch2,
-            initial_epoch=epoch1,
-            callbacks=[logging, checkpoint, reduce_lr, early_stopping],
-        )
-        model.save_weights(os.path.join(log_dir, "trained_weights_final.h5"))
-        step2_train_loss = history.history["loss"]
-
-        file = open(os.path.join(log_dir_time, "step2_loss.npy"), "w")
-        with open(os.path.join(log_dir_time, "step2_loss.npy"), "w") as f:
-            for item in step2_train_loss:
-                f.write("%s\n" % item)
-        file.close()
-
-        step2_val_loss = np.array(history.history["val_loss"])
-
-        file = open(os.path.join(log_dir_time, "step2_val_loss.npy"), "w")
-        with open(os.path.join(log_dir_time, "step2_val_loss.npy"), "w") as f:
-            for item in step2_val_loss:
-                f.write("%s\n" % item)
-        file.close()
+    )
+    history = model.fit_generator(
+        data_generator_wrapper(
+            lines[:num_train], batch_size, input_shape, anchors, num_classes
+        ),
+        steps_per_epoch=max(1, num_train // batch_size),
+        validation_data=data_generator_wrapper(
+            lines[num_train:], batch_size, input_shape, anchors, num_classes
+        ),
+        validation_steps=max(1, num_val // batch_size),
+        epochs=epoch1 + epoch2,
+        initial_epoch=epoch1,
+        callbacks=full_callbacks,
+    )
+    model.save_weights(os.path.join(log_dir, "trained_weights_final.h5"))

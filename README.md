@@ -24,7 +24,7 @@ To build and test your YOLO object detection algorithm follow the below steps:
 
 ## Getting Started
 
-### NEW: Google Colab Tutorial <a href="https://colab.research.google.com/github/AntonMu/TrainYourOwnYOLO/blob/master/TrainYourOwnYOLO.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+### Google Colab Tutorial <a href="https://colab.research.google.com/github/AntonMu/TrainYourOwnYOLO/blob/master/TrainYourOwnYOLO.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 With Google Colab you can skip most of the set up steps and start training your own model right away. 
 
 ### Requisites
@@ -41,12 +41,12 @@ To speed up training, it is recommended to use a **GPU with CUDA** support. For 
 #### Setting up Virtual Environment [Linux or Mac]
 
 Clone this repo with:
-```
+```bash
 git clone https://github.com/AntonMu/TrainYourOwnYOLO
 cd TrainYourOwnYOLO/
 ```
 Create Virtual **(Linux/Mac)** Environment:
-```
+```bash
 python3 -m venv env
 source env/bin/activate
 ```
@@ -57,7 +57,7 @@ Use the [Github Desktop GUI](https://desktop.github.com/) to clone this repo to 
 
 Create Virtual **(Windows)** Environment:
 
-```
+```powershell
 py -m venv env
 .\env\Scripts\activate
 ```
@@ -67,7 +67,7 @@ Make sure that, from now on, you **run all commands from within your virtual env
 #### Install Required Packages [Windows, Mac or Linux]
 Install required packages (from within your virtual environment) via:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 If this fails, you may have to upgrade your pip version first with `pip install pip --upgrade`.
@@ -75,7 +75,7 @@ If this fails, you may have to upgrade your pip version first with `pip install 
 ## Quick Start (Inference only)
 To test the cat face detector on test images located in [`TrainYourOwnYOLO/Data/Source_Images/Test_Images`](/Data/Source_Images/Test_Images) run the `Minimal_Example.py` script in the root folder with:
 
-```
+```bash
 python Minimal_Example.py
 ```
 
@@ -96,9 +96,15 @@ To train your own custom YOLO object detector please follow the instructions det
 
 Each `*.py` script has various command line options that help tweak performance and change things such as input and output directories. All scripts are initialized with good default values that help accomplish all tasks as long as the original folder structure is preserved. To learn more about available command line options of a python script `<script_name.py>` run:
 
-```
+```bash
 python <script_name.py> -h
 ```
+### **NEW:** Weights and Biases
+TrainYourOwnYOLO supports [Weights & Biases](https://wandb.ai/home/) to track your experiments online. Sign up at [wandb.ai](https://wandb.ai/home) to get an API key and run:
+```bash
+wandb -login <API_KEY>
+```
+where `<API_KEY>` is your Weights & Biases API key. 
 
 ## License
 
@@ -109,7 +115,7 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
 0. If you encounter any error, please make sure you follow the instructions **exactly** (word by word). Once you are familiar with the code, you're welcome to modify it as needed but in order to minimize error, I encourage you to not deviate from the instructions above. If you would like to file an issue, please use the provided template and make sure to fill out all fields. 
 
 1. If you encounter a `FileNotFoundError`, `Module not found` or similar error, make sure that you did not change the folder structure. Your directory structure **must** look exactly like this: 
-    ```
+    ```text
     TrainYourOwnYOLO
     └─── 1_Image_Annotation
     └─── 2_Training
@@ -122,7 +128,7 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
     Don't use spaces in file or folder names, i.e. instead of `my folder` use `my_folder`.
 
 2. If you are a Linux user and having trouble installing `*.snap` package files try:
-    ```
+    ```bash
     snap install --dangerous vott-2.1.0-linux.snap
     ```
     See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
@@ -154,7 +160,7 @@ Under the following terms:
  
  Cite as:
  
-  ```
+  ```text
   @misc{TrainYourOwnYOLO,
     title={TrainYourOwnYOLO: Building a Custom Object Detector from Scratch},
     author={Anton Muehlemann},
