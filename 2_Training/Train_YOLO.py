@@ -178,10 +178,15 @@ if __name__ == "__main__":
 
     if FLAGS.is_tiny and FLAGS.weights_path == weights_path:
         weights_path = os.path.join(os.path.dirname(FLAGS.weights_path), "yolo-tiny.h5")
+    else:
+        weights_path = FLAGS.weights_path
+
     if FLAGS.is_tiny and FLAGS.anchors_path == anchors_path:
         anchors_path = os.path.join(
             os.path.dirname(FLAGS.anchors_path), "yolo-tiny_anchors.txt"
         )
+    else:
+        anchors_path = FLAGS.anchors_path
 
     anchors = get_anchors(anchors_path)
 
