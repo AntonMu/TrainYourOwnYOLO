@@ -62,9 +62,13 @@ def get_random_data(
     else:
         line = tmp_split
     # line[0] contains the filename
-    image = Image.open(line[0])
+    image = Image.open(line[0].rstrip())
     # The rest of the line includes bounding boxes
-    line = line[1].split(" ")
+    if len(tmp_split) >2:
+        line = line[1].split(" ")
+    # If no annotations, the rest of the line does not have bounding boxes
+    else:
+        line = []
     iw, ih = image.size
     h, w = input_shape
     box = np.array([np.array(list(map(int, box.split(",")))) for box in line[1:]])
