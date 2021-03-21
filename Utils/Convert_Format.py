@@ -20,7 +20,8 @@ def getFilesWithExtension(path, exts=('csv'), joinPath=False):
                     else: fileList.append(file)
                     continue
     except IOError:
-        print('It is desirable that your training dataset include images with non-labeled objects that you do not want to detect - negative samples without bounding box. Non annotated images can be placed in ->', path)
+        print('\nSometimes it is desirable that your training dataset include images with non-labeled objects that you do not want to detect (i.e. negative samples without bounding box). Non-annotated images can be placed in ->', path)
+        print('\nHowever, this is not mandatory, you can now continue with the training.\n')
     return fileList
 
 def convert_vott_csv_to_yolo(vott_df,labeldict=dict(zip(['Cat_Face'],[0,])),path='',target_name='data_train.txt',abs_path=False, zeroAnnotationPath=None):
