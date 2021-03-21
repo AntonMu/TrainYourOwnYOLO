@@ -23,6 +23,7 @@ Data_Folder = os.path.join(get_parent_dir(1), "Data")
 VoTT_Folder = os.path.join(
     Data_Folder, "Source_Images", "Training_Images", "vott-csv-export"
 )
+no_object_Folder = os.path.join(Data_Folder,'Source_Images','no_object')
 VoTT_csv = os.path.join(VoTT_Folder, "Annotations-export.csv")
 YOLO_filename = os.path.join(VoTT_Folder, "data_train.txt")
 
@@ -58,6 +59,11 @@ if __name__ == "__main__":
         + YOLO_filename,
     )
 
+    parser.add_argument(
+        "--no_object_folder", type=str, default=no_object_Folder,
+        help = "Absolute path to a folder containing images that have no annotations. Default is " + no_object_Folder
+    )
+
     FLAGS = parser.parse_args()
 
     # Prepare the dataset for YOLO
@@ -67,7 +73,7 @@ if __name__ == "__main__":
     multi_df.drop_duplicates(subset=None, keep="first", inplace=True)
     train_path = FLAGS.VoTT_Folder
     convert_vott_csv_to_yolo(
-        multi_df, labeldict, path=train_path, target_name=FLAGS.YOLO_filename
+        multi_df, labeldict, path=train_path, target_name=FLAGS.YOLO_filename, zeroAnnotationPath=FLAGS.no_object_folder
     )
 
     # Make classes file
