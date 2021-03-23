@@ -40,8 +40,9 @@ def detect_object(yolo, img_path, save_img, save_img_path="./", postfix=""):
     prediction, new_image = yolo.detect_image(image)
 
     img_out = postfix.join(os.path.splitext(os.path.basename(img_path)))
+    img_out = os.path.splitext(img_out)[0]+".png"
     if save_img:
-        new_image.save(os.path.join(save_img_path, img_out))
+        new_image.save(os.path.join(save_img_path, img_out), "PNG")
 
     return prediction, image_array
 

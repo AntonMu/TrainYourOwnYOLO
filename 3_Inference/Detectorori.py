@@ -86,7 +86,7 @@ if __name__ == "__main__":
         "--names-list",
         nargs="*",
         default=[],
-        help="Specify list of file types to include. Default is --file_types .jpg .jpeg .png .tif .mp4",
+        help="Specify list of file types to include. Default is --file_types .jpg .jpeg .png .mp4",
     )
 
     parser.add_argument(
@@ -138,8 +138,8 @@ if __name__ == "__main__":
         "--postfix",
         type=str,
         dest="postfix",
-        default="_detected",
-        help='Specify the postfix for images with bounding boxes. Default is "_detected"',
+        default="_catface",
+        help='Specify the postfix for images with bounding boxes. Default is "_catface"',
     )
 
     parser.add_argument(
@@ -170,7 +170,7 @@ if __name__ == "__main__":
         input_paths = GetFileList(FLAGS.input_path)
 
     # Split images and videos
-    img_endings = (".jpg", ".jpeg", ".png", ".tif")
+    img_endings = (".jpg", ".jpeg", ".png")
     vid_endings = (".mp4", ".mpeg", ".mpg", ".avi")
 
     input_image_paths = []
