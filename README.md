@@ -2,6 +2,11 @@
 
 This repo let's you train a custom image detector using the state-of-the-art [YOLOv3](https://pjreddie.com/darknet/yolo/) computer vision algorithm. For a short write up check out this [medium post](https://medium.com/@muehle/how-to-train-your-own-yolov3-detector-from-scratch-224d10e55de2). This repo works with TensorFlow 2.3 and Keras 2.4.
 
+Before getting started:
+
+- 🍴 **fork** this repo so that you can use it as part of your own project.
+- ⭐ **star** this repo to get notifications on future improvements.
+
 ### Pipeline Overview
 
 To build and test your YOLO object detection algorithm follow the below steps:
