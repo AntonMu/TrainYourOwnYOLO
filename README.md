@@ -2,7 +2,7 @@
 
 This repo let's you train a custom image detector using the state-of-the-art [YOLOv3](https://pjreddie.com/darknet/yolo/) computer vision algorithm. For a short write up check out this [medium post](https://medium.com/@muehle/how-to-train-your-own-yolov3-detector-from-scratch-224d10e55de2). This repo works with TensorFlow 2.3 and Keras 2.4.
 
-Before getting started:
+## Before getting started:
 
 - 🍴 **fork** this repo so that you can use it as part of your own project.
 - ⭐ **star** this repo to get notifications on future improvements.
@@ -140,7 +140,12 @@ Unless explicitly stated otherwise at the top of a file, all code is licensed un
     snap install --dangerous vott-2.1.0-linux.snap
     ```
     See [Snap Tutorial](https://tutorials.ubuntu.com/tutorial/advanced-snap-usage#2) for more information.
-
+3. If you have a newer version of python on your system, make sure that you create your virtual environment with version 3.7. You can use virtualenv for this: 
+    ```
+    pip install virtualenv
+    virtualenv env --python=python3.7
+    ```
+    Then follow the same steps as above. 
 ## Need more help? File an Issue!
 If you would like to file an issue, please use the provided issue template and make sure to complete all fields. This makes it easier to reproduce the issue for someone trying to help you. 
 
