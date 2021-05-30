@@ -6,3 +6,4 @@ pandas
 opencv-python
 progressbar2
 wandb
+black

@@ -21,11 +21,11 @@ src_path = os.path.join(get_parent_dir(2), "src")
 sys.path.append(src_path)
 
 import numpy as np
-import keras.backend as K
-from keras.layers import Input, Lambda
-from keras.models import Model
-from keras.optimizers import Adam
-from keras.callbacks import (
+import tensorflow.keras.backend as K
+from tensorflow.keras.layers import Input, Lambda
+from tensorflow.keras.models import Model
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import (
     TensorBoard,
     ModelCheckpoint,
     ReduceLROnPlateau,

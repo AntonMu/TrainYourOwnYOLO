@@ -50,7 +50,8 @@ if __name__ == "__main__":
         # Original URL: https://pjreddie.com/media/files/yolov3-tiny.weights
         gdrive_id = "1mIEZthXBcEguMvuVAHKLXQX3mA1oZUuC"
 
-    if not os.path.isfile(os.path.join(download_folder, weights_file)):
+    # if not os.path.isfile(os.path.join(download_folder, weights_file)):
+    if True:
         print(f"\nDownloading Raw {weights_file}\n")
         start = time.time()
         call_string = " ".join(

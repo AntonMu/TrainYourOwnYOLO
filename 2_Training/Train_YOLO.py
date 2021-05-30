@@ -25,12 +25,12 @@ utils_path = os.path.join(get_parent_dir(1), "Utils")
 sys.path.append(utils_path)
 
 import numpy as np
-import keras.backend as K
-from keras.layers import Input, Lambda
-from keras.models import Model
-from keras.optimizers import Adam
+import tensorflow.keras.backend as K
+from tensorflow.keras.layers import Input, Lambda
+from tensorflow.keras import Model
+from tensorflow.keras.optimizers import Adam
 
-from keras.callbacks import (
+from tensorflow.keras.callbacks import (
     TensorBoard,
     ModelCheckpoint,
     ReduceLROnPlateau,
