@@ -1,4 +1,4 @@
-# TrainYourOwnYOLO: Building a Custom Object Detector from Scratch [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+# TrainYourOwnYOLO: Building a Custom Object Detector from Scratch [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/197467673.svg)](https://zenodo.org/badge/latestdoi/197467673)
 
 This repo let's you train a custom image detector using the state-of-the-art [YOLOv3](https://pjreddie.com/darknet/yolo/) computer vision algorithm. For a short write up check out this [medium post](https://medium.com/@muehle/how-to-train-your-own-yolov3-detector-from-scratch-224d10e55de2). This repo works with TensorFlow 2.3 and Keras 2.4.
 
@@ -178,7 +178,8 @@ Under the following terms:
     title={TrainYourOwnYOLO: Building a Custom Object Detector from Scratch},
     author={Anton Muehlemann},
     year={2019},
-    url={https://github.com/AntonMu/TrainYourOwnYOLO}
+    url={https://github.com/AntonMu/TrainYourOwnYOLO},
+    doi = {10.5281/zenodo.5112375}
   }
   ```
 If your work doesn't include a citation list, simply link this [github repo](https://github.com/AntonMu/TrainYourOwnYOLO)!

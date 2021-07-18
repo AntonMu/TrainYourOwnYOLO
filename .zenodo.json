@@ -1,0 +1,13 @@
+{
+    "description": "Train a state-of-the-art yolov3 object detector from scratch!",
+    "license": "other-open",
+    "title": "TrainYourOwnYOLO: Building a Custom Object Detector from Scratch",
+    "upload_type": "software",
+    "creators": [
+        {
+            "affiliation": "UC Berkeley",
+            "name": "Anton Muehlemann"
+        }
+    ],
+    "access_right": "open"
+}
