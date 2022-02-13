@@ -73,6 +73,7 @@ Make sure that, from now on, you **run all commands from within your virtual env
 Install required packages (from within your virtual environment) via:
 
 ```bash
+pip install --upgrade pip --user
 pip install -r requirements.txt
 ```
 If this fails, you may have to upgrade your pip version first with `pip install pip --upgrade`.
