@@ -1,7 +1,6 @@
 import os
 import subprocess
 import time
-import sys
 
 
 def make_call_string(arglist):
@@ -22,18 +21,20 @@ output_folder = os.path.join(image_folder, "Test_Image_Detection_Results")
 if not os.path.exists(output_folder):
     os.mkdir(output_folder)
 
-# First download the pre-trained weights
-download_script = os.path.join(model_folder, "Download_Weights.py")
+# First download the pre-trained weights from https://drive.google.com/u/0/uc?id=1MGXAP_XD_w4OExPP10UHsejWrMww8Tu7&export=download
 
 if not os.path.isfile(os.path.join(model_folder, "trained_weights_final.h5")):
     print("\n", "Downloading Pretrained Weights", "\n")
+    if not os.path.exists(output_folder):
+        os.mkdir(model_folder)
     start = time.time()
     call_string = " ".join(
         [
-            "python",
-            download_script,
-            "1MGXAP_XD_w4OExPP10UHsejWrMww8Tu7",
-            os.path.join(model_folder, "trained_weights_final.h5"),
+            "cd",
+            model_folder,
+            "\n",
+            "gdown",
+            "https://drive.google.com/uc?id=1MGXAP_XD_w4OExPP10UHsejWrMww8Tu7",
         ]
     )
 

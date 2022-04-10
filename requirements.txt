@@ -7,3 +7,4 @@ opencv-python
 progressbar2
 wandb
 black
+gdown
