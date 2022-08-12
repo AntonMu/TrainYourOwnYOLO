@@ -85,7 +85,7 @@ if __name__ == "__main__":
         "--file_types",
         "--names-list",
         nargs="*",
-        default=[],
+        default=[".jpg, .jpeg, .png, .mp4, .JPG"],
         help="Specify list of file types to include. Default is --file_types .jpg .jpeg .png .mp4",
     )
 
