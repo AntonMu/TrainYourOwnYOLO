@@ -1,4 +1,4 @@
-tensorflow==2.3.1
+tensorflow==2.15.0
 Keras==2.4.3
 pillow
 matplotlib
